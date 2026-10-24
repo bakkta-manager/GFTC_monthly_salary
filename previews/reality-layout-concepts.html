@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>월급반 — 수입 설명 디자인 시안 4개</title>
+<link rel="preload" href="../assets/fonts/pretendard.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Pretendard;src:url('../assets/fonts/pretendard.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+:root{color-scheme:dark;--font:Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;--ui-ink:#f2f3f6;--ui-body:#bac1cc;--ui-blue:#7cb0ff}
+*{box-sizing:border-box}body{margin:0;background:#12141a;color:var(--ui-ink);font:16px/1.8 var(--font);word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}h1,h2,p,ul{margin:0}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:2px solid var(--ui-blue);outline-offset:4px}[hidden]{display:none!important}
+.studio{position:sticky;top:0;z-index:20;background:#171920f5;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff17}.bar{max-width:1440px;margin:auto;padding:14px 28px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}.brand{font-size:14px;font-weight:700}.tabs{display:flex;gap:5px;margin:auto}.tabs a{padding:5px 15px;border-radius:5px;font-size:13px;color:#b4bccb}.tabs a[aria-current=page]{background:#e9eff8;color:#152035}.site-link{font-size:12px;color:#b4bccb}.tools{max-width:1440px;margin:auto;padding:10px 28px;border-top:1px solid #ffffff17;display:flex;gap:20px;justify-content:space-between;align-items:center}.tools p{color:var(--ui-body);font-size:13px}.device-buttons{flex:none}.tools button{color:var(--ui-body);border:1px solid #ffffff25;border-radius:4px;background:transparent;font-size:12px;padding:5px 13px}.tools button[aria-pressed=true]{background:#e9eff8;color:#152035;border-color:#e9eff8}
+.gallery{max-width:1440px;margin:auto;padding:44px 28px 72px}.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:32px}.gallery-head h1{font-size:30px;letter-spacing:-.04em;line-height:1.4}.gallery-head p{color:var(--ui-body);font-size:14px;max-width:460px}.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}.card{border:1px solid #ffffff20;border-radius:10px;background:#1c1f28;overflow:hidden}.thumbnail{position:relative;display:block;width:100%;overflow:hidden;background:#090a0c;aspect-ratio:900/1310}.thumbnail iframe{display:block;position:absolute;top:0;left:0;border:0;width:900px;height:1310px;transform-origin:top left;pointer-events:none}.thumbnail::after{content:'크게 보기 ↗';position:absolute;right:16px;bottom:16px;background:#edf2fc;color:#17223a;padding:7px 13px;border-radius:30px;font-size:12px;font-weight:700}.caption{padding:24px}.caption h2{font-size:22px;line-height:1.4;letter-spacing:-.03em}.caption h2 span{font-size:13px;color:var(--ui-blue);margin-right:12px}.caption p{color:var(--ui-body);font-size:14px;margin-top:8px}.swatches{display:flex;gap:6px;margin-top:16px}.swatches{flex-wrap:wrap}.swatches span{font-size:11px;padding:2px 7px;color:#bac1cc;border:1px solid #ffffff25;border-radius:3px}.viewer{display:block;border:0;width:100%;max-width:1440px;min-height:0;background:#090a0c;margin:0 auto}.viewer.mobile{width:390px;max-width:100%;border-inline:1px solid #ffffff25}.gallery-note{font-size:13px;color:#929cad;margin-top:28px}
+/* Shared warm paper palette and one type scale across every concept. */
+.scene{--paper:#f4f1eb;--ink:#202329;--body:#59616c;--accent:#285dc2;--highlight:#cfdef5;--rule:#20232926;--thread:#285dc266}
+.scene{background:#090a0c}.context{padding:48px 32px;color:#f2f3f6;background:#090a0c}.context-before{text-align:center}.context-before p{font-size:28px;font-weight:700;line-height:1.4;letter-spacing:-.04em}.context-before mark{color:inherit;background:linear-gradient(transparent 62%,#2b5ca08c 62%)}.context-after>div{max-width:760px;margin:auto}.context-after h2{font-size:28px;font-weight:700;line-height:1.4;letter-spacing:-.03em}.context-after p{margin-top:16px;font-size:16px;color:#9ba4b2}
+.reality-stage{background:var(--paper);padding:76px 32px 72px;text-align:center;font-size:17px;line-height:1.85;color:var(--body)}.scene-copy{max-width:832px;margin:auto}.reality-limit,.reality-stage h1{margin:0;font-size:40px;font-weight:700;line-height:1.45;letter-spacing:-.04em;color:var(--ink)}.reality-stage mark{background:linear-gradient(transparent 62%,var(--highlight) 62%);color:inherit;padding:0 .04em;box-decoration-break:clone;-webkit-box-decoration-break:clone}.turn{display:flex;flex-direction:column;align-items:center;width:max-content;gap:12px;margin:28px auto;font-size:24px;font-weight:500;line-height:1.5;color:var(--body)}.turn::before,.turn::after{content:'';display:block;width:1px;height:34px;background:var(--thread)}.reality-proof{max-width:680px;margin:30px auto 0;font-size:inherit;line-height:1.85}.reality-proof strong{font-size:inherit;font-weight:700;color:var(--ink);padding:0 .05em;background:linear-gradient(transparent 74%,var(--highlight) 74%)}.intro-details{width:100%;max-width:832px;padding:32px 0 0;margin:44px auto 0;border-top:1px solid var(--rule)}.intro-details>p{margin:0 0 22px}.intro-details>p:last-child{max-width:680px;margin:0 auto}.three{display:flex;flex-direction:column;align-items:flex-start;gap:3px;max-width:234px;list-style:none;padding:0;margin:0 auto 28px;color:var(--ink);font-weight:500}.three li{display:flex;align-items:center;gap:9px;padding:9px 0;line-height:1.8}.check{display:grid;place-items:center;width:21px;height:21px;flex:none;border:1px solid var(--thread);border-radius:50%;color:var(--accent)}.check svg{width:13px;height:13px}.intro-details strong{display:block;margin-top:6px;font-size:inherit;font-weight:500;color:var(--accent)}
+@media(max-width:760px){.gallery-head{align-items:start;flex-direction:column;gap:14px}.bar{padding-inline:18px;gap:12px}.tabs{margin-left:auto;margin-right:0}.site-link{margin-left:auto}.tools{padding-inline:18px}.gallery{padding:30px 18px 50px}.gallery-grid{gap:20px}.reality-stage{padding-inline:24px}}
+@media(max-width:640px){.tabs{order:3;width:100%;justify-content:space-between}.tabs a{padding:5px 12px}.gallery-grid{grid-template-columns:1fr}.gallery-head h1{font-size:25px}.tools{align-items:start;flex-direction:column;gap:9px}.caption{padding:20px}.context{padding:36px 20px}.context-before p,.context-after h2{font-size:21px}.context-after p{font-size:15px}.reality-stage{padding:48px 20px;font-size:16px}.reality-limit,.reality-stage h1{font-size:28px;line-height:1.5}.turn{font-size:21px;margin:24px auto;gap:10px}.turn::before,.turn::after{height:28px}.reality-proof{margin-top:26px}.intro-details{margin-top:32px;padding-top:26px}.three{align-items:start;max-width:234px;margin:0 auto 26px}.three li{padding:8px 0}.intro-details strong{margin-top:5px}}
+
+/* A: a compact editorial rhythm around the same central axis. */
+.variant-a .scene-copy,.variant-a .intro-details{max-width:680px}
+.variant-a .reality-stage{padding-block:64px}
+.variant-a .turn{flex-direction:row;gap:16px;margin:26px auto}
+.variant-a .turn::before,.variant-a .turn::after{width:28px;height:1px}
+.variant-a .intro-details{border-top:0;margin-top:36px;padding-top:0}
+.variant-a .intro-details::before{content:'';display:block;width:64px;height:1px;background:var(--thread);margin:0 auto 30px}
+/* B: a quiet page surrounded by a second paper tone. */
+.variant-b{background:#e7e3dd}
+.variant-b .reality-stage{max-width:840px;margin:40px auto;padding:60px 40px;border:1px solid #20232920}
+.variant-b .scene-copy,.variant-b .intro-details{max-width:680px}
+.variant-b .intro-details{border-top:1px solid var(--rule)}
+/* C: typographic underlines and a margin note for the evidence. */
+.variant-c .scene-copy,.variant-c .intro-details{max-width:680px}
+.variant-c .reality-limit mark{background:linear-gradient(#bbc5d2,#bbc5d2) left 90%/100% .07em no-repeat}
+.variant-c h1 mark{color:var(--accent);background:linear-gradient(var(--highlight),var(--highlight)) left 92%/100% .12em no-repeat}
+.variant-c .reality-proof{width:fit-content;max-width:100%;padding:16px 24px;background:#ffffff70;border-left:2px solid var(--accent)}
+.variant-c .intro-details{border-bottom:1px solid var(--rule);padding-bottom:32px}
+/* D: one blue paragraph joins the conclusion and its evidence. */
+.variant-d .scene-copy,.variant-d .intro-details{max-width:680px}
+.variant-d .income-block{background:#e3ebf8;padding:32px 24px;border-radius:8px}
+.variant-d .income-block .reality-proof{margin-top:24px}
+.variant-d h1 mark{background:linear-gradient(transparent 62%,#c3d5f1 62%)}
+.variant-d .reality-proof strong{background:linear-gradient(transparent 74%,#c3d5f1 74%)}
+.variant-d .intro-details{border-top:0;padding-top:0;margin-top:36px}
+@media(max-width:900px){.variant-b .reality-stage{margin:28px 20px}}
+@media(max-width:640px){
+ .variant-a .reality-stage{padding-block:48px}.variant-a .turn{gap:12px;margin:24px auto}.variant-a .turn::before,.variant-a .turn::after{width:22px}
+ .variant-a .intro-details{margin-top:30px}.variant-a .intro-details::before{margin-bottom:26px}
+ .variant-b .reality-stage{margin:20px 12px;padding:40px 20px}
+ .variant-c .reality-proof{padding:14px 16px}.variant-c .intro-details{padding-bottom:26px}
+ .variant-d .income-block{padding:28px 12px}.variant-d .income-block .reality-proof{margin-top:24px}.variant-d .intro-details{margin-top:30px}
+}
+</style>
+</head>
+<body>
+<header class="studio" id="studio">
+ <div class="bar"><a class="brand" href="reality-layout-concepts.html">월급반 · 섹션 디자인 시안</a><nav class="tabs" aria-label="시안 선택"><a href="reality-layout-concepts.html" data-tab="all">전체</a><a href="?concept=a" data-tab="a">A</a><a href="?concept=b" data-tab="b">B</a><a href="?concept=c" data-tab="c">C</a><a href="?concept=d" data-tab="d">D</a></nav><a class="site-link" href="/" target="_blank" rel="noopener">현재 랜딩 페이지 ↗</a></div>
+ <div class="tools" id="tools" hidden><p id="summary"></p><div class="device-buttons"><button id="desktop" aria-pressed="true">PC</button> <button id="mobile" aria-pressed="false">모바일</button></div></div>
+</header>
+<main id="app"></main>
+<noscript>시안을 보려면 브라우저의 JavaScript를 켜주세요.</noscript>
+<template id="scene-template">
+ <div class="context context-before"><p>누구나 꿈꾸지만<br><mark>아무나 이룰 수 없는 목표</mark>입니다.</p></div>
+ <section class="reality-stage" aria-labelledby="reality-title">
+  <div class="scene-copy">
+   <p class="reality-limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p>
+   <p class="turn">하지만</p>
+   <div class="income-block"><h1 id="reality-title">월급만큼의 수입은<br><mark>현실적으로 가능</mark>합니다.</h1>
+   <p class="reality-proof"><strong>9년간</strong> <strong>3,165명</strong>을 가르치고 내린 결론입니다.</p></div>
+  </div>
+  <div class="intro-details">
+   <p>체계적인 관리 시스템하에</p>
+   <ul class="three"><li>양질의 학습</li><li>체계적인 훈련</li><li>개인 맞춤 행동 교정</li></ul>
+   <p>3가지를 일정 기간 이상, 꾸준히 반복한 분들은<strong>높은 확률로 월급 이상의 수입을 만들었습니다.</strong></p>
+  </div>
+ </section>
+ <div class="context context-after"><div><h2>증거는 멀리 있지 않았습니다.</h2><p>글로벌트레이더협회는 늘 애널리스트, 코치진 인력난에 시달립니다.</p></div></div>
+</template>
+<script>
+const concepts={
+ a:{title:'단정한 중심',description:'짧은 연결선과 정돈된 여백. 문장부터 실천까지 한 호흡으로 읽히는 가장 간결한 구성입니다.',traits:['중앙 정렬','짧은 연결선','간결한 간격']},
+ b:{title:'한 장의 편지',description:'종이 한 장에 담긴 글처럼. 은은한 외곽선과 바깥 여백으로 내용에 집중하게 합니다.',traits:['종이 면','얇은 외곽선','넉넉한 여백']},
+ c:{title:'조용한 주석',description:'밑줄의 깊이와 근거 문장의 작은 주석. 장식보다 문장의 의미를 따라 강조합니다.',traits:['문장 밑줄','근거 주석','절제된 구분선']},
+ d:{title:'푸른 단락',description:'가능성과 근거를 하나의 푸른 문단으로. 핵심 결론을 읽고 자연스럽게 실천으로 이어집니다.',traits:['결론 묶기','옅은 파란 면','분명한 흐름']}
+};
+const params=new URLSearchParams(location.search),requested=params.get('concept');
+const concept=Object.hasOwn(concepts,requested)?requested:null,embedded=params.get('embed')==='1';
+const app=document.getElementById('app');
+function label(key){return key.toUpperCase()+' · '+concepts[key].title;}
+if(concept&&embedded){
+ document.getElementById('studio').remove();
+ const scene=document.createElement('article');scene.className='scene variant-'+concept;
+ scene.append(document.getElementById('scene-template').content.cloneNode(true));app.append(scene);
+ scene.querySelectorAll('.three li').forEach(item=>{const icon=document.createElement('span');icon.className='check';icon.setAttribute('aria-hidden','true');icon.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>';item.prepend(icon);});
+ document.title=label(concept)+' — 월급반';
+ const reportHeight=()=>parent.postMessage({type:'layout-height',height:scene.getBoundingClientRect().height},location.origin);
+ new ResizeObserver(reportHeight).observe(scene);window.addEventListener('load',reportHeight);document.fonts.ready.then(reportHeight);
+}else if(concept){
+ document.querySelector('[data-tab="'+concept+'"]').setAttribute('aria-current','page');
+ document.getElementById('tools').hidden=false;document.getElementById('summary').textContent=label(concept)+' — '+concepts[concept].description;
+ const frame=document.createElement('iframe');frame.className='viewer';frame.title=label(concept);frame.src='?concept='+concept+'&embed=1';app.append(frame);
+ window.addEventListener('message',event=>{if(event.origin===location.origin&&event.source===frame.contentWindow&&event.data?.type==='layout-height'&&Number.isFinite(event.data.height)&&event.data.height>0&&event.data.height<10000)frame.style.height=Math.ceil(event.data.height)+'px';});
+ function setMobile(mobile){frame.classList.toggle('mobile',mobile);document.getElementById('mobile').setAttribute('aria-pressed',String(mobile));document.getElementById('desktop').setAttribute('aria-pressed',String(!mobile));}
+ document.getElementById('mobile').addEventListener('click',()=>setMobile(true));document.getElementById('desktop').addEventListener('click',()=>setMobile(false));
+}else{
+ document.querySelector('[data-tab="all"]').setAttribute('aria-current','page');
+ app.innerHTML='<div class="gallery"><div class="gallery-head"><h1>같은 글, 네 가지 읽는 흐름.</h1><p>웜 페이퍼와 통일된 글자 크기, 세로 목록을 유지했습니다.<br>여백·연결선·강조 방식의 차이를 비교해보세요.</p></div><div class="gallery-grid"></div><p class="gallery-note">각 시안을 누르면 크게 볼 수 있습니다. PC·모바일 화면으로도 비교할 수 있습니다.</p></div>';
+ const grid=document.querySelector('.gallery-grid');
+ Object.keys(concepts).forEach(key=>{
+  const card=document.createElement('article');card.className='card';
+  card.innerHTML='<a class="thumbnail" href="?concept='+key+'" aria-label="'+label(key)+' 크게 보기"><iframe src="?concept='+key+'&embed=1" title="'+label(key)+' 미리보기" tabindex="-1"></iframe></a><div class="caption"><h2><span>'+key.toUpperCase()+'</span>'+concepts[key].title+'</h2><p>'+concepts[key].description+'</p><div class="swatches" aria-hidden="true">'+concepts[key].traits.map(trait=>'<span>'+trait+'</span>').join('')+'</div></div>';
+  grid.append(card);
+  const thumb=card.querySelector('.thumbnail'),frame=card.querySelector('iframe');let height=1310;
+  function resize(){const scale=thumb.clientWidth/900;frame.style.transform='scale('+scale+')';thumb.style.height=(height*scale)+'px';frame.style.height=height+'px';}
+  new ResizeObserver(resize).observe(thumb);
+  window.addEventListener('message',event=>{if(event.origin===location.origin&&event.source===frame.contentWindow&&event.data?.type==='layout-height'&&Number.isFinite(event.data.height)&&event.data.height>0&&event.data.height<10000){height=Math.ceil(event.data.height);resize();}});
+ });
+}
+</script>
+</body>
+</html>

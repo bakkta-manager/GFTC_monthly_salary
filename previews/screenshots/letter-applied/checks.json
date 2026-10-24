@@ -1,0 +1,132 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "initialY": 0,
+      "overflow": false,
+      "paperWidth": 840,
+      "paperX": 300,
+      "centered": true,
+      "frameBg": "rgb(231, 227, 221)",
+      "framePadding": "40px 0px",
+      "paperBg": "rgb(244, 241, 235)",
+      "paperPadding": "60px 40px",
+      "border": "1px solid rgba(32, 35, 41, 0.125)",
+      "contentWidth": 680,
+      "titleSizes": [
+        "40px",
+        "40px"
+      ],
+      "bodySizes": [
+        "17px",
+        "17px",
+        "17px",
+        "17px",
+        "17px"
+      ],
+      "uniform": true,
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "lightCards": 3,
+      "opening": "누구나 꿈꾸지만"
+    },
+    {
+      "width": 900,
+      "initialY": 0,
+      "overflow": false,
+      "paperWidth": 840,
+      "paperX": 30,
+      "centered": true,
+      "frameBg": "rgb(231, 227, 221)",
+      "framePadding": "28px 20px",
+      "paperBg": "rgb(244, 241, 235)",
+      "paperPadding": "60px 40px",
+      "border": "1px solid rgba(32, 35, 41, 0.125)",
+      "contentWidth": 680,
+      "titleSizes": [
+        "40px",
+        "40px"
+      ],
+      "bodySizes": [
+        "17px",
+        "17px",
+        "17px",
+        "17px",
+        "17px"
+      ],
+      "uniform": true,
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "lightCards": 3,
+      "opening": "누구나 꿈꾸지만"
+    },
+    {
+      "width": 390,
+      "initialY": 0,
+      "overflow": false,
+      "paperWidth": 366,
+      "paperX": 12,
+      "centered": true,
+      "frameBg": "rgb(231, 227, 221)",
+      "framePadding": "20px 12px",
+      "paperBg": "rgb(244, 241, 235)",
+      "paperPadding": "40px 20px",
+      "border": "1px solid rgba(32, 35, 41, 0.125)",
+      "contentWidth": 324,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "bodySizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "lightCards": 3,
+      "opening": "누구나 꿈꾸지만"
+    },
+    {
+      "width": 320,
+      "initialY": 0,
+      "overflow": false,
+      "paperWidth": 296,
+      "paperX": 12,
+      "centered": true,
+      "frameBg": "rgb(231, 227, 221)",
+      "framePadding": "20px 12px",
+      "paperBg": "rgb(244, 241, 235)",
+      "paperPadding": "40px 20px",
+      "border": "1px solid rgba(32, 35, 41, 0.125)",
+      "contentWidth": 254,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "bodySizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "lightCards": 3,
+      "opening": "누구나 꿈꾸지만"
+    }
+  ],
+  "anchor": {
+    "top": 65,
+    "visible": true,
+    "scrollY": 3145
+  },
+  "scrollContinues": true,
+  "contentMatches": true,
+  "errors": []
+}

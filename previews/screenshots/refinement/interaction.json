@@ -1,0 +1,85 @@
+{
+  "gallery": [
+    {
+      "width": 676,
+      "height": 744
+    },
+    {
+      "width": 676,
+      "height": 770
+    },
+    {
+      "width": 676,
+      "height": 738
+    },
+    {
+      "width": 676,
+      "height": 810
+    }
+  ],
+  "mobileFrame": 390,
+  "desktopFrame": 1200,
+  "burst": 835,
+  "keyboard": 1670,
+  "free": 1830,
+  "up": 835,
+  "reduced": 835,
+  "apply": {
+    "y": 7328,
+    "top": -0.09375
+  },
+  "type": [
+    {
+      "width": 1440,
+      "font": [
+        "82.08px",
+        "82.08px",
+        "82.08px"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "font": [
+        "72.96px",
+        "72.96px",
+        "72.96px"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "font": [
+        "39px",
+        "39px",
+        "39px"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "font": [
+        "32px",
+        "32px",
+        "32px"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 844,
+      "font": [
+        "37.558px",
+        "37.558px",
+        "37.558px"
+      ],
+      "overflow": false
+    }
+  ],
+  "touch": [
+    779,
+    1558,
+    5685
+  ],
+  "visibleNoJs": true,
+  "errors": []
+}

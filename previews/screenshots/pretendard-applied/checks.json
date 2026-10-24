@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "loaded": true,
+      "fonts": [
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+      ],
+      "sizes": [
+        "82.08px",
+        "82.08px",
+        "82.08px"
+      ],
+      "line": "96.8544px",
+      "gap": "9.8496px"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "loaded": true,
+      "fonts": [
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+      ],
+      "sizes": [
+        "39px",
+        "39px",
+        "39px"
+      ],
+      "line": "46.02px",
+      "gap": "4.68px"
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "loaded": true,
+      "fonts": [
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+        "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+      ],
+      "sizes": [
+        "32px",
+        "32px",
+        "32px"
+      ],
+      "line": "37.76px",
+      "gap": "3.84px"
+    }
+  ],
+  "errors": []
+}

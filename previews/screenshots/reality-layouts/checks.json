@@ -1,0 +1,472 @@
+{
+  "checks": [
+    {
+      "concept": "a",
+      "width": 900,
+      "overflow": false,
+      "sizes": [
+        "17px",
+        "17px",
+        "17px",
+        "17px",
+        "17px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "40px",
+        "40px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "a",
+      "width": 390,
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "a",
+      "width": 320,
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "b",
+      "width": 900,
+      "overflow": false,
+      "sizes": [
+        "17px",
+        "17px",
+        "17px",
+        "17px",
+        "17px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "40px",
+        "40px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "b",
+      "width": 390,
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "b",
+      "width": 320,
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "c",
+      "width": 900,
+      "overflow": false,
+      "sizes": [
+        "17px",
+        "17px",
+        "17px",
+        "17px",
+        "17px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "40px",
+        "40px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "c",
+      "width": 390,
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "c",
+      "width": 320,
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "d",
+      "width": 900,
+      "overflow": false,
+      "sizes": [
+        "17px",
+        "17px",
+        "17px",
+        "17px",
+        "17px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "40px",
+        "40px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "d",
+      "width": 390,
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    },
+    {
+      "concept": "d",
+      "width": 320,
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "16px",
+        "16px",
+        "16px",
+        "16px"
+      ],
+      "uniform": true,
+      "titleSizes": [
+        "28px",
+        "28px"
+      ],
+      "vertical": true,
+      "text": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다.",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif"
+    }
+  ],
+  "gallery": {
+    "cards": 4,
+    "overflow": false,
+    "mobileWidth": 388,
+    "desktopWidth": 1440,
+    "mobileOverflow": false
+  },
+  "main": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "intro": "누구나 꿈꾸지만",
+      "initialY": 0,
+      "cards": [
+        {
+          "title": "시황",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "27px 25px 30px",
+          "breaks": 1
+        },
+        {
+          "title": "타점 교육",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "27px 25px 30px",
+          "breaks": 1
+        },
+        {
+          "title": "협회장 라이브트레이딩",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "27px 25px 30px",
+          "breaks": 1
+        },
+        {
+          "title": "W.E.T",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "27px 25px 30px",
+          "breaks": 1
+        },
+        {
+          "title": "뉴스",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "27px 25px 30px",
+          "breaks": 1
+        },
+        {
+          "title": "수강생·졸업생 채팅방과 커뮤니티",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "27px 25px 30px",
+          "breaks": 1
+        }
+      ],
+      "realityText": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다."
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "intro": "누구나 꿈꾸지만",
+      "initialY": 0,
+      "cards": [
+        {
+          "title": "시황",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "25px 23px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "타점 교육",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "25px 23px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "협회장 라이브트레이딩",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "25px 23px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "W.E.T",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "25px 23px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "뉴스",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "25px 23px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "수강생·졸업생 채팅방과 커뮤니티",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "25px 23px 27px",
+          "breaks": 1
+        }
+      ],
+      "realityText": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다."
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "intro": "누구나 꿈꾸지만",
+      "initialY": 0,
+      "cards": [
+        {
+          "title": "시황",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "25px 19px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "타점 교육",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "25px 19px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "협회장 라이브트레이딩",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "25px 19px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "W.E.T",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "25px 19px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "뉴스",
+          "light": false,
+          "background": "rgb(16, 21, 29)",
+          "titleColor": "rgb(242, 243, 246)",
+          "bodyColor": "rgb(165, 175, 189)",
+          "fontSize": "16px",
+          "padding": "25px 19px 27px",
+          "breaks": 1
+        },
+        {
+          "title": "수강생·졸업생 채팅방과 커뮤니티",
+          "light": true,
+          "background": "rgb(244, 241, 235)",
+          "titleColor": "rgb(32, 35, 41)",
+          "bodyColor": "rgb(89, 97, 108)",
+          "fontSize": "16px",
+          "padding": "25px 19px 27px",
+          "breaks": 1
+        }
+      ],
+      "realityText": "비현실적인수익은약속할수없습니다.하지만월급만큼의수입은현실적으로가능합니다.9년간3,165명을가르치고내린결론입니다.체계적인관리시스템하에양질의학습체계적인훈련개인맞춤행동교정3가지를일정기간이상,꾸준히반복한분들은높은확률로월급이상의수입을만들었습니다."
+    }
+  ],
+  "hoverFirst": {
+    "visible": "true",
+    "index": 1,
+    "opacity": "1"
+  },
+  "hoverNext": {
+    "visible": "true",
+    "index": 2,
+    "opacity": "1"
+  },
+  "contentSame": true,
+  "errors": []
+}

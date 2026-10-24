@@ -1,0 +1,181 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "mark": "비현실적인 수익",
+      "turn": "24px",
+      "line": "34px",
+      "overflow": false,
+      "images": 0
+    },
+    {
+      "width": 390,
+      "mark": "비현실적인 수익",
+      "turn": "21px",
+      "line": "28px",
+      "overflow": false,
+      "images": 0
+    },
+    {
+      "width": 320,
+      "mark": "비현실적인 수익",
+      "turn": "21px",
+      "line": "28px",
+      "overflow": false,
+      "images": 0
+    }
+  ],
+  "concepts": [
+    {
+      "key": "a",
+      "width": 900,
+      "proof": "9년간 3,165명을 가르쳐본 결과 내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "40px",
+        "40px"
+      ],
+      "turn": "24px"
+    },
+    {
+      "key": "a",
+      "width": 390,
+      "proof": "9년간 3,165명을 가르쳐본 결과 내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "28px",
+        "28px"
+      ],
+      "turn": "21px"
+    },
+    {
+      "key": "a",
+      "width": 320,
+      "proof": "9년간 3,165명을 가르쳐본 결과 내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "28px",
+        "28px"
+      ],
+      "turn": "21px"
+    },
+    {
+      "key": "b",
+      "width": 900,
+      "proof": "9년간 3,165명을 가르쳐본 결과,내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "40px",
+        "40px"
+      ],
+      "turn": "24px"
+    },
+    {
+      "key": "b",
+      "width": 390,
+      "proof": "9년간 3,165명을 가르쳐본 결과,내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "28px",
+        "28px"
+      ],
+      "turn": "21px"
+    },
+    {
+      "key": "b",
+      "width": 320,
+      "proof": "9년간 3,165명을 가르쳐본 결과,내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "28px",
+        "28px"
+      ],
+      "turn": "21px"
+    },
+    {
+      "key": "c",
+      "width": 900,
+      "proof": "9년간3,165명을가르쳐본 결과 내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "40px",
+        "40px"
+      ],
+      "turn": "24px"
+    },
+    {
+      "key": "c",
+      "width": 390,
+      "proof": "9년간3,165명을가르쳐본 결과 내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "28px",
+        "28px"
+      ],
+      "turn": "21px"
+    },
+    {
+      "key": "c",
+      "width": 320,
+      "proof": "9년간3,165명을가르쳐본 결과 내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "28px",
+        "28px"
+      ],
+      "turn": "21px"
+    },
+    {
+      "key": "d",
+      "width": 900,
+      "proof": "9년간 3,165명을 가르쳐본 결과내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "40px",
+        "40px"
+      ],
+      "turn": "24px"
+    },
+    {
+      "key": "d",
+      "width": 390,
+      "proof": "9년간 3,165명을 가르쳐본 결과내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "28px",
+        "28px"
+      ],
+      "turn": "21px"
+    },
+    {
+      "key": "d",
+      "width": 320,
+      "proof": "9년간 3,165명을 가르쳐본 결과내린 결론입니다.",
+      "overflow": false,
+      "claims": [
+        "28px",
+        "28px"
+      ],
+      "turn": "21px"
+    }
+  ],
+  "thumbs": [
+    {
+      "w": 676,
+      "h": 314
+    },
+    {
+      "w": 676,
+      "h": 314
+    },
+    {
+      "w": 676,
+      "h": 314
+    },
+    {
+      "w": 676,
+      "h": 315
+    }
+  ],
+  "errors": []
+}

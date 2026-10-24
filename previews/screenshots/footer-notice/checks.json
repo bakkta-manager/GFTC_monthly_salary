@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "bodySize": "16px",
+      "background": "rgb(16, 21, 29)",
+      "afterForm": true,
+      "beforeFooter": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "bodySize": "16px",
+      "background": "rgb(16, 21, 29)",
+      "afterForm": true,
+      "beforeFooter": true
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "bodySize": "16px",
+      "background": "rgb(16, 21, 29)",
+      "afterForm": true,
+      "beforeFooter": true
+    }
+  ]
+}

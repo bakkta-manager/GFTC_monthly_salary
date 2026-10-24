@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>강의 목록 박스 시안 G1·G2·G3·G4</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+  :root{--text:#262626;--body:#3b4150;--muted:#5d6680;--dim:#5f6b7a;--line:#e5e8ee;--blue:#1c69d4;--blue-deep:#0a4ba1;--tint:#f3f5fa;--sans:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+  *{box-sizing:border-box}
+  body{margin:0;background:#fafbff;color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.7;letter-spacing:-.01em;word-break:keep-all;-webkit-font-smoothing:antialiased}
+  p{margin:0}
+  .wrap{max-width:720px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+  .tag{display:inline-block;margin:56px 0 24px;padding:8px 14px;border-radius:999px;background:var(--text);color:#fff;font-size:13px;font-weight:800;letter-spacing:.08em}
+  .k{font-weight:700;color:var(--blue)}
+  .big{font-size:clamp(24px,2.4vw,30px);font-weight:700;line-height:1.4;letter-spacing:-.035em;margin:0 0 6px}
+  .p{font-size:19px;line-height:1.65;letter-spacing:-.02em;color:var(--body)}
+  .item{display:flex;flex-direction:column;gap:18px}
+  .sep{height:1px;background:var(--line);margin:56px 0 0}
+
+  /* G1 — 연회색 박스 한 줄 */
+  .g1{padding:16px 20px;border-radius:12px;background:var(--tint);font-size:17px;font-weight:600;color:var(--text);display:flex;flex-wrap:wrap;align-items:center;gap:6px 0}
+  .g1 i{font-style:normal;color:#c1c7d0;padding:0 12px}
+  .g1 small{font-weight:400;color:var(--dim);font-size:15px;margin-left:4px}
+  .g1 .etc{color:var(--dim);font-weight:400;padding-left:10px}
+
+  /* G2 — 파란 칩 나열 */
+  .g2{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .g2 span{padding:8px 14px;border-radius:999px;background:#e8f1ff;color:var(--blue-deep);font-size:15px;font-weight:600}
+  .g2 span small{font-weight:400;color:#5d6680;margin-left:4px}
+  .g2 .etc{background:transparent;color:var(--dim);font-weight:400;padding:0 4px}
+
+  /* G3 — 흰 카드 체크 2열 */
+  .g3{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;box-shadow:0 2px 0 rgba(11,29,54,.03),0 10px 28px -14px rgba(11,29,54,.18)}
+  .g3 div{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:600}
+  .g3 div::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue);flex:none}
+  .g3 small{font-weight:400;color:var(--dim);font-size:14px}
+  .g3 .etc{color:var(--dim);font-weight:400}
+  .g3 .etc::before{background:#c1c7d0}
+
+  /* G4 — 라벨 + 번호 목록 */
+  .g4{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+  .g4 .head{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:var(--tint);font-size:13px;font-weight:700;color:var(--blue);letter-spacing:.06em}
+  .g4 .head span{color:var(--dim);font-weight:600;letter-spacing:0}
+  .g4 ol{list-style:none;margin:0;padding:6px 18px;display:grid;grid-template-columns:1fr 1fr}
+  .g4 li{display:flex;gap:12px;align-items:baseline;padding:9px 0;font-size:16px;font-weight:600}
+  .g4 li b{font-size:12px;color:var(--blue);font-weight:700;width:18px;flex:none}
+  .g4 li small{font-weight:400;color:var(--dim);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<span class="tag">시안 G1 — 연회색 박스 한 줄</span>
+<div class="item">
+  <p class="big"><span class="k">첫째,</span> 제 모든 지식과 이론을<br>강의로 제공합니다.</p>
+  <div class="g1"><span>파동에너지 이론</span><i>·</i><span>프라이스 액션</span><i>·</i><span>세 가지 시스템</span><i>·</i><span>세력 패턴<small>(기존 은준반 교육 내용)</small></span><i>·</i><span>ICT</span><span class="etc">등</span></div>
+  <p class="p">제가 학습하고, 실전에서 검증하고<br>현재까지 매매에 사용하고 있는 모든 지식들을 강의로 전달합니다.</p>
+</div>
+<div class="sep"></div>
+
+<span class="tag">시안 G2 — 파란 칩 나열</span>
+<div class="item">
+  <p class="big"><span class="k">첫째,</span> 제 모든 지식과 이론을<br>강의로 제공합니다.</p>
+  <div class="g2"><span>파동에너지 이론</span><span>프라이스 액션</span><span>세 가지 시스템</span><span>세력 패턴<small>기존 은준반 교육 내용</small></span><span>ICT</span><span class="etc">등</span></div>
+  <p class="p">제가 학습하고, 실전에서 검증하고<br>현재까지 매매에 사용하고 있는 모든 지식들을 강의로 전달합니다.</p>
+</div>
+<div class="sep"></div>
+
+<span class="tag">시안 G3 — 흰 카드 2열 목록</span>
+<div class="item">
+  <p class="big"><span class="k">첫째,</span> 제 모든 지식과 이론을<br>강의로 제공합니다.</p>
+  <div class="g3"><div>파동에너지 이론</div><div>프라이스 액션</div><div>세 가지 시스템</div><div>세력 패턴 <small>(기존 은준반 교육 내용)</small></div><div>ICT</div><div class="etc">등</div></div>
+  <p class="p">제가 학습하고, 실전에서 검증하고<br>현재까지 매매에 사용하고 있는 모든 지식들을 강의로 전달합니다.</p>
+</div>
+<div class="sep"></div>
+
+<span class="tag">시안 G4 — 라벨 헤더 + 번호 목록</span>
+<div class="item">
+  <p class="big"><span class="k">첫째,</span> 제 모든 지식과 이론을<br>강의로 제공합니다.</p>
+  <div class="g4"><div class="head">강의 구성 <span>100강 이상</span></div><ol><li><b>01</b>파동에너지 이론</li><li><b>02</b>프라이스 액션</li><li><b>03</b>세 가지 시스템</li><li><b>04</b>세력 패턴 <small>(기존 은준반 교육 내용)</small></li><li><b>05</b>ICT</li><li><b>+</b><small>등</small></li></ol></div>
+  <p class="p">제가 학습하고, 실전에서 검증하고<br>현재까지 매매에 사용하고 있는 모든 지식들을 강의로 전달합니다.</p>
+</div>
+<div style="height:96px"></div>
+
+</div>
+</body>
+</html>

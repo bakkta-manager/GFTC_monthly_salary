@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>월천반 히어로 시안 A·B·C·D</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--blue:#1c69d4;--blue-deep:#0a4ba1;--navy:#0b1d36;--gold:#ffd84d;
+    --sans:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;--serif:"Nanum Myeongjo","Noto Serif KR",Georgia,serif}
+  *{box-sizing:border-box}
+  body{margin:0;background:#0b1d36;color:#fff;font-family:var(--sans);font-size:18px;line-height:1.7;letter-spacing:-.01em;word-break:keep-all;-webkit-font-smoothing:antialiased}
+  h1,p{margin:0}
+  .tag{position:absolute;top:20px;left:20px;z-index:2;padding:8px 14px;border-radius:999px;background:#fff;color:var(--navy);font-size:13px;font-weight:800;letter-spacing:.08em}
+  .hero{position:relative;overflow:hidden;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;color:#fff;background-image:radial-gradient(60% 50% at 50% 0%,rgba(110,193,255,.2),rgba(0,0,0,0) 70%),linear-gradient(#2371d8 0%,#0a4ba1 50%,#0b1d36 100%);border-bottom:4px solid #fff}
+  .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%)}
+  .wrap{position:relative;width:100%;max-width:1100px;margin:0 auto;padding:clamp(72px,8vw,110px) clamp(20px,4vw,40px)}
+  .gold{color:var(--gold)}
+  .lbl{font-size:15px;font-weight:600;letter-spacing:.02em;color:rgba(255,255,255,.65)}
+  .quote{font-family:var(--serif);font-style:italic;color:rgba(255,255,255,.92)}
+  .h1{font-weight:800;letter-spacing:-.045em;line-height:1.18}
+
+  /* A — 세로 스토리 */
+  .a .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:32px}
+  .a .quote{font-size:clamp(20px,2.3vw,30px);line-height:1.55}
+  .a .h1{font-size:clamp(38px,5vw,64px)}
+  .a .blk{display:flex;flex-direction:column;align-items:center;gap:14px}
+
+  /* B — 좌측 정렬 편지 */
+  .b .wrap{max-width:960px;display:flex;flex-direction:column;align-items:flex-start;gap:36px}
+  .b .quotes{display:flex;flex-direction:column;gap:10px;padding-left:24px;border-left:2px solid var(--gold)}
+  .b .quote{font-size:clamp(22px,2.6vw,34px);line-height:1.5}
+  .b .h1{font-size:clamp(40px,5.6vw,72px);max-width:16ch}
+  .b .lbl.g{color:var(--gold);font-weight:700;letter-spacing:.08em}
+
+  /* C — 인용구 중심 */
+  .c .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:40px}
+  .c .quote{font-size:clamp(26px,3.6vw,48px);line-height:1.45;font-weight:700;max-width:24ch}
+  .c .quote em{font-style:italic;color:var(--gold)}
+  .c .rule{width:64px;height:2px;background:rgba(255,255,255,.35)}
+  .c .h1{font-size:clamp(24px,2.6vw,34px);font-weight:600;letter-spacing:-.03em;line-height:1.5;color:rgba(255,255,255,.92);max-width:30ch}
+
+  /* D — 좌우 분할 */
+  .d .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:center}
+  .d .left{display:flex;flex-direction:column;gap:18px;padding-right:48px;border-right:1px solid rgba(255,255,255,.2)}
+  .d .quote{font-size:clamp(20px,2vw,26px);line-height:1.6}
+  .d .right{display:flex;flex-direction:column;gap:28px}
+  .d .h1{font-size:clamp(40px,5.2vw,68px);line-height:1.1}
+  @media (max-width:860px){.d .wrap{grid-template-columns:1fr;gap:36px}.d .left{padding-right:0;border-right:0;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.2)}}
+</style>
+</head>
+<body>
+
+<!-- A -->
+<section class="hero a"><span class="tag">시안 A — 세로 스토리</span><div class="grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="blk">
+      <span class="lbl">월천반은 다음 아이디어에서 출발했습니다.</span>
+      <p class="quote">'내가 10년 동안 공부하고 경험한것들을 그대로 전수해보자'<br>'나와 같은 레벨의 트레이더를 양성하는 과정을 만들어보자'</p>
+    </div>
+    <svg aria-hidden="true" width="18" height="40" viewBox="0 0 18 40" fill="none"><circle cx="9" cy="6" r="3" fill="#ffd84d"/><path d="M9 10v20M2 24l7 7 7-7" stroke="rgba(255,255,255,.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="blk">
+      <span class="lbl">그렇게</span>
+      <h1 class="h1" style="max-width:22ch">저의 <span class="gold">10년</span>을 압축해서<br><span class="gold">9개월</span>만에 전수하는<br>월천반 과정이 탄생했습니다.</h1>
+    </div>
+  </div>
+</section>
+
+<!-- B -->
+<section class="hero b"><span class="tag">시안 B — 좌측 정렬 편지</span><div class="grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="lbl">월천반은 다음 아이디어에서 출발했습니다.</span>
+    <div class="quotes">
+      <p class="quote">'내가 10년 동안 공부하고 경험한것들을 그대로 전수해보자'</p>
+      <p class="quote">'나와 같은 레벨의 트레이더를 양성하는 과정을 만들어보자'</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span class="lbl g">그렇게</span>
+      <h1 class="h1">저의 <span class="gold">10년</span>을 압축해서<br><span class="gold">9개월</span>만에 전수하는<br>월천반 과정이 탄생했습니다.</h1>
+    </div>
+  </div>
+</section>
+
+<!-- C -->
+<section class="hero c"><span class="tag">시안 C — 인용구 중심</span><div class="grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="lbl">월천반은 다음 아이디어에서 출발했습니다.</span>
+    <p class="quote">'내가 <em>10년</em> 동안 공부하고 경험한것들을<br>그대로 전수해보자'<br>'나와 같은 레벨의 트레이더를<br>양성하는 과정을 만들어보자'</p>
+    <span class="rule" aria-hidden="true"></span>
+    <h1 class="h1">그렇게, 저의 10년을 압축해서 <b class="gold">9개월</b>만에 전수하는<br>월천반 과정이 탄생했습니다.</h1>
+  </div>
+</section>
+
+<!-- D -->
+<section class="hero d"><span class="tag">시안 D — 좌우 분할</span><div class="grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="left">
+      <span class="lbl">월천반은 다음 아이디어에서 출발했습니다.</span>
+      <p class="quote">'내가 10년 동안 공부하고 경험한것들을 그대로 전수해보자'</p>
+      <p class="quote">'나와 같은 레벨의 트레이더를 양성하는 과정을 만들어보자'</p>
+    </div>
+    <div class="right">
+      <span class="lbl g" style="color:var(--gold);font-weight:700;letter-spacing:.08em">그렇게</span>
+      <h1 class="h1">저의 <span class="gold">10년</span>을<br>압축해서<br><span class="gold">9개월</span>만에<br>전수하는</h1>
+      <p style="font-size:clamp(20px,2vw,28px);font-weight:700;letter-spacing:-.03em">월천반 과정이 탄생했습니다.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+{
+  "checks": [
+    {
+      "key": "a",
+      "width": 900,
+      "overflow": false,
+      "claim": "40px",
+      "limit": "40px",
+      "proof": "20px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 907,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(244, 241, 235)",
+      "body": "rgb(89, 97, 108)",
+      "title": "rgb(32, 35, 41)",
+      "accent": "rgb(40, 93, 194)",
+      "highlight": "#cfdef5",
+      "ratios": {
+        "body": 5.55873445643404,
+        "title": 13.965896812633188,
+        "accent": 5.423150519472403
+      }
+    },
+    {
+      "key": "a",
+      "width": 390,
+      "overflow": false,
+      "claim": "28px",
+      "limit": "28px",
+      "proof": "17px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 818,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(244, 241, 235)",
+      "body": "rgb(89, 97, 108)",
+      "title": "rgb(32, 35, 41)",
+      "accent": "rgb(40, 93, 194)",
+      "highlight": "#cfdef5",
+      "ratios": {
+        "body": 5.55873445643404,
+        "title": 13.965896812633188,
+        "accent": 5.423150519472403
+      }
+    },
+    {
+      "key": "a",
+      "width": 320,
+      "overflow": false,
+      "claim": "28px",
+      "limit": "28px",
+      "proof": "17px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 909,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(244, 241, 235)",
+      "body": "rgb(89, 97, 108)",
+      "title": "rgb(32, 35, 41)",
+      "accent": "rgb(40, 93, 194)",
+      "highlight": "#cfdef5",
+      "ratios": {
+        "body": 5.55873445643404,
+        "title": 13.965896812633188,
+        "accent": 5.423150519472403
+      }
+    },
+    {
+      "key": "b",
+      "width": 900,
+      "overflow": false,
+      "claim": "40px",
+      "limit": "40px",
+      "proof": "20px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 907,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(234, 242, 255)",
+      "body": "rgb(77, 94, 120)",
+      "title": "rgb(20, 43, 77)",
+      "accent": "rgb(34, 92, 195)",
+      "highlight": "#c7dbfc",
+      "ratios": {
+        "body": 5.848246624880304,
+        "title": 12.575949226181477,
+        "accent": 5.50454183937176
+      }
+    },
+    {
+      "key": "b",
+      "width": 390,
+      "overflow": false,
+      "claim": "28px",
+      "limit": "28px",
+      "proof": "17px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 818,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(234, 242, 255)",
+      "body": "rgb(77, 94, 120)",
+      "title": "rgb(20, 43, 77)",
+      "accent": "rgb(34, 92, 195)",
+      "highlight": "#c7dbfc",
+      "ratios": {
+        "body": 5.848246624880304,
+        "title": 12.575949226181477,
+        "accent": 5.50454183937176
+      }
+    },
+    {
+      "key": "b",
+      "width": 320,
+      "overflow": false,
+      "claim": "28px",
+      "limit": "28px",
+      "proof": "17px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 909,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(234, 242, 255)",
+      "body": "rgb(77, 94, 120)",
+      "title": "rgb(20, 43, 77)",
+      "accent": "rgb(34, 92, 195)",
+      "highlight": "#c7dbfc",
+      "ratios": {
+        "body": 5.848246624880304,
+        "title": 12.575949226181477,
+        "accent": 5.50454183937176
+      }
+    },
+    {
+      "key": "c",
+      "width": 900,
+      "overflow": false,
+      "claim": "40px",
+      "limit": "40px",
+      "proof": "20px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 907,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(19, 38, 65)",
+      "body": "rgb(186, 201, 225)",
+      "title": "rgb(245, 248, 255)",
+      "accent": "rgb(147, 191, 255)",
+      "highlight": "#2a5180",
+      "ratios": {
+        "body": 9.071193862817996,
+        "title": 14.3009844797783,
+        "accent": 8.0628450358338
+      }
+    },
+    {
+      "key": "c",
+      "width": 390,
+      "overflow": false,
+      "claim": "28px",
+      "limit": "28px",
+      "proof": "17px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 818,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(19, 38, 65)",
+      "body": "rgb(186, 201, 225)",
+      "title": "rgb(245, 248, 255)",
+      "accent": "rgb(147, 191, 255)",
+      "highlight": "#2a5180",
+      "ratios": {
+        "body": 9.071193862817996,
+        "title": 14.3009844797783,
+        "accent": 8.0628450358338
+      }
+    },
+    {
+      "key": "c",
+      "width": 320,
+      "overflow": false,
+      "claim": "28px",
+      "limit": "28px",
+      "proof": "17px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 909,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(19, 38, 65)",
+      "body": "rgb(186, 201, 225)",
+      "title": "rgb(245, 248, 255)",
+      "accent": "rgb(147, 191, 255)",
+      "highlight": "#2a5180",
+      "ratios": {
+        "body": 9.071193862817996,
+        "title": 14.3009844797783,
+        "accent": 8.0628450358338
+      }
+    },
+    {
+      "key": "d",
+      "width": 900,
+      "overflow": false,
+      "claim": "40px",
+      "limit": "40px",
+      "proof": "20px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 907,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(231, 238, 233)",
+      "body": "rgb(79, 103, 93)",
+      "title": "rgb(24, 56, 47)",
+      "accent": "rgb(44, 107, 86)",
+      "highlight": "#b9d7c6",
+      "ratios": {
+        "body": 5.1898096187549,
+        "title": 10.819597176946164,
+        "accent": 5.323358661703626
+      }
+    },
+    {
+      "key": "d",
+      "width": 390,
+      "overflow": false,
+      "claim": "28px",
+      "limit": "28px",
+      "proof": "17px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 818,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(231, 238, 233)",
+      "body": "rgb(79, 103, 93)",
+      "title": "rgb(24, 56, 47)",
+      "accent": "rgb(44, 107, 86)",
+      "highlight": "#b9d7c6",
+      "ratios": {
+        "body": 5.1898096187549,
+        "title": 10.819597176946164,
+        "accent": 5.323358661703626
+      }
+    },
+    {
+      "key": "d",
+      "width": 320,
+      "overflow": false,
+      "claim": "28px",
+      "limit": "28px",
+      "proof": "17px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "loaded": true,
+      "height": 909,
+      "checks": 3,
+      "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르치고 내린 결론입니다. 체계적인 관리 시스템하에 양질의 학습체계적인 훈련개인 맞춤 행동 교정 3가지를 일정 기간 이상, 꾸준히 반복한 분들은높은 확률로 월급 이상의 수입을 만들었습니다.",
+      "bg": "rgb(231, 238, 233)",
+      "body": "rgb(79, 103, 93)",
+      "title": "rgb(24, 56, 47)",
+      "accent": "rgb(44, 107, 86)",
+      "highlight": "#b9d7c6",
+      "ratios": {
+        "body": 5.1898096187549,
+        "title": 10.819597176946164,
+        "accent": 5.323358661703626
+      }
+    }
+  ],
+  "gallery": {
+    "cards": 4,
+    "overflow": false,
+    "mobileWidth": 388,
+    "desktopWidth": 1440,
+    "mobileOverflow": false
+  },
+  "main": [
+    {
+      "width": 1440,
+      "initialY": 0,
+      "footerCount": 0,
+      "oldFooterText": false,
+      "noticeCount": 3,
+      "overflow": false,
+      "noticeBottom": 836.203125,
+      "stickyTop": 900
+    },
+    {
+      "width": 390,
+      "initialY": 0,
+      "footerCount": 0,
+      "oldFooterText": false,
+      "noticeCount": 3,
+      "overflow": false,
+      "noticeBottom": 795.5,
+      "stickyTop": 900
+    },
+    {
+      "width": 320,
+      "initialY": 0,
+      "footerCount": 0,
+      "oldFooterText": false,
+      "noticeCount": 3,
+      "overflow": false,
+      "noticeBottom": 795.546875,
+      "stickyTop": 900
+    }
+  ],
+  "errors": []
+}

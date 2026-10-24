@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>사례 섹션 시안 J1·J2·J3·J4</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+  :root{--text:#262626;--body:#3b4150;--dim:#5f6b7a;--line:#e5e8ee;--blue:#1c69d4;--blue-deep:#0a4ba1;--navy:#0b1d36;--gold:#ffd84d;--red:#d7263d;--tint:#f3f5fa;--sans:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+  *{box-sizing:border-box}
+  body{margin:0;background:#fafbff;color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.7;letter-spacing:-.01em;word-break:keep-all;-webkit-font-smoothing:antialiased}
+  p,h2{margin:0}
+  a{color:inherit;text-decoration:none}
+  .tag{display:inline-block;margin:0 0 0 clamp(20px,4vw,40px);padding:8px 14px;border-radius:999px;background:var(--text);color:#fff;font-size:13px;font-weight:800;transform:translateY(28px);position:relative;z-index:1}
+  section{padding:clamp(80px,9vw,120px) clamp(20px,4vw,40px);margin-bottom:48px}
+  .col{max-width:1100px;margin:0 auto}
+  .h2{font-weight:700;font-size:clamp(30px,4vw,48px);line-height:1.15;letter-spacing:-.045em;text-align:center;margin-bottom:clamp(40px,5vw,64px)}
+  .h2 .b{color:var(--blue)}
+  .r{color:var(--red);font-weight:800}.bl{color:var(--blue);font-weight:800}
+  .thumb{position:relative;display:block;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .thumb::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,255,255,.92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230b1d36' d='M9 6l10 6-10 6z'/%3E%3C/svg%3E") center/28px no-repeat;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+  .txt{font-size:clamp(18px,1.7vw,22px);font-weight:700;line-height:1.75;letter-spacing:-.025em}
+
+  /* J1 — 교차 2열 (월급반 혜택 스타일) */
+  .j1 .row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:36px 0;border-top:1px solid var(--line)}
+  .j1 .row:last-child{border-bottom:1px solid var(--line)}
+  .j1 .row:nth-child(even) .thumb{order:-1}
+  .j1 .txt{text-align:center}
+
+  /* J2 — 2×2 흰 카드 */
+  .j2 .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .j2 .card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 2px 0 rgba(11,29,54,.03),0 10px 28px -14px rgba(11,29,54,.18)}
+  .j2 .thumb{border-radius:0}
+  .j2 .txt{padding:24px 28px 28px;font-size:18px}
+
+  /* J3 — 네이비 섹션 */
+  .j3{background:var(--navy);color:#fff}
+  .j3 .h2 .b{color:var(--gold)}
+  .j3 .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px 32px}
+  .j3 .item{display:flex;flex-direction:column;gap:18px}
+  .j3 .txt{color:rgba(255,255,255,.9)}
+  .j3 .r{color:#ff7a8a}.j3 .bl{color:var(--gold)}
+
+  /* J4 — 번호 리스트 (작은 썸네일) */
+  .j4 .col{max-width:860px}
+  .j4 .row{display:grid;grid-template-columns:280px 1fr;gap:32px;align-items:center;padding:28px 0;border-top:1px solid var(--line)}
+  .j4 .row:last-child{border-bottom:1px solid var(--line)}
+  .j4 .thumb{border-radius:12px}
+  .j4 .n{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:.08em;margin-bottom:6px}
+  .j4 .txt{font-size:19px;line-height:1.65}
+  @media (max-width:760px){.j1 .row,.j2 .grid,.j3 .grid,.j4 .row{grid-template-columns:1fr}.j1 .row:nth-child(even) .thumb{order:0}}
+</style>
+</head>
+<body>
+
+<span class="tag">시안 J1 — 교차 2열</span>
+<section class="j1"><div class="col">
+  <h2 class="h2">이 이론을 적용한 뒤<br><span class="b">삶이 바뀐</span> 사람들</h2>
+  <div class="row"><p class="txt">30대 초반 공무원.<br>수중에 <span class="r">500만원</span> 뿐이던 이 사람은<br><span class="bl">이 이론</span>을 적용한 후 <span class="r">3년</span>만에<br>빚없이 <span class="bl">집 2채</span>를 마련했습니다.</p><a class="thumb" href="https://youtu.be/ZJDwAoTDZqs"><img src="../assets/case-1.jpg" alt=""></a></div>
+  <div class="row"><p class="txt">투자에 '투'자도 모르던 생업 <span class="r">농부</span>가 있었습니다.<br>그는 낮에는 농사를 짓고 소를 키우며<br>밤에는 <span class="bl">이 이론</span>을 활용했습니다.<br>그리고 월 <span class="r">1억</span>을 벌고 있습니다.</p><a class="thumb" href="https://youtu.be/l9NWYuH32gs"><img src="../assets/case-2.jpg" alt=""></a></div>
+  <div class="row"><p class="txt">12년간 투자했지만 실패만 거듭하던<br>한 사람이 있었습니다.<br>그는 <span class="bl">이 이론</span>을 적용한 뒤,<br>2주만에 2배로 투자금을 불렸습니다.</p><a class="thumb" href="https://youtu.be/vSk1eoU3GmE"><img src="../assets/case-3.jpg" alt=""></a></div>
+  <div class="row"><p class="txt">빚 4억의 MZ세대 영끌족 투자자가 있었습니다.<br>그는 2년동안 퇴근 후에만<br><span class="bl">이 이론</span>을 적용했습니다.<br>그리고 지금은 그 곤경에서 빠져나왔습니다.</p><a class="thumb" href="https://youtu.be/wBjdpOaY_LQ"><img src="../assets/case-4.jpg" alt=""></a></div>
+</div></section>
+
+<span class="tag">시안 J2 — 2×2 흰 카드</span>
+<section class="j2"><div class="col">
+  <h2 class="h2">이 이론을 적용한 뒤<br><span class="b">삶이 바뀐</span> 사람들</h2>
+  <div class="grid">
+    <div class="card"><a class="thumb" href="https://youtu.be/ZJDwAoTDZqs"><img src="../assets/case-1.jpg" alt=""></a><p class="txt">30대 초반 공무원.<br>수중에 <span class="r">500만원</span> 뿐이던 이 사람은<br><span class="bl">이 이론</span>을 적용한 후 <span class="r">3년</span>만에<br>빚없이 <span class="bl">집 2채</span>를 마련했습니다.</p></div>
+    <div class="card"><a class="thumb" href="https://youtu.be/l9NWYuH32gs"><img src="../assets/case-2.jpg" alt=""></a><p class="txt">투자에 '투'자도 모르던 생업 <span class="r">농부</span>가 있었습니다.<br>그는 낮에는 농사를 짓고 소를 키우며<br>밤에는 <span class="bl">이 이론</span>을 활용했습니다.<br>그리고 월 <span class="r">1억</span>을 벌고 있습니다.</p></div>
+    <div class="card"><a class="thumb" href="https://youtu.be/vSk1eoU3GmE"><img src="../assets/case-3.jpg" alt=""></a><p class="txt">12년간 투자했지만 실패만 거듭하던<br>한 사람이 있었습니다.<br>그는 <span class="bl">이 이론</span>을 적용한 뒤,<br>2주만에 2배로 투자금을 불렸습니다.</p></div>
+    <div class="card"><a class="thumb" href="https://youtu.be/wBjdpOaY_LQ"><img src="../assets/case-4.jpg" alt=""></a><p class="txt">빚 4억의 MZ세대 영끌족 투자자가 있었습니다.<br>그는 2년동안 퇴근 후에만<br><span class="bl">이 이론</span>을 적용했습니다.<br>그리고 지금은 그 곤경에서 빠져나왔습니다.</p></div>
+  </div>
+</div></section>
+
+<span class="tag">시안 J3 — 네이비 섹션</span>
+<section class="j3"><div class="col">
+  <h2 class="h2">이 이론을 적용한 뒤<br><span class="b">삶이 바뀐</span> 사람들</h2>
+  <div class="grid">
+    <div class="item"><a class="thumb" href="https://youtu.be/ZJDwAoTDZqs"><img src="../assets/case-1.jpg" alt=""></a><p class="txt">30대 초반 공무원.<br>수중에 <span class="r">500만원</span> 뿐이던 이 사람은<br><span class="bl">이 이론</span>을 적용한 후 <span class="r">3년</span>만에<br>빚없이 <span class="bl">집 2채</span>를 마련했습니다.</p></div>
+    <div class="item"><a class="thumb" href="https://youtu.be/l9NWYuH32gs"><img src="../assets/case-2.jpg" alt=""></a><p class="txt">투자에 '투'자도 모르던 생업 <span class="r">농부</span>가 있었습니다.<br>그는 낮에는 농사를 짓고 소를 키우며<br>밤에는 <span class="bl">이 이론</span>을 활용했습니다.<br>그리고 월 <span class="r">1억</span>을 벌고 있습니다.</p></div>
+    <div class="item"><a class="thumb" href="https://youtu.be/vSk1eoU3GmE"><img src="../assets/case-3.jpg" alt=""></a><p class="txt">12년간 투자했지만 실패만 거듭하던<br>한 사람이 있었습니다.<br>그는 <span class="bl">이 이론</span>을 적용한 뒤,<br>2주만에 2배로 투자금을 불렸습니다.</p></div>
+    <div class="item"><a class="thumb" href="https://youtu.be/wBjdpOaY_LQ"><img src="../assets/case-4.jpg" alt=""></a><p class="txt">빚 4억의 MZ세대 영끌족 투자자가 있었습니다.<br>그는 2년동안 퇴근 후에만<br><span class="bl">이 이론</span>을 적용했습니다.<br>그리고 지금은 그 곤경에서 빠져나왔습니다.</p></div>
+  </div>
+</div></section>
+
+<span class="tag">시안 J4 — 번호 리스트</span>
+<section class="j4"><div class="col">
+  <h2 class="h2">이 이론을 적용한 뒤<br><span class="b">삶이 바뀐</span> 사람들</h2>
+  <div class="row"><a class="thumb" href="https://youtu.be/ZJDwAoTDZqs"><img src="../assets/case-1.jpg" alt=""></a><div><div class="n">CASE 01</div><p class="txt">30대 초반 공무원.<br>수중에 <span class="r">500만원</span> 뿐이던 이 사람은<br><span class="bl">이 이론</span>을 적용한 후 <span class="r">3년</span>만에<br>빚없이 <span class="bl">집 2채</span>를 마련했습니다.</p></div></div>
+  <div class="row"><a class="thumb" href="https://youtu.be/l9NWYuH32gs"><img src="../assets/case-2.jpg" alt=""></a><div><div class="n">CASE 02</div><p class="txt">투자에 '투'자도 모르던 생업 <span class="r">농부</span>가 있었습니다.<br>그는 낮에는 농사를 짓고 소를 키우며<br>밤에는 <span class="bl">이 이론</span>을 활용했습니다.<br>그리고 월 <span class="r">1억</span>을 벌고 있습니다.</p></div></div>
+  <div class="row"><a class="thumb" href="https://youtu.be/vSk1eoU3GmE"><img src="../assets/case-3.jpg" alt=""></a><div><div class="n">CASE 03</div><p class="txt">12년간 투자했지만 실패만 거듭하던<br>한 사람이 있었습니다.<br>그는 <span class="bl">이 이론</span>을 적용한 뒤,<br>2주만에 2배로 투자금을 불렸습니다.</p></div></div>
+  <div class="row"><a class="thumb" href="https://youtu.be/wBjdpOaY_LQ"><img src="../assets/case-4.jpg" alt=""></a><div><div class="n">CASE 04</div><p class="txt">빚 4억의 MZ세대 영끌족 투자자가 있었습니다.<br>그는 2년동안 퇴근 후에만<br><span class="bl">이 이론</span>을 적용했습니다.<br>그리고 지금은 그 곤경에서 빠져나왔습니다.</p></div></div>
+</div></section>
+
+</body>
+</html>

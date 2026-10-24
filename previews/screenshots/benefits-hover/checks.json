@@ -1,0 +1,213 @@
+{
+  "passed": true,
+  "copyPreserved": true,
+  "errors": [],
+  "reports": [
+    {
+      "desktop": {
+        "gap": "20px",
+        "columns": "334px 334px",
+        "overflow": false,
+        "opacity": 1,
+        "x": 348,
+        "y": -6,
+        "layerWidth": 346,
+        "duration": "0.28s, 0.28s, 0.28s, 0.15s",
+        "active": 1,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 0,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 0,
+            "y": 278,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 278,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 0,
+            "y": 555,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 555,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          }
+        ]
+      },
+      "midpoint": 215.8
+    },
+    {
+      "resized": {
+        "gap": "20px",
+        "columns": "334px 334px",
+        "overflow": false,
+        "opacity": 1,
+        "x": -6,
+        "y": -6,
+        "layerWidth": 346,
+        "duration": "0.28s, 0.28s, 0.28s, 0.15s",
+        "active": 0,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 0,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 0,
+            "y": 278,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 278,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 0,
+            "y": 555,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 555,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "reduced": {
+        "gap": "20px",
+        "columns": "334px 334px",
+        "overflow": false,
+        "opacity": 1,
+        "x": 348,
+        "y": -6,
+        "layerWidth": 346,
+        "duration": "0s",
+        "active": 1,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 0,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 0,
+            "y": 278,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 278,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 0,
+            "y": 555,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          },
+          {
+            "x": 354,
+            "y": 555,
+            "width": 334,
+            "height": 258,
+            "heading": "18px",
+            "body": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "gap": "16px",
+      "columns": "350px",
+      "layer": "0",
+      "active": 0
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "gap": "16px",
+      "columns": "280px",
+      "layer": "0",
+      "active": 0
+    }
+  ]
+}

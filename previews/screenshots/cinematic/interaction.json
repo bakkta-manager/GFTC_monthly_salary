@@ -1,0 +1,40 @@
+{
+  "mobile": [
+    {
+      "width": 390,
+      "overflow": false,
+      "titleFont": "54.6px",
+      "copyHeight": 267.75,
+      "textOverflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "titleFont": "44.8px",
+      "copyHeight": 219.6875,
+      "textOverflow": false
+    }
+  ],
+  "first": "1",
+  "second": {
+    "top": 65,
+    "opacity": "1"
+  },
+  "third": {
+    "top": 65,
+    "opacity": "1"
+  },
+  "stickyAfter": {
+    "opening": false,
+    "end": -80,
+    "sticky": "visible"
+  },
+  "reduced": {
+    "visible": true,
+    "animations": 0
+  },
+  "nojsVisible": true,
+  "packagedImage": true,
+  "lowerPageUnchanged": true,
+  "errors": []
+}

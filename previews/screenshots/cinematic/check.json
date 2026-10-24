@@ -1,0 +1,215 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 835,
+          "width": 1440,
+          "textInside": true,
+          "copyHeight": 252.25,
+          "text": "\"코인 대박 나서 건물 샀습니다\" \"트레이딩으로 수십억 벌었습니다\""
+        },
+        {
+          "id": "intro-statement",
+          "top": 900,
+          "height": 835,
+          "width": 1440,
+          "textInside": true,
+          "copyHeight": 390.46875,
+          "text": "누구나 꿈꾸지만,아무나 이룰 수 없는목표입니다."
+        },
+        {
+          "id": "intro-reality",
+          "top": 1735,
+          "height": 835,
+          "width": 1440,
+          "textInside": true,
+          "copyHeight": 508.453125,
+          "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르쳐본 결과 내린 결론입니다."
+        }
+      ],
+      "overflow": false,
+      "textOverflow": [],
+      "image": {
+        "loaded": true,
+        "width": 1672
+      },
+      "removed": true,
+      "headings": 1,
+      "stickyHidden": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 655,
+          "width": 1280,
+          "textInside": true,
+          "copyHeight": 224.25,
+          "text": "\"코인 대박 나서 건물 샀습니다\" \"트레이딩으로 수십억 벌었습니다\""
+        },
+        {
+          "id": "intro-statement",
+          "top": 720,
+          "height": 655,
+          "width": 1280,
+          "textInside": true,
+          "copyHeight": 348.078125,
+          "text": "누구나 꿈꾸지만,아무나 이룰 수 없는목표입니다."
+        },
+        {
+          "id": "intro-reality",
+          "top": 1375,
+          "height": 655,
+          "width": 1280,
+          "textInside": true,
+          "copyHeight": 477.5,
+          "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르쳐본 결과 내린 결론입니다."
+        }
+      ],
+      "overflow": false,
+      "textOverflow": [],
+      "image": {
+        "loaded": true,
+        "width": 1672
+      },
+      "removed": true,
+      "headings": 1,
+      "stickyHidden": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 779,
+          "width": 390,
+          "textInside": true,
+          "copyHeight": 221.25,
+          "text": "\"코인 대박 나서 건물 샀습니다\" \"트레이딩으로 수십억 벌었습니다\""
+        },
+        {
+          "id": "intro-statement",
+          "top": 844,
+          "height": 779,
+          "width": 390,
+          "textInside": true,
+          "copyHeight": 142.9375,
+          "text": "누구나 꿈꾸지만,아무나 이룰 수 없는목표입니다."
+        },
+        {
+          "id": "intro-reality",
+          "top": 1623,
+          "height": 779,
+          "width": 390,
+          "textInside": true,
+          "copyHeight": 329.21875,
+          "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르쳐본 결과 내린 결론입니다."
+        }
+      ],
+      "overflow": false,
+      "textOverflow": [],
+      "image": {
+        "loaded": true,
+        "width": 1672
+      },
+      "removed": true,
+      "headings": 1,
+      "stickyHidden": true
+    },
+    {
+      "width": 320,
+      "height": 640,
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 575,
+          "width": 320,
+          "textInside": true,
+          "copyHeight": 208.75,
+          "text": "\"코인 대박 나서 건물 샀습니다\" \"트레이딩으로 수십억 벌었습니다\""
+        },
+        {
+          "id": "intro-statement",
+          "top": 640,
+          "height": 575,
+          "width": 320,
+          "textInside": true,
+          "copyHeight": 142.9375,
+          "text": "누구나 꿈꾸지만,아무나 이룰 수 없는목표입니다."
+        },
+        {
+          "id": "intro-reality",
+          "top": 1215,
+          "height": 575,
+          "width": 320,
+          "textInside": true,
+          "copyHeight": 348.75,
+          "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르쳐본 결과 내린 결론입니다."
+        }
+      ],
+      "overflow": false,
+      "textOverflow": [],
+      "image": {
+        "loaded": true,
+        "width": 1672
+      },
+      "removed": true,
+      "headings": 1,
+      "stickyHidden": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 325,
+          "width": 844,
+          "textInside": true,
+          "copyHeight": 110,
+          "text": "\"코인 대박 나서 건물 샀습니다\" \"트레이딩으로 수십억 벌었습니다\""
+        },
+        {
+          "id": "intro-statement",
+          "top": 390,
+          "height": 325,
+          "width": 844,
+          "textInside": true,
+          "copyHeight": 164.765625,
+          "text": "누구나 꿈꾸지만,아무나 이룰 수 없는목표입니다."
+        },
+        {
+          "id": "intro-reality",
+          "top": 715,
+          "height": 415.84375,
+          "width": 844,
+          "textInside": true,
+          "copyHeight": 335.84375,
+          "text": "비현실적인 수익은약속할 수 없습니다. 하지만 월급만큼의 수입은현실적으로 가능합니다. 9년간 3,165명을 가르쳐본 결과 내린 결론입니다."
+        }
+      ],
+      "overflow": false,
+      "textOverflow": [],
+      "image": {
+        "loaded": true,
+        "width": 1672
+      },
+      "removed": true,
+      "headings": 1,
+      "stickyHidden": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,6 @@
+project_id = "gftc-wolgeupban"
+
+[functions.submit-consultation]
+# The handler validates the current publishable API key explicitly.
+# Publishable keys are not JWTs; private tables remain inaccessible to visitors.
+verify_jwt = false

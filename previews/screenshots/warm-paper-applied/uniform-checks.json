@@ -1,0 +1,129 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "sizes": [
+        {
+          "selector": ".reality-proof",
+          "size": "17px"
+        },
+        {
+          "selector": ".reality-proof strong",
+          "size": "17px"
+        },
+        {
+          "selector": ".intro-details>p",
+          "size": "17px"
+        },
+        {
+          "selector": ".three li",
+          "size": "17px"
+        },
+        {
+          "selector": ".intro-details>p:last-child",
+          "size": "17px"
+        },
+        {
+          "selector": ".intro-details strong",
+          "size": "17px"
+        }
+      ],
+      "uniform": true,
+      "overflow": false
+    },
+    {
+      "width": 900,
+      "sizes": [
+        {
+          "selector": ".reality-proof",
+          "size": "17px"
+        },
+        {
+          "selector": ".reality-proof strong",
+          "size": "17px"
+        },
+        {
+          "selector": ".intro-details>p",
+          "size": "17px"
+        },
+        {
+          "selector": ".three li",
+          "size": "17px"
+        },
+        {
+          "selector": ".intro-details>p:last-child",
+          "size": "17px"
+        },
+        {
+          "selector": ".intro-details strong",
+          "size": "17px"
+        }
+      ],
+      "uniform": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "sizes": [
+        {
+          "selector": ".reality-proof",
+          "size": "16px"
+        },
+        {
+          "selector": ".reality-proof strong",
+          "size": "16px"
+        },
+        {
+          "selector": ".intro-details>p",
+          "size": "16px"
+        },
+        {
+          "selector": ".three li",
+          "size": "16px"
+        },
+        {
+          "selector": ".intro-details>p:last-child",
+          "size": "16px"
+        },
+        {
+          "selector": ".intro-details strong",
+          "size": "16px"
+        }
+      ],
+      "uniform": true,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "sizes": [
+        {
+          "selector": ".reality-proof",
+          "size": "16px"
+        },
+        {
+          "selector": ".reality-proof strong",
+          "size": "16px"
+        },
+        {
+          "selector": ".intro-details>p",
+          "size": "16px"
+        },
+        {
+          "selector": ".three li",
+          "size": "16px"
+        },
+        {
+          "selector": ".intro-details>p:last-child",
+          "size": "16px"
+        },
+        {
+          "selector": ".intro-details strong",
+          "size": "16px"
+        }
+      ],
+      "uniform": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

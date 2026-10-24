@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>월급반 — 핵심 단어 강조 시안 4개</title>
+<link rel="preload" href="../assets/fonts/pretendard.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face{font-family:"Pretendard";src:url("../assets/fonts/pretendard.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+  :root{
+    color-scheme:dark;
+    --bg:#0A0B0F;
+    --bg2:#0E1015;
+    --card:#13151C;
+    --card2:#1A1D26;
+    --line:rgba(242,243,246,.08);
+    --line2:rgba(242,243,246,.14);
+    --text:#F2F3F6;
+    --muted:#9DA3B0;
+    --dim:#656B78;
+    --accent:#3B82F6;
+    --accent2:#7CB0FF;
+    --accent-dim:rgba(59,130,246,.16);
+    --on-accent:#FFFFFF;
+    --sans:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    --fs-h1:clamp(1.75rem,3.5vw,2.25rem);--fs-h2:clamp(1.75rem,3.5vw,2.25rem);--fs-h3:1.375rem;--fs-body:1.0625rem;--fs-meta:.875rem;
+    --measure:46rem;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:var(--sans);font-size:var(--fs-body);line-height:1.8;
+    word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  img,svg{max-width:100%}
+  .wrap{max-width:var(--measure);margin:0 auto;padding:0 1.5rem}
+  @media (max-width:640px){.wrap{padding:0 1.25rem}}
+
+  h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
+  h1{font-size:var(--fs-h1);line-height:1.25}
+  h2{font-size:var(--fs-h2);line-height:1.35}
+  h3{font-size:var(--fs-h3);line-height:1.4}
+  .gold{color:var(--accent)}
+  .muted{color:var(--muted)}
+  p{margin:0 0 1.25rem}
+  .cb{display:none}
+  mark{background:linear-gradient(transparent 55%,rgba(59,130,246,.45) 55%);color:inherit;padding:0 .1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  p:last-child{margin-bottom:0}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+    padding:1rem 1.75rem;font:inherit;font-weight:700;font-size:var(--fs-body);line-height:1.2;
+    text-decoration:none;border-radius:6px;cursor:pointer;border:1px solid transparent;
+    transition:background .15s,border-color .15s,transform .1s;
+  }
+  .btn.gold{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+  .btn.gold:hover{background:var(--accent2);border-color:var(--accent2)}
+  .btn.gold:disabled{opacity:.45;cursor:not-allowed}
+  .btn.line{background:transparent;color:var(--text);border-color:var(--line2)}
+  .btn.line:hover{border-color:var(--accent);color:var(--accent)}
+  .btn:active{transform:translateY(1px)}
+
+  /* 네비 */
+  .nav{position:sticky;top:0;z-index:20;background:rgba(10,11,15,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4rem}
+  .brand{display:flex;align-items:baseline;gap:.75rem}
+  .brand b{font-size:var(--fs-body);font-weight:700}
+  .brand span{font-size:var(--fs-meta);color:var(--muted)}
+  .nav .btn{padding:.6rem 1.1rem;font-size:var(--fs-meta)}
+  @media (max-width:480px){.brand span{display:none}}
+
+  /* 편지형 본문 */
+  .letter{max-width:var(--measure);margin:0 auto;padding:6rem 1.5rem}
+  header.letter{padding-top:7rem}
+  @media (max-width:640px){.letter{padding:4.5rem 1.25rem}header.letter{padding-top:5rem}}
+  .letter+.letter{border-top:1px solid var(--line)}
+  .letter p{margin:0 0 1.4rem}
+  .letter p:last-child{margin-bottom:0}
+  .letter h2{margin:0 0 1.5rem}
+  .letter .lead{color:var(--muted)}
+  /* 도입부 — 사진 두 장면과 같은 크기의 메시지 */
+  .cinematic-intro{background:var(--bg);--intro-display:clamp(32px,5.7vw,96px)}
+  .cinematic-intro+.letter{border-top:1px solid var(--line)}
+  .cinematic-stage{position:relative;isolation:isolate;display:grid;place-items:center;min-height:calc(100vh - 65px);min-height:calc(100svh - 65px);padding:88px 40px 100px;scroll-margin-top:65px}
+  .cinematic-stage .scene-copy{position:relative;z-index:2;width:100%;text-align:center}
+  .wealth-stage,.statement-stage{overflow:hidden;background:var(--bg)}
+  .cinematic-stage .scene-photo{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+  .wealth-stage::after,.statement-stage::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.58),rgba(0,0,0,.62) 50%,rgba(0,0,0,.48) 72%,rgba(0,0,0,.82));pointer-events:none}
+  .car-stage::after{background:linear-gradient(180deg,rgba(0,0,0,.68),rgba(0,0,0,.72) 50%,rgba(0,0,0,.58) 72%,rgba(0,0,0,.92))}
+  .statement-stage::after{background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(0,0,0,.72) 50%,rgba(0,0,0,.65))}
+  .wealth-stage .scene-copy,.statement-stage .scene-copy{text-shadow:0 2px 24px rgba(0,0,0,.65)}
+  .wealth-quotes{max-width:1720px;margin:0 auto}
+  .wealth-quotes p,.statement-stage h1{font-size:var(--intro-display);font-weight:700;line-height:1.35;letter-spacing:-.045em;color:#f2f3f6}
+  .wealth-quotes p{margin:0}
+  .wealth-quotes .quote-ending{white-space:nowrap}
+  .scene-next{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;padding:10px 18px;color:#e4eaf3;text-decoration:none;font-size:12px;line-height:1.4;white-space:nowrap;letter-spacing:.03em}
+  .scene-next svg{width:18px;height:26px;opacity:.85}
+  .cinematic-stage.statement-stage{--statement-padding:88px;background:var(--bg);padding-block:var(--statement-padding) calc(var(--statement-padding) + 65px)}
+  .statement-stage h1{display:flex;flex-direction:column;gap:.12em;margin:0 auto;max-width:1720px;line-height:1.18}
+  .statement-stage h1>span{display:block}
+  .statement-stage .statement-opening{margin-bottom:0}
+  .statement-stage h1 mark{background:linear-gradient(#2b5ca0b3,#2b5ca0b3) left 82%/100% .28em no-repeat;padding:0 .04em}
+  .statement-stage .scene-next{color:var(--muted)}
+  .cinematic-intro.is-animated .scene-copy{opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease}
+  .cinematic-intro.is-animated .cinematic-stage.is-visible .scene-copy{opacity:1;transform:none}
+  .in-opening .sticky{visibility:hidden;pointer-events:none}
+  @media (max-width:900px){
+    .cinematic-stage{padding-inline:28px}
+    .wealth-quotes .quote-ending{display:block}
+  }
+  @media (max-width:640px){
+    .cinematic-stage{padding:60px 20px 86px}
+    .car-stage .scene-photo{top:44%;bottom:auto;height:auto;transform:translateY(-10%);mask-image:linear-gradient(transparent,#000 12%,#000 82%,transparent)}
+    .wealth-stage::after{background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.55) 50%,rgba(0,0,0,.4) 75%,rgba(0,0,0,.7))}
+    .car-stage::after{background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.65) 50%,rgba(0,0,0,.5) 75%,rgba(0,0,0,.8))}
+    .cinematic-stage.statement-stage{--statement-padding:60px}
+    .cinematic-intro{--intro-display:clamp(32px,10vw,50px)}
+    .scene-next{bottom:18px;font-size:11px;gap:6px}
+    .scene-next svg{height:22px}
+    .statement-stage .statement-opening{margin-bottom:0}
+
+  }
+  @media (max-height:560px) and (min-width:641px){
+    .cinematic-stage{padding-top:50px;padding-bottom:72px}
+    .cinematic-stage.statement-stage{--statement-padding:50px}
+    .cinematic-intro{--intro-display:clamp(28px,4.45vw,48px)}
+    .wealth-quotes .quote-ending{display:inline}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .cinematic-intro.is-animated .scene-copy{opacity:1;transform:none;transition:none}
+  }
+
+body{background:#111318}.studio{position:sticky;top:0;z-index:50;background:#15171ef5;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff18}.studio-inner{max-width:1440px;margin:auto;padding:16px 28px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.studio-brand{font-size:15px;font-weight:700;text-decoration:none}.tabs{display:flex;gap:6px;margin-left:auto}.tabs a{font-size:13px;text-decoration:none;padding:5px 14px;border-radius:6px;color:#b6becb}.tabs a[aria-current=page]{background:#f2f3f6;color:#14171c}.return-link{font-size:12px;color:#a6adba;text-decoration:none}.toolbar{max-width:1440px;margin:auto;padding:10px 28px 14px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid #ffffff12}.toolbar p{margin:0;color:#b6becb;font-size:13px}.devices{display:flex;gap:6px}.devices button{border:1px solid #ffffff26;border-radius:5px;background:transparent;color:#b6becb;padding:6px 16px;font:inherit;font-size:12px;cursor:pointer}.devices button[aria-pressed=true]{background:#edf1f7;color:#14171c;border-color:#edf1f7}[hidden]{display:none!important}
+.gallery{max-width:1440px;margin:auto;padding:42px 28px 64px}.gallery h1{font-size:32px;letter-spacing:-.04em;line-height:1.3}.gallery-lead{font-size:15px;color:#a9b1bf;margin:14px 0 30px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;align-items:start}.card{overflow:hidden;border:1px solid #ffffff22;border-radius:14px;background:#1b1e26}.card-top{padding:22px 24px;display:flex;align-items:center;gap:12px}.card-top h2{font-size:23px;line-height:1.3;letter-spacing:-.025em}.letter-label{color:#9fb6d5;font-size:15px;font-weight:700}.swatch{width:16px;height:16px;border-radius:50%;margin-left:auto}.recommend{border:1px solid #7cb0ff50;border-radius:30px;color:#99c0ff;padding:2px 9px;font-size:11px}.frame-shell{position:relative;overflow:hidden;width:100%;background:#0a0b0f}.frame-shell iframe{display:block;position:absolute;left:0;top:0;border:0;transform-origin:top left;max-width:none}.thumbnail{display:block;text-decoration:none}.thumbnail iframe{pointer-events:none}.caption{padding:20px 24px;border-top:1px solid #ffffff16}.caption p{font-size:14px;line-height:1.7;margin:0;color:#aeb6c4}.caption a{display:inline-block;font-size:13px;font-weight:600;text-decoration:none;margin-top:13px;color:#e6ecf7}.viewer-wrap{max-width:1440px;margin:24px auto 48px;padding:0 24px}.viewer-wrap.mobile{max-width:438px}.viewer-wrap .frame-shell{border:1px solid #ffffff1e;border-radius:8px}.note{font-size:12px;color:#8f98a8;margin-top:24px}
+body.embed{background:var(--bg)}.embed .nav{position:relative}.embed .cinematic-stage{min-height:calc(var(--preview-height,900px) - 65px)}.embed .keyword{font:inherit;letter-spacing:inherit}.variant-a .keyword{color:#7cb0ff}.variant-b .keyword{color:#e6c78a}.variant-c .keyword{color:#76dcc7}.variant-d .keyword{color:inherit;background:linear-gradient(#3b82f6b3,#3b82f6b3) left 85%/100% .27em no-repeat;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+@media(max-width:760px){.studio-inner{padding:13px 18px;gap:12px}.tabs{order:3;width:100%;margin:0;justify-content:space-between}.return-link{margin-left:auto}.gallery{padding:30px 18px 44px}.gallery h1{font-size:27px}.grid{grid-template-columns:1fr;gap:22px}.toolbar{padding-inline:18px;align-items:flex-start;flex-direction:column;gap:10px}.viewer-wrap{padding:0 12px;margin-top:14px}.card-top{padding:18px 20px}.caption{padding:18px 20px}}
+</style></head><body>
+<header class="studio" id="studio"><div class="studio-inner"><a class="studio-brand" href="intro-keyword-colors.html">월급반 · 핵심 단어 강조</a><nav class="tabs" aria-label="시안 선택"><a href="intro-keyword-colors.html" data-tab="all">전체 비교</a><a href="?concept=a" data-tab="a">A</a><a href="?concept=b" data-tab="b">B</a><a href="?concept=c" data-tab="c">C</a><a href="?concept=d" data-tab="d">D</a></nav><a class="return-link" href="../" target="_blank" rel="noopener">현재 사이트 ↗</a></div><div class="toolbar" id="toolbar" hidden><p id="summary"></p><div class="devices"><button id="desktop" aria-pressed="true">PC</button><button id="mobile" aria-pressed="false">모바일</button></div></div></header>
+<main id="app"></main><noscript>시안 비교를 보려면 JavaScript를 켜주세요.</noscript>
+<template id="scene"><nav class="nav">
+  <div class="wrap">
+    <div class="brand"><b>월급반</b><span>글로벌트레이더협회</span></div>
+    <a class="btn gold" href="../#apply" target="_top">상담 신청</a>
+  </div>
+</nav><div class="cinematic-intro">    <header class="cinematic-stage wealth-stage" id="intro-wealth">
+      <img class="scene-photo" src="../assets/intro-house-generated-v1.webp" width="1672" height="941" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+      <div class="scene-copy">
+        <blockquote class="wealth-quotes" aria-label="흔한 과장 광고 문구">
+          <p>"<span class="keyword">코인</span> 대박 나서 <span class="quote-ending"><span class="keyword">건물</span> 샀습니다"</span></p>
+        </blockquote>
+      </div>
+      <a class="scene-next" href="#intro-car" aria-label="다음 내용 보기"><svg viewBox="0 0 20 28" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M10 2v21m-6-6 6 6 6-6"/></svg></a>
+    </header>
+
+    <section class="cinematic-stage wealth-stage car-stage" id="intro-car" aria-label="두 번째 과장 광고 문구">
+      <img class="scene-photo" src="../assets/intro-car-generated-v2.webp" width="1672" height="941" alt="" aria-hidden="true" decoding="async">
+      <div class="scene-copy">
+        <blockquote class="wealth-quotes"><p>"<span class="keyword">트레이딩</span>으로 <span class="quote-ending"><span class="keyword">수십억</span> 벌었습니다"</span></p></blockquote>
+      </div>
+      <a class="scene-next" href="../#intro-statement" target="_top" aria-label="다음 내용 보기"><svg viewBox="0 0 20 28" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M10 2v21m-6-6 6 6 6-6"/></svg></a>
+    </section>
+
+</div></template>
+<script>
+const CONCEPTS={
+ a:{title:'아이스 블루',color:'#7CB0FF',description:'현재 사이트의 파랑과 자연스럽게 이어집니다. 선명하고 차분한 강조입니다.'},
+ b:{title:'샴페인 골드',color:'#E6C78A',description:'어두운 집과 스포츠카에 따뜻한 금빛을 더해 고급스러운 분위기를 강조합니다.'},
+ c:{title:'쿨 민트',color:'#76DCC7',description:'검은 배경에서 또렷하게 보이는 민트. 조금 더 현대적이고 경쾌한 인상입니다.'},
+ d:{title:'블루 마커',color:'#3B82F6',description:'흰 글자를 유지하고 단어 아래에 파란 마커를 더합니다. 기존 밑줄 강조와 연결됩니다.'}
+};
+const params=new URLSearchParams(location.search),requested=params.get('concept');
+const key=Object.hasOwn(CONCEPTS,requested)?requested:null;
+const app=document.getElementById('app');
+function fitFrame(shell,frame,width,height){
+ function resize(){const scale=Math.min(1,shell.clientWidth/width);frame.style.width=width+'px';frame.style.height=height+'px';frame.style.transform='scale('+scale+')';shell.style.height=(height*scale)+'px';}
+ new ResizeObserver(resize).observe(shell);resize();
+}
+if(params.get('embed')==='1'&&key){
+ document.body.className='embed variant-'+key;document.getElementById('studio').remove();
+ document.documentElement.style.setProperty('--preview-height',params.get('device')==='mobile'?'844px':'900px');
+ app.append(document.getElementById('scene').content.cloneNode(true));
+ document.title=key.toUpperCase()+' · '+CONCEPTS[key].title;
+}else if(key){
+ document.querySelector('[data-tab="'+key+'"]').setAttribute('aria-current','page');
+ document.getElementById('toolbar').hidden=false;
+ document.getElementById('summary').textContent=key.toUpperCase()+' · '+CONCEPTS[key].title+' — '+CONCEPTS[key].description;
+ const wrap=document.createElement('div');wrap.className='viewer-wrap';app.append(wrap);
+ function showDevice(mobile){
+  wrap.classList.toggle('mobile',mobile);wrap.replaceChildren();
+  const shell=document.createElement('div');shell.className='frame-shell';const frame=document.createElement('iframe');
+  frame.title=key.toUpperCase()+' '+CONCEPTS[key].title+' '+(mobile?'모바일':'PC')+' 시안';frame.src='?concept='+key+'&embed=1'+(mobile?'&device=mobile':'');
+  shell.append(frame);wrap.append(shell);fitFrame(shell,frame,mobile?390:1440,mobile?1623:1735);
+  document.getElementById('mobile').setAttribute('aria-pressed',String(mobile));document.getElementById('desktop').setAttribute('aria-pressed',String(!mobile));
+ }
+ document.getElementById('mobile').addEventListener('click',()=>showDevice(true));document.getElementById('desktop').addEventListener('click',()=>showDevice(false));showDevice(false);
+}else{
+ document.querySelector('[data-tab="all"]').setAttribute('aria-current','page');
+ app.innerHTML='<div class="gallery"><h1>핵심 단어에 시선이 머물도록.</h1><p class="gallery-lead">코인 · 건물 / 트레이딩 · 수십억 — 같은 장면, 네 가지 강조 방식.</p><div class="grid"></div><p class="note">각 시안을 누르면 PC·모바일로 크게 비교할 수 있습니다.</p></div>';
+ const grid=document.querySelector('.grid');
+ for(const [id,concept] of Object.entries(CONCEPTS)){
+  const card=document.createElement('article');card.className='card';
+  card.innerHTML='<div class="card-top"><span class="letter-label">'+id.toUpperCase()+'</span><h2>'+concept.title+'</h2>'+(id==='a'?'<span class="recommend">추천</span>':'')+'<span class="swatch" style="background:'+concept.color+'" aria-hidden="true"></span></div><a class="thumbnail frame-shell" href="?concept='+id+'" aria-label="'+id.toUpperCase()+' '+concept.title+' 크게 보기"><iframe src="?concept='+id+'&embed=1" title="'+concept.title+' 두 장면 미리보기" tabindex="-1"></iframe></a><div class="caption"><p>'+concept.description+'</p><a href="?concept='+id+'">크게 보기 ↗</a></div>';
+  grid.append(card);fitFrame(card.querySelector('.frame-shell'),card.querySelector('iframe'),1440,1735);
+ }
+}
+</script></body></html>

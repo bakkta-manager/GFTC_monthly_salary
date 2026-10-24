@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>학습 환경 섹션 시안 v2 — 월급반</title>
+<style>
+  @font-face{font-family:"Pretendard";src:url("../assets/fonts/pretendard.woff2") format("woff2");font-weight:100 900;font-display:swap}
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9ecf2;color:#1b1f27;font-family:"Pretendard","Apple SD Gothic Neo",sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased}
+  .page{max-width:1680px;margin:0 auto;padding:48px 32px 96px}
+  .page>h1{font-size:28px;letter-spacing:-.03em;margin:0 0 8px}
+  .page>p{margin:0 0 40px;color:#5d6680;font-size:16px}
+  .concept{margin-bottom:64px}
+  .concept-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  .concept-head .tag{display:inline-grid;place-items:center;flex:none;width:34px;height:34px;border-radius:50%;background:#1c69d4;color:#fff;font-weight:700;font-size:16px}
+  .concept-head h2{font-size:20px;margin:0;letter-spacing:-.02em;white-space:nowrap}
+  .concept-head span{color:#5d6680;font-size:14px}
+  .frames{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:24px;align-items:start}
+  .frame{container-type:inline-size;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px -12px rgba(11,29,54,.25);background:#fff}
+  .frame-label{font-size:12px;color:#8c95ad;margin:8px 0 0;letter-spacing:.06em;text-transform:uppercase}
+  @media (max-width:1100px){.frames{grid-template-columns:1fr}.frame.mobile{width:390px}}
+
+  /* 공통 — index.html .renew 토큰 */
+  .sec{padding:clamp(64px,7cqw,112px) clamp(20px,2.5cqw,40px);background:#fafbff;color:#3b4252;font-size:17px;line-height:1.75;letter-spacing:-.01em;position:relative;overflow:hidden}
+  .sec.tint{background:#f3f5fa}
+  .sec .wrap{max-width:1120px;margin:0 auto;position:relative}
+  .sec h2{margin:0;font-size:clamp(28px,3.2cqw,42px);font-weight:700;letter-spacing:-.03em;line-height:1.3;color:#1b1f27}
+  .sec h2 .accent{color:#1c69d4}
+  .sec h3{margin:0 0 8px;font-size:clamp(19px,1.5cqw,22px);font-weight:700;letter-spacing:-.02em;line-height:1.4;color:#1b1f27}
+  .sec p{margin:0;font-size:16px;line-height:1.8;color:#5d6680}
+  .head{text-align:center;margin-bottom:clamp(40px,4.5cqw,64px)}
+  .sec .close{max-width:40rem;margin:0 auto;text-align:center;font-size:clamp(16px,1.3cqw,18px);line-height:1.85;color:#5d6680}
+  .ico{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#0653b6,#1c69d4);color:#fff;box-shadow:0 8px 20px -8px rgba(28,105,212,.6)}
+  .ico svg{width:24px;height:24px}
+
+  /* A. 네이비 쇼케이스 패널 */
+  .a .panel{position:relative;overflow:hidden;border-radius:26px;padding:clamp(40px,4.5cqw,64px) clamp(24px,4cqw,56px);background:linear-gradient(135deg,#0b1d36 0%,#0a3470 55%,#1c69d4 100%);color:#fff;box-shadow:0 30px 60px -30px rgba(11,29,54,.6)}
+  .a .panel::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 80% 10%,rgba(124,176,255,.35),transparent 70%),radial-gradient(40% 40% at 10% 100%,rgba(124,176,255,.18),transparent 70%)}
+  .a .panel>*{position:relative}
+  .a .head{margin-bottom:clamp(32px,3.5cqw,48px)}
+  .a h2{color:#fff}.a h2 .accent{color:#7cb0ff}
+  .a .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .a .card{position:relative;overflow:hidden;padding:28px 26px 30px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+  .a .card .wm{position:absolute;right:10px;bottom:-22px;font-size:120px;font-weight:700;letter-spacing:-.06em;line-height:1;color:rgba(255,255,255,.07);font-variant-numeric:tabular-nums}
+  .a .card .ico{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);box-shadow:none;margin-bottom:22px}
+  .a .card h3{color:#fff}.a .card p{color:rgba(255,255,255,.72)}
+  .a .close{margin-top:clamp(32px,3.5cqw,44px);color:rgba(255,255,255,.78)}
+  @container (max-width:720px){.a .cards{grid-template-columns:1fr;gap:12px}.a .card{padding:22px 20px 24px}.a .close br{display:none}}
+
+  /* B. 큰 숫자 3열 */
+  .b .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+  .b .col{padding:8px 32px 0;border-left:1px solid #dfe4ec}
+  .b .col:first-child{border-left:0;padding-left:0}
+  .b .big{display:block;font-size:clamp(56px,6cqw,84px);font-weight:700;letter-spacing:-.05em;line-height:1;color:#1c69d4;margin-bottom:18px;font-variant-numeric:tabular-nums}
+  .b .close{margin-top:clamp(40px,4.5cqw,64px)}
+  @container (max-width:640px){.b .cols{grid-template-columns:1fr}.b .col{padding:24px 0;border-left:0;border-top:1px solid #dfe4ec}.b .col:first-child{border-top:0;padding-top:0}.b .big{font-size:48px;margin-bottom:10px}.b .close br{display:none}}
+
+  /* C. 에디토리얼 + 흰 리스트 카드 */
+  .c .split{display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,5cqw,72px);align-items:center}
+  .c .head{text-align:left;margin:0 0 20px}
+  .c .close{max-width:none;margin:0;text-align:left}
+  .c .card{background:#fff;border:1px solid #dfe4ec;border-radius:26px;box-shadow:0 1px 0 rgba(11,29,54,.04),0 24px 48px -24px rgba(11,29,54,.25);padding:10px 30px}
+  .c .row{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;padding:24px 0}
+  .c .row+.row{border-top:1px solid #eef1f6}
+  .c .row .n{font-size:15px;font-weight:700;color:#1c69d4;padding-top:4px;font-variant-numeric:tabular-nums}
+  .c .row h3{margin-bottom:4px}
+  @container (max-width:760px){.c .split{grid-template-columns:1fr;gap:28px}.c .card{padding:6px 22px}}
+
+  /* D. 패널 카드 3열 */
+  .d .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+  .d .card{background:#fff;border:1px solid #dfe4ec;border-radius:22px;overflow:hidden;box-shadow:0 1px 0 rgba(11,29,54,.04),0 4px 12px -6px rgba(11,29,54,.10)}
+  .d .vis{position:relative;height:170px;display:grid;place-items:center;color:#fff;overflow:hidden;background:linear-gradient(135deg,#0b1d36,#0a4ba1)}
+  .d .card:nth-child(2) .vis{background:linear-gradient(135deg,#0a3470,#1c69d4)}
+  .d .card:nth-child(3) .vis{background:linear-gradient(135deg,#0b1d36,#0a3470 70%,#1c69d4)}
+  .d .vis::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 75% 20%,rgba(124,176,255,.4),transparent 70%)}
+  .d .vis svg{position:relative;width:56px;height:56px}
+  .d .vis .wm{position:absolute;right:.1em;bottom:-.16em;font-size:150px;font-weight:700;letter-spacing:-.06em;line-height:1;color:rgba(255,255,255,.1);font-variant-numeric:tabular-nums}
+  .d .body{padding:26px 26px 28px}
+  .d .close{margin-top:clamp(40px,4.5cqw,64px)}
+  @container (max-width:720px){.d .cards{grid-template-columns:1fr;gap:16px}.d .vis{height:140px}.d .close br{display:none}}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>학습 환경 섹션 시안 v2</h1>
+  <p>'제공 혜택'(네이비 차트 패널)과 '월급반 상담 신청'(네이비 밴드) 사이. 혜택 섹션과 같은 시각 언어(네이비 패널, 흰 카드 그림자)로 네 가지 밀도. 문구는 원안 그대로, 번호는 "1. 제목" 형식.</p>
+
+  <!-- A -->
+  <section class="concept">
+    <div class="concept-head"><span class="tag">A</span><h2>네이비 쇼케이스 패널</h2><span>혜택 섹션의 차트 패널과 같은 네이비 그라데이션 패널 안에 반투명 카드 3장. 흰 배경 위에 떠 있어 바로 아래 상담 밴드와 겹치지 않음. 가장 임팩트가 큼.</span></div>
+    <div class="frames">
+      <div class="frame"><section class="sec a"><div class="wrap"><div class="panel">
+        <div class="head"><h2>배우고, 기록하고,<br><span class="accent">함께 돌아봅니다.</span></h2></div>
+        <div class="cards">
+          <div class="card"><span class="wm">1</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M15.5 14.2c2.8.2 5.5 2 5.5 4.8"/></svg></div><h3>1. 6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div>
+          <div class="card"><span class="wm">2</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8M8 12.5h5"/></svg></div><h3>2. 조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div>
+          <div class="card"><span class="wm">3</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 13.5h8M8 17h5"/></svg></div><h3>3. 기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div>
+        </div>
+        <p class="close">6인 팀에서 나누는 배움부터 조교의 학습 지원까지.<br>매주 실천하고 돌아볼 수 있는 학습 환경을 준비하고 있습니다.</p>
+      </div></div></section><p class="frame-label">Desktop</p></div>
+      <div class="frame mobile"><section class="sec a"><div class="wrap"><div class="panel">
+        <div class="head"><h2>배우고, 기록하고,<br><span class="accent">함께 돌아봅니다.</span></h2></div>
+        <div class="cards">
+          <div class="card"><span class="wm">1</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M15.5 14.2c2.8.2 5.5 2 5.5 4.8"/></svg></div><h3>1. 6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div>
+          <div class="card"><span class="wm">2</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8M8 12.5h5"/></svg></div><h3>2. 조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div>
+          <div class="card"><span class="wm">3</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 13.5h8M8 17h5"/></svg></div><h3>3. 기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div>
+        </div>
+        <p class="close">6인 팀에서 나누는 배움부터 조교의 학습 지원까지.<br>매주 실천하고 돌아볼 수 있는 학습 환경을 준비하고 있습니다.</p>
+      </div></div></section><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <!-- B -->
+  <section class="concept">
+    <div class="concept-head"><span class="tag">B</span><h2>큰 숫자 3열</h2><span>카드 없이 큰 블루 숫자 1·2·3와 세로 구분선만. 원안(세 열 구분선)에서 숫자로만 위계를 세운 가장 단순한 안. 혜택 섹션의 "1. 시황"과 같은 호흡.</span></div>
+    <div class="frames">
+      <div class="frame"><section class="sec b"><div class="wrap">
+        <div class="head"><h2>배우고, 기록하고,<br><span class="accent">함께 돌아봅니다.</span></h2></div>
+        <div class="cols">
+          <div class="col"><span class="big">1</span><h3>6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div>
+          <div class="col"><span class="big">2</span><h3>조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div>
+          <div class="col"><span class="big">3</span><h3>기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div>
+        </div>
+        <p class="close">6인 팀에서 나누는 배움부터 조교의 학습 지원까지.<br>매주 실천하고 돌아볼 수 있는 학습 환경을 준비하고 있습니다.</p>
+      </div></section><p class="frame-label">Desktop</p></div>
+      <div class="frame mobile"><section class="sec b"><div class="wrap">
+        <div class="head"><h2>배우고, 기록하고,<br><span class="accent">함께 돌아봅니다.</span></h2></div>
+        <div class="cols">
+          <div class="col"><span class="big">1</span><h3>6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div>
+          <div class="col"><span class="big">2</span><h3>조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div>
+          <div class="col"><span class="big">3</span><h3>기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div>
+        </div>
+        <p class="close">6인 팀에서 나누는 배움부터 조교의 학습 지원까지.<br>매주 실천하고 돌아볼 수 있는 학습 환경을 준비하고 있습니다.</p>
+      </div></section><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <!-- C -->
+  <section class="concept">
+    <div class="concept-head"><span class="tag">C</span><h2>에디토리얼 + 흰 리스트 카드</h2><span>왼쪽 제목과 맺음 문장, 오른쪽에 "1. 2. 3." 리스트가 담긴 흰 카드. 좌우 리듬으로 중앙 정렬이 이어지는 단조로움을 깸.</span></div>
+    <div class="frames">
+      <div class="frame"><section class="sec tint c"><div class="wrap"><div class="split">
+        <div>
+          <div class="head"><h2>배우고, 기록하고,<br><span class="accent">함께 돌아봅니다.</span></h2></div>
+          <p class="close">6인 팀에서 나누는 배움부터 조교의 학습 지원까지. 매주 실천하고 돌아볼 수 있는 학습 환경을 준비하고 있습니다.</p>
+        </div>
+        <div class="card">
+          <div class="row"><span class="n">1.</span><div><h3>6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div></div>
+          <div class="row"><span class="n">2.</span><div><h3>조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div></div>
+          <div class="row"><span class="n">3.</span><div><h3>기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div></div>
+        </div>
+      </div></div></section><p class="frame-label">Desktop</p></div>
+      <div class="frame mobile"><section class="sec tint c"><div class="wrap"><div class="split">
+        <div>
+          <div class="head"><h2>배우고, 기록하고,<br><span class="accent">함께 돌아봅니다.</span></h2></div>
+          <p class="close">6인 팀에서 나누는 배움부터 조교의 학습 지원까지. 매주 실천하고 돌아볼 수 있는 학습 환경을 준비하고 있습니다.</p>
+        </div>
+        <div class="card">
+          <div class="row"><span class="n">1.</span><div><h3>6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div></div>
+          <div class="row"><span class="n">2.</span><div><h3>조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div></div>
+          <div class="row"><span class="n">3.</span><div><h3>기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div></div>
+        </div>
+      </div></div></section><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <!-- D -->
+  <section class="concept">
+    <div class="concept-head"><span class="tag">D</span><h2>패널 카드 3열</h2><span>혜택 섹션의 네이비 패널을 카드 상단에 축소해 넣은 3열. 패널 자리는 나중에 실제 사진(팀 채팅, 조교 피드백, 매매일지)으로 교체 가능.</span></div>
+    <div class="frames">
+      <div class="frame"><section class="sec tint d"><div class="wrap">
+        <div class="head"><h2>배우고, 기록하고,<br><span class="accent">함께 돌아봅니다.</span></h2></div>
+        <div class="cards">
+          <div class="card"><div class="vis"><span class="wm">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M15.5 14.2c2.8.2 5.5 2 5.5 4.8"/></svg></div><div class="body"><h3>1. 6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div></div>
+          <div class="card"><div class="vis"><span class="wm">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8M8 12.5h5"/></svg></div><div class="body"><h3>2. 조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div></div>
+          <div class="card"><div class="vis"><span class="wm">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 13.5h8M8 17h5"/></svg></div><div class="body"><h3>3. 기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div></div>
+        </div>
+        <p class="close">6인 팀에서 나누는 배움부터 조교의 학습 지원까지.<br>매주 실천하고 돌아볼 수 있는 학습 환경을 준비하고 있습니다.</p>
+      </div></section><p class="frame-label">Desktop</p></div>
+      <div class="frame mobile"><section class="sec tint d"><div class="wrap">
+        <div class="head"><h2>배우고, 기록하고,<br><span class="accent">함께 돌아봅니다.</span></h2></div>
+        <div class="cards">
+          <div class="card"><div class="vis"><span class="wm">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M15.5 14.2c2.8.2 5.5 2 5.5 4.8"/></svg></div><div class="body"><h3>1. 6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div></div>
+          <div class="card"><div class="vis"><span class="wm">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8M8 12.5h5"/></svg></div><div class="body"><h3>2. 조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div></div>
+          <div class="card"><div class="vis"><span class="wm">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 13.5h8M8 17h5"/></svg></div><div class="body"><h3>3. 기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div></div>
+        </div>
+        <p class="close">6인 팀에서 나누는 배움부터 조교의 학습 지원까지.<br>매주 실천하고 돌아볼 수 있는 학습 환경을 준비하고 있습니다.</p>
+      </div></section><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# 시스템/도구 산출물
+.DS_Store
+.omc/
+.playwright-mcp/
+.impeccable/
+.check*.html
+
+# 개인 녹음·전사, 무관한 참고 자료
+전사/
+비즈니스피티 랜딩폼/
+
+# 대용량 핸드오프 아카이브
+design-handoff/*.zip
+
+# 배포 전용 저장소(별도 git, 배포 도구가 관리)
+sites/

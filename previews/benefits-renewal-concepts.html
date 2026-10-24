@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>제공 혜택 시안 4종 — 월급반</title>
+<style>
+  @font-face{font-family:"Pretendard";src:url("../assets/fonts/pretendard.woff2") format("woff2");font-weight:100 900;font-display:swap}
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9ecf2;color:#1b1f27;font-family:"Pretendard","Apple SD Gothic Neo",sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased}
+  .page{max-width:1680px;margin:0 auto;padding:48px 32px 96px}
+  .page>h1{font-size:28px;letter-spacing:-.03em;margin:0 0 8px}
+  .page>p{margin:0 0 40px;color:#5d6680;font-size:16px}
+  .concept{margin-bottom:64px}
+  .concept-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  .concept-head .tag{display:inline-grid;place-items:center;flex:none;width:34px;height:34px;border-radius:50%;background:#1c69d4;color:#fff;font-weight:700;font-size:16px}
+  .concept-head h2{font-size:20px;margin:0;letter-spacing:-.02em;white-space:nowrap}
+  .concept-head span{color:#5d6680;font-size:14px}
+  .frames{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:24px;align-items:start}
+  .frame{container-type:inline-size;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px -12px rgba(11,29,54,.25);background:#fff}
+  .frame-label{font-size:12px;color:#8c95ad;margin:8px 0 0;letter-spacing:.06em;text-transform:uppercase}
+  @media (max-width:1100px){.frames{grid-template-columns:1fr}.frame.mobile{width:390px}}
+
+  /* 공통 */
+  .sec{padding:clamp(64px,7cqw,112px) clamp(20px,2.5cqw,40px);background:#fafbff;color:#3b4252;font-size:17px;line-height:1.75;letter-spacing:-.01em}
+  .sec .wrap{max-width:1120px;margin:0 auto}
+  .sec h2{margin:0 0 clamp(36px,4cqw,56px);text-align:center;font-size:clamp(28px,3.2cqw,42px);font-weight:700;letter-spacing:-.03em;line-height:1.3;color:#1b1f27}
+  .sec h3,.sec b{display:block;margin:0 0 10px;font-size:clamp(19px,1.5cqw,22px);font-weight:700;letter-spacing:-.02em;line-height:1.4;color:#1b1f27}
+  .sec p{margin:0;font-size:16px;line-height:1.8}
+  .ico{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:#e8f1ff;border:1px solid rgba(28,105,212,.16);color:#1c69d4}
+  .ico svg{width:24px;height:24px}
+
+  /* A. 번호 리스트 — 멤버십 레퍼런스의 Benefit 01 에디토리얼 */
+  .a .list{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+  .a .item{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:30px 0;border-top:1px solid #dfe4ec}
+  .a .item:nth-child(-n+2){border-top:0;padding-top:0}
+  .a .num{font-size:13px;font-weight:700;letter-spacing:.14em;color:#1c69d4;padding-top:6px;font-variant-numeric:tabular-nums}
+  .a .num::before{content:"BENEFIT "}
+  @container (max-width:640px){.a .list{grid-template-columns:1fr}.a .item:nth-child(2){border-top:1px solid #dfe4ec;padding-top:30px}}
+
+  /* B. 블루 아이콘 타일 그리드 — 현재 카드 구조를 더 선명하게 */
+  .b .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+  .b .card{position:relative;overflow:hidden;padding:30px 28px 32px;background:#fff;border:1px solid #dfe4ec;border-radius:18px;box-shadow:0 1px 0 rgba(11,29,54,.04),0 4px 12px -6px rgba(11,29,54,.10)}
+  .b .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#0653b6,#3b82f6)}
+  .b .ico{margin-bottom:20px;background:linear-gradient(135deg,#0653b6,#1c69d4);border:0;color:#fff;box-shadow:0 8px 20px -8px rgba(28,105,212,.6)}
+  @container (max-width:1024px){.b .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @container (max-width:640px){.b .grid{grid-template-columns:1fr;gap:16px}.b .card{padding:26px 22px 28px}}
+
+  /* C. 지그재그 피처 — 멤버십 레퍼런스의 혜택 섹션(시각 패널 + 텍스트) */
+  .c .row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4cqw,56px);align-items:center;padding:clamp(20px,2.4cqw,32px) 0}
+  .c .row+.row{border-top:1px solid #e6eaf1}
+  .c .row:nth-child(even) .panel{order:2}
+  .c .panel{aspect-ratio:16/9;border-radius:22px;display:grid;place-items:center;background:linear-gradient(135deg,#0b1d36 0%,#0a3470 55%,#1c69d4 100%);box-shadow:0 24px 50px -24px rgba(11,29,54,.5);position:relative;overflow:hidden}
+  .c .panel::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 70% 20%,rgba(124,176,255,.35),transparent 70%)}
+  .c .panel svg{position:relative;width:72px;height:72px;color:#fff;opacity:.95}
+  .c .num{display:block;margin-bottom:10px;font-size:13px;font-weight:700;letter-spacing:.14em;color:#1c69d4}
+  .c .num::before{content:"BENEFIT "}
+  .c .text h3{font-size:clamp(22px,2cqw,28px)}
+  @container (max-width:640px){.c .row{grid-template-columns:1fr;gap:18px}.c .row:nth-child(even) .panel{order:0}}
+
+  /* D. 네이비 글래스 카드 — 레퍼런스 철학 블록 톤 */
+  .d{background:linear-gradient(180deg,#144a8f 0%,#0a3470 50%,#08182e 100%);color:rgba(255,255,255,.78);position:relative}
+  .d::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 0%,rgba(110,193,255,.22),transparent 70%);pointer-events:none}
+  .d .wrap{position:relative}
+  .d h2{color:#fff}
+  .d .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .d .card{padding:30px 28px 32px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(8px)}
+  .d .card b{color:#fff}
+  .d .card p{color:rgba(255,255,255,.75)}
+  .d .ico{margin-bottom:20px;background:rgba(124,176,255,.14);border-color:rgba(124,176,255,.35);color:#7cb0ff}
+  @container (max-width:1024px){.d .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @container (max-width:640px){.d .grid{grid-template-columns:1fr;gap:14px}.d .card{padding:26px 22px 28px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>제공 혜택 시안 4종</h1>
+  <p>혜택 6개의 제목과 설명은 그대로, 배치와 톤만 다르게 잡았습니다. 왼쪽은 데스크톱, 오른쪽은 390px 모바일 폭입니다.</p>
+
+  <section class="concept">
+    <div class="concept-head"><span class="tag">A</span><h2>번호 리스트</h2><span>멤버십 레퍼런스의 'Benefit 01' 에디토리얼 구성. 카드 없이 번호·제목·설명을 2열 선 구분으로. 가장 담백하고 읽는 흐름이 빠름.</span></div>
+    <div class="frames">
+      <div><div class="frame"><section class="sec a"><div class="wrap"><h2>월급반 제공 혜택</h2><div class="list" data-render="a"></div></div></section></div><p class="frame-label">Desktop</p></div>
+      <div><div class="frame mobile"><section class="sec a"><div class="wrap"><h2>월급반 제공 혜택</h2><div class="list" data-render="a"></div></div></section></div><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <div class="concept-head"><span class="tag">B</span><h2>블루 아이콘 타일</h2><span>지금 구조를 유지하되 아이콘을 블루 그라데이션 타일로 바꾸고 카드 왼쪽에 블루 엣지를 넣어 선명하게. 변경 폭이 가장 작음.</span></div>
+    <div class="frames">
+      <div><div class="frame"><section class="sec b"><div class="wrap"><h2>월급반 제공 혜택</h2><div class="grid" data-render="b"></div></div></section></div><p class="frame-label">Desktop</p></div>
+      <div><div class="frame mobile"><section class="sec b"><div class="wrap"><h2>월급반 제공 혜택</h2><div class="grid" data-render="b"></div></div></section></div><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <div class="concept-head"><span class="tag">C</span><h2>지그재그 피처</h2><span>멤버십 레퍼런스의 혜택 섹션처럼 시각 패널과 텍스트를 좌우로 번갈아 배치. 패널에는 나중에 실제 화면 캡처를 넣을 수 있음. 가장 풍성하고 세로로 긺.</span></div>
+    <div class="frames">
+      <div><div class="frame"><section class="sec c"><div class="wrap"><h2>월급반 제공 혜택</h2><div class="rows" data-render="c"></div></div></section></div><p class="frame-label">Desktop</p></div>
+      <div><div class="frame mobile"><section class="sec c"><div class="wrap"><h2>월급반 제공 혜택</h2><div class="rows" data-render="c"></div></div></section></div><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <div class="concept-head"><span class="tag">D</span><h2>네이비 글래스 카드</h2><span>레퍼런스 철학 블록의 네이비 그라데이션 위에 반투명 카드. 밝은 현실 섹션과 밝은 상담 섹션 사이에서 리듬을 만드는 프리미엄 톤.</span></div>
+    <div class="frames">
+      <div><div class="frame"><section class="sec d"><div class="wrap"><h2>월급반 제공 혜택</h2><div class="grid" data-render="d"></div></div></section></div><p class="frame-label">Desktop</p></div>
+      <div><div class="frame mobile"><section class="sec d"><div class="wrap"><h2>월급반 제공 혜택</h2><div class="grid" data-render="d"></div></div></section></div><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+</div>
+<script>
+  var ICONS={
+    chart:'<path d="M4 19V5m0 14h16M7 14l4-4 4 2 5-7"/>',
+    target:'<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/>',
+    live:'<rect x="3" y="5" width="18" height="12" rx="1"/><path d="M9 21h6m-3-4v4m-2-12 5 3-5 3z"/>',
+    wet:'<path d="M8 4H5v5m11 11h3v-5M5 8a8 8 0 0 1 13-2M19 16A8 8 0 0 1 6 18m3-6 2 2 4-4"/>',
+    news:'<rect x="5" y="3" width="15" height="18" rx="1"/><path d="M5 7H2v12a2 2 0 0 0 2 2M8 7h9m-9 4h9m-9 4h4m-4 3h9"/>',
+    chat:'<path d="M4 4h13v10H9l-5 4V4zm13 4h4v12l-4-3h-5v-3"/>'
+  };
+  var ITEMS=[
+    ['chart','시황','아침·점심·저녁, 주요 시장 흐름과 주목해야 할 포인트를 정리해 드립니다.<br>하루 동안 달라지는 시장을 살펴보며 자신의 매매 계획을 점검할 때 참고할 수 있습니다.'],
+    ['target','타점 교육','진입의 근거와 기다려야 할 상황을 배웁니다.<br>타점 판단 과정을 이해하고 자신만의 매매 기준을 세우는 교육입니다.'],
+    ['live','협회장 라이브 트레이딩','협회장의 매매 과정을 실시간으로 살펴봅니다.<br>시장 상황을 어떻게 해석하고 매매를 결정하는지 보며 배운 기준이 실전에서 어떻게 적용되는지 익힙니다.'],
+    ['wet','W.E.T','자신의 트레이딩 행동을 돌아보고 개선할 부분을 찾도록 돕는 인공지능입니다.<br>반복되는 매매 습관을 점검하고 스스로 정한 원칙을 지키도록 행동 교정을 돕습니다.'],
+    ['news','뉴스','시장에 영향을 줄 수 있는 주요 뉴스를 전해 드립니다.<br>가격 움직임의 배경을 이해하고 매매 전 확인해야 할 이슈를 살펴볼 때 참고할 수 있습니다.'],
+    ['chat','수강생·졸업생 채팅방과 커뮤니티','같은 과정을 거치는 수강생, 먼저 거쳐 간 졸업생과 한 공간에서 이야기합니다.<br>매매 고민을 나누고 서로의 복기를 보며, 과정이 끝난 뒤에도 혼자 남지 않도록 돕습니다.']
+  ];
+  function svg(k){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+ICONS[k]+'</svg>';}
+  var T={
+    a:function(it,i){return '<div class="item"><span class="num">0'+(i+1)+'</span><div><h3>'+it[1]+'</h3><p>'+it[2]+'</p></div></div>';},
+    b:function(it){return '<div class="card"><span class="ico">'+svg(it[0])+'</span><b>'+it[1]+'</b><p>'+it[2]+'</p></div>';},
+    c:function(it,i){return '<div class="row"><div class="panel">'+svg(it[0])+'</div><div class="text"><span class="num">0'+(i+1)+'</span><h3>'+it[1]+'</h3><p>'+it[2]+'</p></div></div>';},
+    d:function(it){return '<div class="card"><span class="ico">'+svg(it[0])+'</span><b>'+it[1]+'</b><p>'+it[2]+'</p></div>';}
+  };
+  document.querySelectorAll('[data-render]').forEach(function(el){el.innerHTML=ITEMS.map(T[el.dataset.render]).join('');});
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+[
+  {
+    "reduced": false,
+    "first": 835,
+    "second": 1670,
+    "free": 1750,
+    "samples": [
+      898,
+      2000,
+      2825,
+      3650,
+      4475
+    ],
+    "continuous": 4475,
+    "upward": 0,
+    "shortBurst": 835,
+    "errors": []
+  },
+  {
+    "reduced": true,
+    "first": 835,
+    "second": 1670,
+    "free": 1750,
+    "samples": [
+      835,
+      1670,
+      2385,
+      3210,
+      4035
+    ],
+    "continuous": 4035,
+    "upward": 0,
+    "shortBurst": 835,
+    "errors": []
+  }
+]

@@ -1,0 +1,169 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "initialY": 0,
+      "overflow": false,
+      "bg": "rgb(244, 241, 235)",
+      "body": "rgb(89, 97, 108)",
+      "title": "rgb(32, 35, 41)",
+      "highlight": "linear-gradient(rgba(0, 0, 0, 0) 62%, rgb(207, 222, 245) 62%)",
+      "accent": "rgb(40, 93, 194)",
+      "claimSize": "40px",
+      "titleSize": "40px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "rows": [
+        {
+          "x": 603,
+          "y": 766.4375,
+          "width": 109.625,
+          "height": 48.59375,
+          "text": "양질의 학습"
+        },
+        {
+          "x": 603,
+          "y": 818.03125,
+          "width": 124.3125,
+          "height": 48.59375,
+          "text": "체계적인 훈련"
+        },
+        {
+          "x": 603,
+          "y": 869.625,
+          "width": 162,
+          "height": 48.59375,
+          "text": "개인 맞춤 행동 교정"
+        }
+      ],
+      "vertical": true,
+      "aligned": true,
+      "centered": true,
+      "darkIntro": "rgb(10, 11, 15)",
+      "notice": 3
+    },
+    {
+      "width": 900,
+      "initialY": 0,
+      "overflow": false,
+      "bg": "rgb(244, 241, 235)",
+      "body": "rgb(89, 97, 108)",
+      "title": "rgb(32, 35, 41)",
+      "highlight": "linear-gradient(rgba(0, 0, 0, 0) 62%, rgb(207, 222, 245) 62%)",
+      "accent": "rgb(40, 93, 194)",
+      "claimSize": "40px",
+      "titleSize": "40px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "rows": [
+        {
+          "x": 333,
+          "y": 766.4375,
+          "width": 109.625,
+          "height": 48.59375,
+          "text": "양질의 학습"
+        },
+        {
+          "x": 333,
+          "y": 818.03125,
+          "width": 124.3125,
+          "height": 48.59375,
+          "text": "체계적인 훈련"
+        },
+        {
+          "x": 333,
+          "y": 869.625,
+          "width": 162,
+          "height": 48.59375,
+          "text": "개인 맞춤 행동 교정"
+        }
+      ],
+      "vertical": true,
+      "aligned": true,
+      "centered": true,
+      "darkIntro": "rgb(10, 11, 15)",
+      "notice": 3
+    },
+    {
+      "width": 390,
+      "initialY": 0,
+      "overflow": false,
+      "bg": "rgb(244, 241, 235)",
+      "body": "rgb(89, 97, 108)",
+      "title": "rgb(32, 35, 41)",
+      "highlight": "linear-gradient(rgba(0, 0, 0, 0) 62%, rgb(207, 222, 245) 62%)",
+      "accent": "rgb(40, 93, 194)",
+      "claimSize": "28px",
+      "titleSize": "28px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "rows": [
+        {
+          "x": 78,
+          "y": 712.53125,
+          "width": 105.046875,
+          "height": 44.796875,
+          "text": "양질의 학습"
+        },
+        {
+          "x": 78,
+          "y": 760.328125,
+          "width": 118.875,
+          "height": 44.796875,
+          "text": "체계적인 훈련"
+        },
+        {
+          "x": 78,
+          "y": 808.125,
+          "width": 154.34375,
+          "height": 44.796875,
+          "text": "개인 맞춤 행동 교정"
+        }
+      ],
+      "vertical": true,
+      "aligned": true,
+      "centered": true,
+      "darkIntro": "rgb(10, 11, 15)",
+      "notice": 3
+    },
+    {
+      "width": 320,
+      "initialY": 0,
+      "overflow": false,
+      "bg": "rgb(244, 241, 235)",
+      "body": "rgb(89, 97, 108)",
+      "title": "rgb(32, 35, 41)",
+      "highlight": "linear-gradient(rgba(0, 0, 0, 0) 62%, rgb(207, 222, 245) 62%)",
+      "accent": "rgb(40, 93, 194)",
+      "claimSize": "28px",
+      "titleSize": "28px",
+      "font": "Pretendard, \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+      "rows": [
+        {
+          "x": 43,
+          "y": 698.96875,
+          "width": 105.046875,
+          "height": 44.796875,
+          "text": "양질의 학습"
+        },
+        {
+          "x": 43,
+          "y": 746.765625,
+          "width": 118.875,
+          "height": 44.796875,
+          "text": "체계적인 훈련"
+        },
+        {
+          "x": 43,
+          "y": 794.5625,
+          "width": 154.34375,
+          "height": 44.796875,
+          "text": "개인 맞춤 행동 교정"
+        }
+      ],
+      "vertical": true,
+      "aligned": true,
+      "centered": true,
+      "darkIntro": "rgb(10, 11, 15)",
+      "notice": 3
+    }
+  ],
+  "errors": []
+}

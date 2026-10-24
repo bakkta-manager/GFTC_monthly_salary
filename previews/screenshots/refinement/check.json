@@ -1,0 +1,453 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "fonts": [
+        {
+          "size": "64.08px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "64.08px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "64.08px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        }
+      ],
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 835
+        },
+        {
+          "id": "intro-car",
+          "top": 900,
+          "height": 835
+        },
+        {
+          "id": "intro-statement",
+          "top": 1735,
+          "height": 835
+        },
+        {
+          "id": "intro-reality",
+          "top": 2570,
+          "height": 951
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 1600
+        },
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 3160
+        }
+      ],
+      "overflow": false,
+      "final": false,
+      "detailsInReality": true,
+      "mark": "아무나 이룰 수 없는 목표",
+      "afterFirst": 835,
+      "afterSecond": 1670,
+      "freeDelta": 80,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "fonts": [
+        {
+          "size": "56.96px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "56.96px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "56.96px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        }
+      ],
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 655
+        },
+        {
+          "id": "intro-car",
+          "top": 720,
+          "height": 655
+        },
+        {
+          "id": "intro-statement",
+          "top": 1375,
+          "height": 655
+        },
+        {
+          "id": "intro-reality",
+          "top": 2030,
+          "height": 920
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 1600
+        },
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 3160
+        }
+      ],
+      "overflow": false,
+      "final": false,
+      "detailsInReality": true,
+      "mark": "아무나 이룰 수 없는 목표",
+      "afterFirst": 655,
+      "afterSecond": 1310,
+      "freeDelta": 80,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "fonts": [
+        {
+          "size": "31.98px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "31.98px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "31.98px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        }
+      ],
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 779
+        },
+        {
+          "id": "intro-car",
+          "top": 844,
+          "height": 779
+        },
+        {
+          "id": "intro-statement",
+          "top": 1623,
+          "height": 779
+        },
+        {
+          "id": "intro-reality",
+          "top": 2402,
+          "height": 779
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 1600
+        },
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 3160
+        }
+      ],
+      "overflow": false,
+      "final": false,
+      "detailsInReality": true,
+      "mark": "아무나 이룰 수 없는 목표",
+      "afterFirst": 779,
+      "afterSecond": 1558,
+      "freeDelta": 80,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 640,
+      "fonts": [
+        {
+          "size": "28px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "28px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "28px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        }
+      ],
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 575
+        },
+        {
+          "id": "intro-car",
+          "top": 640,
+          "height": 575
+        },
+        {
+          "id": "intro-statement",
+          "top": 1215,
+          "height": 575
+        },
+        {
+          "id": "intro-reality",
+          "top": 1790,
+          "height": 790
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 1600
+        },
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 3160
+        }
+      ],
+      "overflow": false,
+      "final": false,
+      "detailsInReality": true,
+      "mark": "아무나 이룰 수 없는 목표",
+      "afterFirst": 575,
+      "afterSecond": 1150,
+      "freeDelta": 80,
+      "errors": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "fonts": [
+        {
+          "size": "37.558px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "37.558px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        },
+        {
+          "size": "37.558px",
+          "weight": "700",
+          "color": "rgb(242, 243, 246)"
+        }
+      ],
+      "stages": [
+        {
+          "id": "intro-wealth",
+          "top": 65,
+          "height": 325
+        },
+        {
+          "id": "intro-car",
+          "top": 390,
+          "height": 325
+        },
+        {
+          "id": "intro-statement",
+          "top": 715,
+          "height": 325
+        },
+        {
+          "id": "intro-reality",
+          "top": 1040,
+          "height": 731
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 1600
+        },
+        {
+          "loaded": true,
+          "w": 2400,
+          "h": 3160
+        }
+      ],
+      "overflow": false,
+      "final": false,
+      "detailsInReality": true,
+      "mark": "아무나 이룰 수 없는 목표",
+      "afterFirst": 325,
+      "afterSecond": 650,
+      "freeDelta": 80,
+      "errors": []
+    }
+  ],
+  "concepts": [
+    {
+      "key": "a",
+      "width": 900,
+      "overflow": false,
+      "font": [
+        "40px",
+        "40px"
+      ],
+      "count": 3,
+      "height": 989
+    },
+    {
+      "key": "a",
+      "width": 390,
+      "overflow": false,
+      "font": [
+        "28px",
+        "28px"
+      ],
+      "count": 3,
+      "height": 901
+    },
+    {
+      "key": "a",
+      "width": 320,
+      "overflow": false,
+      "font": [
+        "28px",
+        "28px"
+      ],
+      "count": 3,
+      "height": 990
+    },
+    {
+      "key": "b",
+      "width": 900,
+      "overflow": false,
+      "font": [
+        "36px",
+        "36px"
+      ],
+      "count": 3,
+      "height": 1024
+    },
+    {
+      "key": "b",
+      "width": 390,
+      "overflow": false,
+      "font": [
+        "28px",
+        "28px"
+      ],
+      "count": 3,
+      "height": 880
+    },
+    {
+      "key": "b",
+      "width": 320,
+      "overflow": false,
+      "font": [
+        "28px",
+        "28px"
+      ],
+      "count": 3,
+      "height": 969
+    },
+    {
+      "key": "c",
+      "width": 900,
+      "overflow": false,
+      "font": [
+        "36px",
+        "36px"
+      ],
+      "count": 3,
+      "height": 981
+    },
+    {
+      "key": "c",
+      "width": 390,
+      "overflow": false,
+      "font": [
+        "28px",
+        "28px"
+      ],
+      "count": 3,
+      "height": 847
+    },
+    {
+      "key": "c",
+      "width": 320,
+      "overflow": false,
+      "font": [
+        "28px",
+        "28px"
+      ],
+      "count": 3,
+      "height": 936
+    },
+    {
+      "key": "d",
+      "width": 900,
+      "overflow": false,
+      "font": [
+        "40px",
+        "40px"
+      ],
+      "count": 3,
+      "height": 1077
+    },
+    {
+      "key": "d",
+      "width": 390,
+      "overflow": false,
+      "font": [
+        "28px",
+        "28px"
+      ],
+      "count": 3,
+      "height": 902
+    },
+    {
+      "key": "d",
+      "width": 320,
+      "overflow": false,
+      "font": [
+        "28px",
+        "28px"
+      ],
+      "count": 3,
+      "height": 991
+    }
+  ]
+}

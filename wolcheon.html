@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>월천반 — 글로벌트레이더협회</title>
+<meta name="description" content="협회장의 10년을 9개월에 그대로 전수하는 월천반. 강의, 행동 교정 프로그램, 집단 훈련까지 소수 정예로 운영합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme:light;
+    --bg:#fafbff; --tint:#f3f5fa; --card:#ffffff;
+    --line:#e5e8ee; --line2:#c1c7d0;
+    --text:#262626; --body:#3b4150; --muted:#5d6680; --dim:#5f6b7a;
+    --blue:#1c69d4; --blue-deep:#0a4ba1; --navy:#0b1d36; --navy-2:#061327;
+    --gold:#ffd84d; --gold-ink:#3a2c00; --amber:#b45309; --amber-bg:#fff7e6;
+    --red:#d91e1e;
+    --sans:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+    --serif:"Nanum Myeongjo","Noto Serif KR",Georgia,serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.7;letter-spacing:-.01em;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue)}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+  img,svg{max-width:100%}
+  h1,h2,h3{margin:0}
+  p{margin:0}
+  .wrap{max-width:1100px;margin:0 auto;padding-inline:clamp(20px,4vw,40px)}
+  .serif{font-family:var(--serif)}
+  .h1{font-weight:800;font-size:clamp(38px,5vw,64px);line-height:1.08;letter-spacing:-.045em}
+  .h2{font-weight:700;font-size:clamp(30px,4vw,56px);line-height:1.12;letter-spacing:-.045em;color:var(--text)}
+  .lead{font-size:18px;line-height:1.7;color:var(--text)}
+  .muted{color:var(--muted)}
+  .blue{color:var(--blue)}
+  .gold{color:var(--gold)}
+  .label{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+  .chip{display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#e8f1ff;color:var(--blue-deep);font-size:13px;font-weight:600;letter-spacing:-.01em}
+  .mark{background:linear-gradient(transparent 55%,#fff1b8 55%);padding:0 .1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .card{background:var(--card);border-radius:20px;border:1px solid var(--line);box-shadow:0 2px 0 rgba(11,29,54,.03),0 10px 28px -14px rgba(11,29,54,.18)}
+  .cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;white-space:nowrap;border:0;cursor:pointer;font-family:inherit;letter-spacing:-.01em;transition:background .15s,transform .1s}
+  .cta:active{transform:translateY(1px)}
+  .cta.blue-btn{background:var(--blue);color:#fff;box-shadow:0 8px 18px -8px rgba(28,105,212,.55)}
+  .cta.blue-btn:hover{background:#1559b8}
+  .cta.gold-btn{background:var(--gold);color:var(--gold-ink);box-shadow:0 0 20px -4px rgba(255,216,77,.6)}
+  .cta.gold-btn:hover{background:#f5c518}
+  .cta.ghost{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);color:#fff}
+  .cta.ghost:hover{background:rgba(255,255,255,.1)}
+  .cta:disabled{opacity:.5;cursor:not-allowed}
+  section{scroll-margin-top:100px}
+
+  /* nav (floating pill, 히어로 지나면 등장) */
+  .nav{position:fixed;top:22px;left:0;right:0;z-index:50;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-14px);transition:opacity .24s ease,transform .24s ease,visibility .24s}
+  .nav.is-visible{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
+  .nav-inner{width:min(1120px,calc(100% - 48px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px;padding:10px 11px 10px 27px;border-radius:99px;background:#fffffff5;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid #e1e8f280;box-shadow:0 8px 32px #082f661c}
+  .brand{font-size:25px;font-weight:800;letter-spacing:-1px;display:inline-flex;align-items:center;gap:13px;white-space:nowrap;color:#14263e;text-decoration:none}
+  .brand>span{font-size:13px;font-weight:600;letter-spacing:-.3px;border-left:1px solid #ccd7e4;padding-left:13px;color:#536780}
+  .nav nav{display:flex;gap:30px;align-items:center;font-size:14px;font-weight:600;color:#50627a}
+  .nav nav a{position:relative;color:inherit;text-decoration:none;transition:color .2s ease}
+  .nav nav a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:2px;background:var(--blue);border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform .22s ease}
+  .nav nav a:is(:hover,:focus-visible){color:var(--blue)}
+  .nav nav a:is(:hover,:focus-visible)::after{transform:scaleX(1)}
+  .nav-cta{padding:11px 20px;background:var(--blue);border-radius:99px;color:#fff;font-size:14px;font-weight:600;display:flex;gap:20px;align-items:center;text-decoration:none;white-space:nowrap;transition:background-color .22s ease,box-shadow .22s ease}
+  .nav-cta>span{font-size:18px;line-height:1;transition:transform .22s ease}
+  .nav-cta:hover{background:#1559b8;box-shadow:0 5px 16px #145bb526}
+  .nav-cta:is(:hover,:focus-visible)>span{transform:translate(2px,-2px)}
+  @media (max-width:760px){.nav{top:16px}.nav-inner{width:calc(100% - 28px);padding:8px 9px 8px 18px;gap:15px}.brand{font-size:22px;gap:9px}.brand>span{font-size:11px;padding-left:9px}.nav nav{display:none}.nav-cta{font-size:12px;padding:9px 14px;gap:13px}}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;color:#fff;text-align:center;background-image:radial-gradient(60% 50% at 50% 0%,rgba(110,193,255,.2),rgba(0,0,0,0) 70%),linear-gradient(#2371d8 0%,#0a4ba1 50%,#0b1d36 100%)}
+  .hero .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%)}
+  .hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center}
+  .hero .wrap{position:relative;width:100%;padding-block:clamp(72px,8vw,110px);display:flex;flex-direction:column;align-items:center;gap:32px}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);font-size:16px;font-weight:700;letter-spacing:.02em}
+  .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+  .hero .sub{font-size:clamp(18px,1.8vw,24px);font-weight:600;line-height:1.55;color:rgba(255,255,255,.92);max-width:30ch}
+  .hero .idea,.hero .born{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .hero .idea-label{font-size:clamp(18px,1.9vw,26px);font-weight:600;letter-spacing:-.01em;color:rgba(255,255,255,.85)}
+  .hero .arrow{width:28px;height:56px;display:block}
+  .hero .quote{font-size:clamp(20px,2.3vw,30px);line-height:1.55;font-style:italic;color:rgba(255,255,255,.92)}
+  .hero .born .h1{line-height:1.18}
+  .hero .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:12px}
+  .hero .actions .cta{min-height:52px;padding:14px 28px}
+
+  /* 편지형 섹션 (세 가지) */
+  /* 사례 */
+  .cases .h2{font-weight:700;font-size:clamp(30px,4vw,48px);line-height:1.15;letter-spacing:-.045em;text-align:center;margin:0 0 clamp(40px,5vw,64px)}
+  .cases .h2 .blue{color:var(--blue)}
+  .cases .row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:36px 0;border-top:1px solid var(--line)}
+  .cases .row:last-child{border-bottom:1px solid var(--line)}
+  .cases .row:nth-of-type(even) .thumb{order:-1}
+  .cases .txt{margin:0;text-align:center;font-size:clamp(18px,1.7vw,22px);font-weight:700;line-height:1.75;letter-spacing:-.025em;color:var(--text)}
+  .cases .r{color:var(--red);font-weight:800}
+  .cases .bl{color:var(--blue);font-weight:800}
+  .cases .thumb{position:relative;display:block;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000;color:inherit;text-decoration:none}
+  .cases .thumb img,.cases .thumb iframe{width:100%;height:100%;display:block;border:0}
+  .cases .thumb img{object-fit:cover}
+  .cases .thumb::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,255,255,.92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230b1d36' d='M9 6l10 6-10 6z'/%3E%3C/svg%3E") center/28px no-repeat;box-shadow:0 8px 24px rgba(0,0,0,.3);pointer-events:none}
+  .cases .thumb.playing::after{display:none}
+  @media (max-width:760px){.cases .row{grid-template-columns:1fr;gap:20px}.cases .row:nth-of-type(even) .thumb{order:0}}
+  .letter{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+  .letter .head{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+  .letter .head .serif{font-size:20px;font-style:italic;color:var(--muted)}
+  .letter .rule{height:1px;background:var(--line);margin:8px 0}
+  .letter .lec{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
+  .letter .lec div{display:flex;gap:10px;align-items:baseline;font-size:17px;font-weight:600;color:var(--text)}
+  .letter .lec b{font-size:12px;color:var(--blue);font-weight:800;letter-spacing:.04em;flex:none}
+  @media (max-width:560px){.letter .lec{grid-template-columns:1fr}}
+  .letter .box{background:var(--tint);border-radius:16px;padding:28px 30px;display:flex;flex-direction:column;gap:18px}
+  @media (max-width:480px){.letter .box{padding:20px 18px}}
+  .letter .item{display:flex;flex-direction:column;gap:18px}
+  .letter .k{font-weight:700;color:var(--blue)}
+  .letter .big{font-size:clamp(24px,2.4vw,30px);font-weight:700;line-height:1.4;letter-spacing:-.035em;color:var(--text);margin:-4px 0 6px;text-wrap:balance}
+  .letter .p{font-size:19px;line-height:1.65;letter-spacing:-.02em;color:var(--body)}
+  .letter .strong{font-size:19px;line-height:1.65;letter-spacing:-.02em;color:var(--text);font-weight:700}
+  .letter .num{font-weight:800;color:var(--blue)}
+  .letter .num.red{color:var(--red)}
+  .letter .eq{font-size:19px;line-height:1.65;letter-spacing:-.02em;font-weight:700;color:var(--text)}
+  .letter .eq i{font-style:normal;color:var(--amber)}
+  .letter .sig{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;color:var(--dim);font-size:14px}
+  .letter .sig .serif{font-size:16px;color:var(--muted)}
+  @media (max-width:480px){.letter .p,.letter .strong,.letter .eq{font-size:17px}}
+
+  /* 경고 포스터 */
+  .warn{color:#fff;background:#0a4ba1}
+  .warn .wrap{padding-block:clamp(80px,9vw,120px)}
+  .warn .col{max-width:760px;margin:0 auto;display:flex;flex-direction:column}
+  .warn .head{display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center;margin-bottom:clamp(24px,3vw,40px)}
+  .warn .tag{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:var(--text);color:var(--gold);font-size:13px;font-weight:800;letter-spacing:.12em}
+  .warn h2{font-weight:700;font-size:clamp(34px,4.6vw,60px);line-height:1.12;letter-spacing:-.045em;color:#fff}
+  .warn h2 .blue{color:var(--gold)}
+  .warn .blk{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:clamp(36px,4vw,44px) 0;border-top:1px solid rgba(255,255,255,.25)}
+  .warn .blk:last-of-type{border-bottom:1px solid rgba(255,255,255,.25)}
+  .warn h3{font-size:clamp(30px,3.8vw,44px);font-weight:700;line-height:1.2;letter-spacing:-.04em;color:#fff}
+  .warn h3 .o{color:var(--gold)}
+  .warn .body{display:flex;flex-direction:column;align-items:center;gap:16px}
+  .warn .body p{font-size:18px;line-height:1.8;color:rgba(255,255,255,.82)}
+  .warn .body .g{display:inline-block;max-width:none;font-size:17px;line-height:1.5;font-weight:700;color:#3a2c00;padding:10px 20px;background:var(--gold);border-radius:999px}
+  .warn .close{margin-top:0;padding-top:64px;position:relative;text-align:center;font-size:clamp(22px,2.4vw,28px);font-weight:700;line-height:1.45;letter-spacing:-.03em;color:#fff}
+  .warn .close .blue{color:var(--gold)}
+  .warn .close::before{content:"";position:absolute;left:50%;top:0;width:2px;height:40px;background:rgba(255,255,255,.55);transform:translateX(-50%)}
+
+  /* 커리큘럼 */
+  .curri{background:var(--tint)}
+  .curri .wrap{padding-block:clamp(80px,9vw,120px)}
+  .curri .col{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+  .cycle{display:grid;grid-template-columns:min(460px,100%) auto;justify-content:center;gap:72px;align-items:center}
+  .wheel{position:relative;width:min(460px,100%);aspect-ratio:1}
+  .wheel svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+  .wheel .core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:32.6%;aspect-ratio:1;border-radius:50%;background:var(--blue);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;box-shadow:0 12px 28px -12px rgba(28,105,212,.6)}
+  .wheel .core b{font-size:clamp(22px,7.4cqw,34px);font-weight:800;letter-spacing:-.04em;line-height:1.1}
+  .wheel .core span{font-size:13px;color:var(--gold)}
+  .wheel .node{position:absolute;width:28.7%;aspect-ratio:1;border-radius:50%;background:#fff;border:2px solid var(--blue);color:var(--navy);box-shadow:0 12px 28px -14px rgba(11,29,54,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center;transform:translate(-50%,-50%)}
+  .wheel .node .n{font-size:13px;font-weight:700;color:var(--blue)}
+  .wheel .node b{font-size:clamp(16px,4.8cqw,22px);font-weight:700;letter-spacing:-.03em}
+  .wheel{container-type:inline-size}
+  .wheel .n1{left:50%;top:8.7%}.wheel .n2{left:85.8%;top:70.65%}.wheel .n3{left:14.2%;top:70.65%}
+  .legend{display:flex;flex-direction:column;gap:28px;max-width:560px;width:max-content}
+  .legend .n{font-size:24px;font-weight:700;color:var(--blue);letter-spacing:-.03em;margin-right:10px}
+  .legend b{font-size:24px;font-weight:700;letter-spacing:-.03em;display:block;margin-bottom:6px}
+  .legend p{font-size:17px;line-height:1.75;color:var(--body)}
+  @media (max-width:980px){.cycle{grid-template-columns:1fr;justify-items:center}.legend{width:100%;max-width:560px}}
+  .curri .head{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+  .step{position:relative;display:grid;grid-template-columns:72px 1fr;gap:24px;padding-bottom:48px}
+  .step:last-child{padding-bottom:0}
+  .step .line{position:absolute;left:23px;top:48px;bottom:0;width:2px;background:#cfe1ff}
+  .step .dot{width:48px;height:48px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;display:grid;place-content:center;box-shadow:0 0 0 6px #e8f1ff;position:relative;z-index:1}
+  .step .body{display:flex;flex-direction:column;gap:12px}
+  .step .n{font-weight:700;color:var(--blue);margin-right:12px}
+  .step b.t{display:flex;align-items:center;min-height:48px;font-size:clamp(24px,2.4vw,30px);font-weight:700;letter-spacing:-.03em;line-height:1.2}
+  .step p{font-size:19px;line-height:1.8;color:var(--body)}
+  .step .chips{display:flex;flex-wrap:wrap;gap:8px}
+  @media (max-width:480px){.step{grid-template-columns:56px 1fr;gap:14px}.step .line{left:17px;top:36px}.step .dot{width:36px;height:36px;font-size:14px}.step b.t{min-height:36px}.step p{font-size:17px}}
+  .preview{position:relative;isolation:isolate;overflow:hidden;min-height:440px;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:0 20px 64px -24px rgba(11,29,54,.25)}
+  .preview .doc{padding:40px 44px;filter:blur(4.5px);opacity:.62;user-select:none;pointer-events:none;transform:scale(1.02);display:flex;flex-direction:column}
+  .preview .doc .dh{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:22px;border-bottom:1px solid var(--line2)}
+  .preview .doc .dh b{font-size:23px;font-weight:700}
+  .preview .doc .dh span{font-size:13px;color:var(--muted)}
+  .preview .doc .dr{display:grid;grid-template-columns:38px 1fr;gap:16px;padding:23px 0;border-bottom:1px solid var(--line)}
+  .preview .doc .dr:last-child{border-bottom:0}
+  .preview .doc .dr>span{font-size:13px;color:var(--blue);font-weight:700}
+  .preview .doc .dr b{display:block;margin:0 0 8px;font-size:17px;font-weight:600}
+  .preview .doc .dr p{font-size:13px;line-height:1.9;color:var(--muted)}
+  .preview .notice{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:32px;text-align:center;background:linear-gradient(transparent,rgba(243,245,250,.85) 34%,rgba(243,245,250,.93) 55%,transparent)}
+  .preview .lock{display:inline-flex;align-items:center;gap:12px;padding:14px 22px;border-radius:999px;background:#fff;border:1px solid var(--line2);box-shadow:0 10px 28px -14px rgba(11,29,54,.18);font-size:clamp(16px,1.6vw,20px);font-weight:600;color:var(--text)}
+  @media (max-width:640px){.preview{min-height:360px}.preview .doc{padding:28px 24px}.preview .doc .dh b{font-size:18px}.preview .doc .dr{grid-template-columns:22px 1fr;gap:10px;padding:18px 0}}
+
+  /* 혜택 (이미지 교차 배치 — 월급반 페이지 섹션 이식) */
+  .benefit .wrap{padding-block:clamp(80px,9vw,120px);display:flex;flex-direction:column;gap:48px}
+  .benefit .head{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .feats{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:28px}
+  .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:center}
+  .feat:nth-child(even) .panel{order:2;box-shadow:0 24px 50px -24px rgba(10,75,161,.6)}
+  .panel{position:relative;height:clamp(220px,21vw,300px);border-radius:26px;background:var(--blue);overflow:hidden;box-shadow:0 24px 50px -24px rgba(28,105,212,.6)}
+  .panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .feat[data-benefit="wet"] .panel img,.feat[data-benefit="community"] .panel img,.feat[data-benefit="news"] .panel img{object-position:left top}
+  .feat-text{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+  .feat-text .pill{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;background:#e8f1ff;color:var(--blue-deep);font-size:13px;font-weight:700;letter-spacing:.08em}
+  .feat-text b{display:block;font-size:clamp(22px,2vw,28px);font-weight:700;line-height:1.4;letter-spacing:-.02em;color:var(--text)}
+  .feat-text p{font-size:16px;line-height:1.8;color:var(--body)}
+  @media (max-width:760px){.feats{gap:44px}.feat{grid-template-columns:1fr;gap:20px}.feat:nth-child(even) .panel{order:0}.panel{height:clamp(180px,48vw,260px)}}
+  .benefit .note{display:flex;justify-content:center;margin-top:24px}
+  .benefit .note div{display:inline-flex;align-items:center;gap:12px;padding:16px 24px;border-radius:14px;background:#e8f1ff;color:var(--blue-deep);font-size:16px;font-weight:600;text-align:center}
+
+  /* 수강료 */
+  .price{background:var(--tint)}
+  .price .wrap{padding-block:clamp(80px,9vw,120px);display:flex;flex-direction:column;gap:48px;align-items:center}
+  .price .head{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .pcard{width:100%;max-width:880px;border-radius:24px;color:#fff;background:linear-gradient(160deg,#1c69d4 0%,#0a4ba1 60%,#0b1d36 100%);box-shadow:0 30px 80px -30px rgba(10,75,161,.6);padding:clamp(28px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:36px 48px;align-items:start}
+  .pcard .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .pcard .tags span{padding:6px 12px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid rgba(255,255,255,.35)}
+  .pcard .tags span.w{background:#fff;color:var(--blue-deep);font-weight:800;letter-spacing:.1em;border:0}
+  .pcard .left{display:flex;flex-direction:column;gap:18px}
+  .pcard .left>b{font-size:26px;font-weight:700;letter-spacing:-.03em}
+  .pcard ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:16px}
+  .pcard li{display:flex;gap:10px;align-items:flex-start}
+  .check{flex:none;width:22px;height:22px;border-radius:50%;background:var(--blue);display:grid;place-content:center;margin-top:3px}
+  .check.g{background:var(--gold)}
+  .check.w{background:rgba(255,255,255,.25)}
+  .pcard .right{display:flex;flex-direction:column;gap:20px;padding:28px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);align-self:stretch;justify-content:space-between}
+  .pcard .tiers{display:flex;flex-direction:column;gap:10px}
+  .pcard .tier{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid rgba(255,255,255,.14)}
+  .pcard .tier .tl{font-size:15px;color:rgba(255,255,255,.75)}
+  .pcard .tier .tl em{font-style:normal;margin-left:6px;padding:2px 8px;border-radius:999px;background:#ffd84d;color:#3a2c00;font-size:12px;font-weight:700}
+  .pcard .amount{display:flex;align-items:baseline;gap:4px;color:rgba(255,255,255,.7)}
+  .pcard .amount span{font-size:15px;font-weight:600}
+  .pcard .amount b{font-size:22px;font-weight:700;letter-spacing:-.03em;line-height:1}
+  .pcard .tier.now{border-top:0;padding-top:0}
+  .pcard .tier.now .tl{color:#fff;font-weight:700;font-size:16px}
+  .pcard .tier.now .amount{color:#fff}
+  .pcard .tier.now .amount b{font-size:clamp(36px,4vw,44px);font-weight:800;letter-spacing:-.05em;color:#ffd84d}
+  .pcard .tier.now .amount span{font-size:18px;color:#ffd84d}
+  .pcard .fine{font-size:14px;color:rgba(255,255,255,.75)}
+  .pcard .right p{font-size:15px;color:rgba(255,255,255,.85);line-height:1.6}
+  .pcard .right .cta{min-height:56px;font-size:17px}
+
+  /* 신청 */
+  .apply{padding:0;background:var(--tint)}
+  .apply .band{position:relative;overflow:hidden;padding:clamp(72px,8vw,96px) 0 calc(64px + clamp(40px,4.5vw,64px));background:linear-gradient(180deg,#144a8f 0%,#0a3470 55%,#08182e 100%);color:#fff;text-align:center}
+  .apply .band::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 0%,rgba(110,193,255,.24),transparent 70%);pointer-events:none}
+  .apply .band .wrap{position:relative;display:flex;flex-direction:column;align-items:center}
+  .apply .band h2{font-weight:700;font-size:clamp(28px,3.2vw,42px);line-height:1.3;letter-spacing:-.03em;color:#fff}
+  .tuition{display:inline-flex;align-items:center;gap:18px;max-width:100%;margin:28px auto 0;padding:18px 36px;border-radius:999px;background:rgba(47,109,246,.18);border:1px solid rgba(124,200,255,.4)}
+  .tuition::before{content:"";width:10px;height:10px;border-radius:50%;background:#7cb0ff;box-shadow:0 0 10px #7cb0ff}
+  .tuition>span{font-size:17px;font-weight:600;color:rgba(255,255,255,.8)}
+  .tuition>strong{font-size:clamp(26px,2.4vw,32px);font-weight:700;letter-spacing:-.03em;line-height:1.2;color:#fff;white-space:nowrap}
+  .tuition>strong small{font-size:.55em;font-weight:600;margin-left:.35em;color:rgba(255,255,255,.75)}
+  .apply .band-sub{margin-top:22px;font-size:16px;color:rgba(255,255,255,.75)}
+  .apply-body{position:relative;margin-top:-64px;padding-bottom:clamp(72px,8vw,112px);display:flex;flex-direction:column;gap:24px}
+  @media (max-width:640px){.apply .band{padding:56px 0 calc(48px + 40px)}.apply-body{margin-top:-48px}.tuition{gap:12px;padding:14px 24px}.tuition>span{font-size:15px}.tuition>strong{font-size:24px}}
+  .form{max-width:760px;width:100%;margin:0 auto;padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;gap:28px;border-radius:26px;box-shadow:0 2px 0 rgba(11,29,54,.03),0 24px 60px -24px rgba(11,29,54,.35)}
+  .steps{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:12px;font-size:14px;color:var(--dim)}
+  .steps li{display:flex;align-items:center;gap:8px}
+  .steps li b{width:28px;height:28px;border-radius:50%;border:1px solid var(--line2);display:grid;place-content:center;font-size:13px;font-weight:600}
+  .steps li.on{color:var(--text);font-weight:700}
+  .steps li.on b{background:var(--blue);border-color:var(--blue);color:#fff}
+  .steps li.passed b{border-color:var(--blue);color:var(--blue)}
+  .steps li+li::before{content:"";width:36px;height:1px;background:var(--line2);margin-right:4px}
+  .steps li.on+li::before,.steps li.passed+li::before{background:var(--blue)}
+  @media (max-width:480px){.steps li:not(.on) span{display:none}.steps li+li::before{width:20px}}
+  .group{padding-top:28px;margin-top:4px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:22px}
+  .group:first-of-type{padding-top:0;margin-top:0;border-top:0}
+  .group>h3{font-size:20px;font-weight:700;letter-spacing:-.02em}
+  fieldset{border:0;margin:0;padding:0;min-width:0}
+  legend{display:block;font-weight:600;font-size:14px;line-height:1.5;padding:0;margin-bottom:8px;color:var(--text)}
+  legend em{font-style:normal;font-weight:400;color:var(--dim);margin-left:.4rem}
+  .req legend::after{content:"*";color:var(--blue);margin-left:.3rem}
+  .form .intro{color:var(--muted);font-size:16px;line-height:1.7;margin:-6px 0 4px}
+  .form input[type=text],.form input[type=tel],.form select,.form textarea{width:100%;font:inherit;font-size:16px;color:var(--text);background:#fff;border:1px solid var(--line2);border-radius:12px;padding:0 16px;height:52px;line-height:1.4;transition:border-color .15s,box-shadow .15s}
+  .form textarea{height:auto;min-height:14rem;padding:14px 16px;resize:vertical;line-height:1.7}
+  .form select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4.5l4 4 4-4' fill='none' stroke='%231c69d4' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+  .form select.empty{color:var(--dim)}
+  .form input::placeholder,.form textarea::placeholder{color:var(--dim)}
+  .form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(28,105,212,.18)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:420px){.two{grid-template-columns:1fr}}
+  .slots{display:grid;grid-template-columns:56px 1fr 1fr;gap:10px;align-items:center}
+  .slots .lab{font-size:14px;color:var(--muted);font-weight:600}
+  .slots select{padding-left:12px;padding-right:30px;background-position:right 10px center}
+  @media (max-width:420px){.slots{grid-template-columns:48px 1fr 1fr;gap:6px}}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips .chip{position:relative;padding:0;background:transparent}
+  .chips .chip input[type=radio]{position:absolute;inset:0;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+  .chips .chip span{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border-radius:999px;border:1px solid var(--line2);background:#fff;color:var(--muted);font-size:15px;font-weight:600;line-height:1.3;cursor:pointer;transition:border-color .15s,color .15s,background .15s}
+  .chips .chip:hover span{border-color:var(--blue);color:var(--text)}
+  .chips .chip input:checked+span{border-color:var(--blue);background:#e8f1ff;color:var(--blue-deep)}
+  .chips .chip input:focus-visible+span{outline:2px solid var(--blue);outline-offset:2px}
+  .chips .chip.etc{display:flex;align-items:center;gap:8px}
+  .chips .chip.etc input[type=text]{position:static;opacity:1;width:9rem;height:44px;padding:0 12px;font-size:15px;border-radius:999px}
+  .chips.grow .chip{flex:1 1 calc(50% - 8px)}
+  .chips.grow .chip span{width:100%;justify-content:center}
+  .consent{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;background:var(--tint);border-radius:14px;padding:16px 18px;font-size:16px}
+  .consent details{flex:1;min-width:0}
+  .consent summary{cursor:pointer;color:var(--muted);list-style:none;display:flex;align-items:center;gap:6px;font-weight:600}
+  .consent summary::-webkit-details-marker{display:none}
+  .consent summary::after{content:"";width:8px;height:8px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg);margin-left:2px;transition:transform .15s}
+  .consent details[open] summary::after{transform:rotate(-135deg)}
+  .consent details p{margin:10px 0 0;font-size:14px;color:var(--dim);line-height:1.6}
+  .checkbox{display:flex;align-items:center;gap:10px;cursor:pointer;flex:none;font-weight:600}
+  .checkbox input{appearance:none;-webkit-appearance:none;width:20px;height:20px;margin:0;border:1.5px solid var(--line2);border-radius:6px;background:#fff;display:grid;place-content:center;cursor:pointer}
+  .checkbox input::before{content:"";width:11px;height:11px;border-radius:2px;background:var(--blue);transform:scale(0);transition:transform .12s}
+  .checkbox input:checked{border-color:var(--blue)}
+  .checkbox input:checked::before{transform:scale(1)}
+  .form .submit{width:100%;min-height:56px;font-size:17px;margin-top:6px}
+  .form .fine{font-size:13px;color:var(--dim);text-align:center;margin-top:-10px}
+  .form .fine a{color:var(--muted)}
+  .form .err{display:none;color:var(--red);font-size:15px;font-weight:600;margin:0}
+  .form.invalid .err{display:block}
+  .form .step[hidden]{display:none}
+  .form .step{display:flex;flex-direction:column;gap:22px}
+  .done{display:none;max-width:760px;margin:0 auto;padding:56px 32px;text-align:center}
+  .done svg{width:48px;height:48px;color:var(--blue);margin-bottom:18px}
+  .done h3{margin-bottom:10px;font-size:24px;letter-spacing:-.02em}
+  .done p{color:var(--muted)}
+
+  /* footer */
+  footer{border-top:1px solid var(--line);background:var(--bg)}
+  footer .wrap{padding-block:48px 56px;display:flex;flex-direction:column;gap:24px}
+  footer .notice{border:1px solid var(--line);border-radius:16px;padding:24px 28px;background:#fff;display:flex;flex-direction:column;gap:10px;font-size:14px;color:var(--muted);line-height:1.7}
+  footer .notice b{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:14px}
+  footer .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:var(--dim);align-items:center}
+  footer .bottom b{color:var(--muted)}
+  footer .bottom .cta{min-height:40px;padding:8px 18px;font-size:13px}
+
+  .sticky{display:none}
+  @media (max-width:640px){
+    .sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(250,251,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+    .sticky .cta{width:100%;min-height:52px}
+    footer .wrap{padding-bottom:120px}
+    body.at-form .sticky{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav" inert>
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="GFTC 월천반 처음으로">GFTC<span>월천반</span></a>
+    <nav aria-label="주요 메뉴"><a href="#three">제공 내용</a><a href="#curri">커리큘럼</a><a href="#benefit">혜택</a><a href="#price">수강료</a></nav>
+    <a class="nav-cta" href="#apply">상담 신청</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="idea">
+      <span class="idea-label">월천반은 다음 아이디어에서 출발했습니다.</span>
+      <p class="serif quote">'내가 10년 동안 공부하고 경험한것들을 그대로 전수해보자'<br>'나와 같은 레벨의 트레이더를 양성하는 과정을 만들어보자'</p>
+    </div>
+    <svg class="arrow" aria-hidden="true" viewBox="0 0 18 40" fill="none"><path d="M9 4v26M2 24l7 7 7-7" stroke="rgba(255,255,255,.75)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="born">
+      <span class="idea-label">그렇게</span>
+      <h1 class="h1" style="max-width:22ch">저의 <span class="gold">10년</span>을 압축해서<br><span class="gold">9개월</span>만에 전수하는<br>월천반 과정이 탄생했습니다.</h1>
+    </div>
+
+  </div>
+</section>
+
+<!-- 세 가지 (협회장의 편지) -->
+<section id="three">
+  <div class="wrap" style="padding-block:clamp(80px,9vw,120px)">
+    <div class="letter">
+      <div class="head">
+        <h2 class="h2">제공되는 것은<br><span class="blue">세 가지</span>입니다</h2>
+      </div>
+      <div class="rule"></div>
+
+      <div class="item">
+        <p class="big"><span class="k">첫째,</span> 제 모든 지식과 이론을<br>강의로 제공합니다.</p>
+        <div class="box">
+        <div class="lec"><div><b>01</b>파동에너지 이론</div><div><b>02</b>프라이스 액션</div><div><b>03</b>세 가지 시스템</div><div><b>04</b>세력 패턴</div><div><b>05</b>기존 은준반 교육 내용</div><div><b>06</b>ICT</div></div>
+        <p class="p">제가 학습하고, 실전에서 검증하고<br>현재까지 매매에 사용하고 있는 모든 지식들을 강의로 전달합니다.</p>
+        <p class="p">실전성을 기준으로 추리고 추렸지만<br>그럼에도 <span class="num">100강</span> 이상의 커리큘럼이 나왔습니다.</p>
+        <p class="strong">전부 이해하신다면<br>이 이상 트레이딩에 필요한 지식은 없을 거라 자신합니다.</p>
+        </div>
+      </div>
+      <div class="rule"></div>
+
+      <div class="item">
+        <p class="big"><span class="k">둘째,</span> 제 심법 문제를 해결한<br>행동 교정 프로그램을 드립니다.</p>
+        <div class="box">
+        <p class="p">저는 협회 내에서도 운용 시드가 압도적으로 큽니다.<br>그만큼 심리 통제가 가장 큰 고민이었습니다.</p>
+        <p class="p">실제로 4월 21일, 약 <span class="num red">6천만 원</span>을 손절했습니다.<br>심리적인 문제로 인한 손절이었습니다.</p>
+        <p class="p">고민 끝에 1년 넘게 개발하던 W.E.T을 바로 적용했고,<br>다음 달 바로 <span class="num">3억 6천만 원</span>의 수익을 올렸습니다.</p>
+        <p class="p"><span class="mark">손실의 6배를 복구한 셈입니다.</span></p>
+        <p class="p">제가 필요해서 W.E.T을 만들었고, 실제 제 수익이 달라졌습니다.</p>
+        <p class="p">프로그램만 드리고 끝내지 않습니다.<br>전담 조교가 W.E.T의 행동교정 리포트를 같이 읽고,<br>솔루션대로 매매하는지 확인합니다.</p>
+        <p class="strong">분석이 아무리 정교해도 지키지 않으면 소용없습니다.<br>그래서 조교의 1:1 관리감독이 병행됩니다.</p>
+        </div>
+      </div>
+      <div class="rule"></div>
+
+      <div class="item">
+        <p class="big"><span class="k">셋째,</span> 프랍 트레이딩 회사의<br>집단 훈련을 도입했습니다.</p>
+        <div class="box">
+        <p class="p">프랍펌과 증권사는 회사 돈을 맡길 트레이더를 직접 키웁니다.<br>마치 아이돌 기획사가 연습생을 키우는 시스템과 비슷합니다.<br>모여서 훈련시키고, 서로 피드백하고, 치열하게 경쟁도 합니다.</p>
+        <p class="p">저 역시 프랍 회사에서 훈련받던 시기에 실력이 비약적으로 성장했습니다.</p>
+        <p class="p">트레이딩은 개인적이지만, 배우고 훈련할 때는 단체전이 압도적으로 유리합니다.</p>
+        <p class="strong">함께 학습하고 훈련하는 사람들의 수만큼 곱으로 성장한다 해도 과언이 아닙니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 만만하지 않을 겁니다 (경고 포스터) -->
+<section class="warn">
+  <div class="wrap">
+    <div class="col">
+    <div class="head">
+      <h2>월천반 과정은<br>결코 <span class="blue">만만하지 않을</span> 겁니다</h2>
+    </div>
+    <div class="blk">
+      <h3><span class="o">첫째,</span> 오래 걸립니다.</h3>
+      <div class="body"><p>효율성과는 거리가 멉니다.<br>협회장의 10년치 지식과 경험을 전수하는 과정인 만큼,<br>단기간에 끝낼 수 있는 양과 밀도가 아닙니다.</p><p class="g">협회가 권장하는 교육 기간은 9개월입니다.</p></div>
+    </div>
+    <div class="blk">
+      <h3><span class="o">둘째,</span> 귀찮습니다.</h3>
+      <div class="body"><p>편하게 앉아서 영상만 시청하거나,<br>책 한두 번만 읽어도 된다면 편할 겁니다.</p><p class="g">매주 1회 이상 ZOOM 참여 · 매일 매매 일지 · 조교와 인공지능의 재촉과 압박</p></div>
+    </div>
+    <div class="blk">
+      <h3><span class="o">셋째,</span> 불편합니다.</h3>
+      <div class="body"><p>타고난 성향, 굳어진 버릇, 반복되는 문제들을<br>집요하게 지적하고 교정합니다.</p><p class="g">9개월 동안 모든 매매 내역이 분석되어 행동 교정에 활용됩니다.</p></div>
+    </div>
+    <p class="close">교육 효과는 자신 있지만<br>많은 분들에게 제공하기는 어려운 구조입니다.<br>그래서 <span class="blue">소수 정예</span>로 진행될 예정입니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 커리큘럼 -->
+<section class="curri" id="curri">
+  <div class="wrap">
+    <div class="col">
+      <div class="head">
+        <h2 class="h2">훈련은 <span class="blue">3단계</span>로 설계됩니다</h2>
+        <p class="lead muted">9개월 동안 이론, 실전, 행동 교정 3가지에 집중합니다.</p>
+      </div>
+
+      <div class="cycle">
+        <div class="wheel">
+          <svg viewBox="0 0 460 460" aria-hidden="true">
+            <defs>
+              <marker id="cyc-ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1c69d4"/></marker>
+              <linearGradient id="cyc-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cfe1ff"/><stop offset="1" stop-color="#1c69d4"/></linearGradient>
+            </defs>
+            <path d="M301.2 53.8A190 190 0 0 1 418.2 256.4" fill="none" stroke="url(#cyc-g)" stroke-width="8" stroke-linecap="round" marker-end="url(#cyc-ah)"/>
+            <path d="M347 379.7A190 190 0 0 1 113 379.7" fill="none" stroke="url(#cyc-g)" stroke-width="8" stroke-linecap="round" marker-end="url(#cyc-ah)"/>
+            <path d="M41.8 256.4A190 190 0 0 1 158.8 53.8" fill="none" stroke="url(#cyc-g)" stroke-width="8" stroke-linecap="round" marker-end="url(#cyc-ah)"/>
+          </svg>
+          <div class="core"><b>9개월</b><span>월천반 과정</span></div>
+          <div class="node n1"><span class="n">1단계</span><b>이론</b></div>
+          <div class="node n2"><span class="n">2단계</span><b>실전</b></div>
+          <div class="node n3"><span class="n">3단계</span><b>행동 교정</b></div>
+        </div>
+        <div class="legend">
+          <div><b><span class="n">1단계</span>이론</b><p>주요 시장 흐름과 주목해야 할 포인트를 정리합니다.<br>타점 판단 과정을 이해하고 자신의 매매 기준을 세웁니다.</p></div>
+          <div><b><span class="n">2단계</span>실전</b><p>매매 과정을 실시간으로 살펴봅니다.<br>배운 기준이 실전에서 어떻게 적용되는지 익힙니다.</p></div>
+          <div><b><span class="n">3단계</span>행동 교정</b><p>반복되는 매매 습관을 점검하고 원칙을 지킵니다.<br>매매 내역을 분석하여 행동 교정 과정에 활용합니다.</p></div>
+        </div>
+      </div>
+
+      <div class="preview">
+        <div class="doc" aria-hidden="true">
+          <div class="dh"><b>월천반 커리큘럼</b><span>9개월 과정 · 이론 → 실전 → 행동 교정</span></div>
+          <div class="dr"><span>01</span><div><b>이론 · 파동에너지 이론과 세 가지 시스템</b><p>주요 시장 흐름과 주목해야 할 포인트를 정리합니다. 타점 판단 과정을 이해하고 자신의 매매 기준을 세웁니다. 프라이스 액션, 세력 패턴, ICT 강의가 이어집니다.</p></div></div>
+          <div class="dr"><span>03</span><div><b>행동 교정 · W.E.T 리포트와 전담 조교 1:1</b><p>반복되는 매매 습관을 점검하고 원칙을 지킵니다. 매일 매매 일지를 작성하고, 매매 내역을 분석하여 행동 교정 과정에 활용합니다.</p></div></div>
+          <div class="dr"><span>02</span><div><b>실전 · 협회장 라이브 트레이딩과 집단 복기</b><p>매매 과정을 실시간으로 살펴봅니다. 배운 기준이 실전에서 어떻게 적용되는지 익히고, 집단 복기와 경쟁 시스템으로 훈련합니다.</p></div></div>
+          <div class="dr"><span>04</span><div><b>주간 운영 · ZOOM 세션과 매매 일지</b><p>매주 1회 이상 ZOOM 참여, 매일 매매 일지 작성, 시황과 뉴스 제공. 9개월 동안 모든 매매 내역이 분석되어 교정 과정에 활용됩니다.</p></div></div>
+        </div>
+        <div class="notice">
+          <div class="lock"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1c69d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>상세 커리큘럼은 수강생분들에게 공개합니다</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 혜택 -->
+<section class="benefit" id="benefit">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="h2"><span class="blue">함께</span> 제공됩니다</h2>
+    </div>
+    <ul class="feats" role="list">
+      <li class="feat" data-benefit="market">
+        <div class="panel" aria-hidden="true"><img src="assets/benefit-market.jpg" alt="" width="1600" height="987" loading="lazy" decoding="async"></div>
+        <div class="feat-text"><b>1. 시황</b><p>아침·점심·저녁, 주요 시장 흐름과 주목해야 할 포인트를 정리해 드립니다.<br>하루 동안 달라지는 시장을 살펴보며 자신의 매매 계획을 점검할 때 참고할 수 있습니다.</p></div>
+      </li>
+      <li class="feat" data-benefit="entry">
+        <div class="panel" aria-hidden="true"><img src="assets/benefit-entry.jpg" alt="" width="1600" height="928" loading="lazy" decoding="async"></div>
+        <div class="feat-text"><b>2. 타점 교육</b><p>진입의 근거와 기다려야 할 상황을 배웁니다.<br>타점 판단 과정을 이해하고 자신만의 매매 기준을 세우는 교육입니다.</p></div>
+      </li>
+      <li class="feat" data-benefit="live">
+        <div class="panel" aria-hidden="true"><img src="assets/benefit-live.jpg" alt="" width="1600" height="937" loading="lazy" decoding="async"></div>
+        <div class="feat-text"><b>3. 협회장 라이브 트레이딩</b><p>협회장의 매매 과정을 실시간으로 살펴봅니다.<br>시장 상황을 어떻게 해석하고 매매를 결정하는지 보며 배운 기준이 실전에서 어떻게 적용되는지 익힙니다.</p></div>
+      </li>
+      <li class="feat" data-benefit="wet">
+        <div class="panel" aria-hidden="true"><img src="assets/benefit-wet.jpg" alt="" width="1600" height="822" loading="lazy" decoding="async"></div>
+        <div class="feat-text"><b>4. W.E.T</b><p>자신의 트레이딩 행동을 돌아보고 개선할 부분을 찾도록 돕는 인공지능입니다.<br>반복되는 매매 습관을 점검하고 스스로 정한 원칙을 지키도록 행동 교정을 돕습니다.</p></div>
+      </li>
+      <li class="feat" data-benefit="news">
+        <div class="panel" aria-hidden="true"><img src="assets/benefit-news-wolcheon.jpg" alt="" width="1272" height="1176" loading="lazy" decoding="async"></div>
+        <div class="feat-text"><b>5. 뉴스</b><p>시장에 영향을 줄 수 있는 주요 뉴스를 전해 드립니다.<br>가격 움직임의 배경을 이해하고 매매 전 확인해야 할 이슈를 살펴볼 때 참고할 수 있습니다.</p></div>
+      </li>
+      <li class="feat" data-benefit="community">
+        <div class="panel" aria-hidden="true"><img src="assets/benefit-community-wolcheon.jpg" alt="" width="2130" height="2008" style="object-position:left top" loading="lazy" decoding="async"></div>
+        <div class="feat-text"><b>6. 수강생·졸업생 채팅방과 커뮤니티</b><p>같은 과정을 거치는 수강생, 먼저 거쳐 간 졸업생과 한 공간에서 이야기합니다.<br>매매 고민을 나누고 서로의 복기를 보며, 과정이 끝난 뒤에도 혼자 남지 않도록 돕습니다.</p></div>
+      </li>
+    </ul>
+    <div class="note">
+      <div><span>월급반에서 제공되는 혜택들을 함께 이용하실 수 있습니다</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 사례 -->
+<section class="cases" id="cases">
+  <div class="wrap" style="padding-block:clamp(80px,9vw,120px)">
+    <div class="col" style="max-width:1100px;margin:0 auto">
+      <h2 class="h2">글로벌트레이더협회를 만나<br><span class="blue">삶이 바뀐</span> 사람들</h2>
+      <div class="row"><p class="txt">30대 초반 공무원.<br>수중에 <span class="r">500만원</span> 뿐이던 이 사람은<br><span class="bl">이 이론</span>을 적용한 후 <span class="r">3년</span>만에<br>빚없이 <span class="bl">집 2채</span>를 마련했습니다.</p><a class="thumb" href="https://youtu.be/ZJDwAoTDZqs" target="_blank" rel="noopener" data-yt="ZJDwAoTDZqs"><img src="assets/case-1.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+      <div class="row"><p class="txt">투자에 '투'자도 모르던 생업 <span class="r">농부</span>가 있었습니다.<br>그는 낮에는 농사를 짓고 소를 키우며<br>밤에는 <span class="bl">이 이론</span>을 활용했습니다.<br>그리고 월 <span class="r">1억</span>을 벌고 있습니다.</p><a class="thumb" href="https://youtu.be/l9NWYuH32gs" target="_blank" rel="noopener" data-yt="l9NWYuH32gs"><img src="assets/case-2.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+      <div class="row"><p class="txt">12년간 투자했지만 실패만 거듭하던<br>한 사람이 있었습니다.<br>그는 <span class="bl">이 이론</span>을 적용한 뒤,<br>2주만에 2배로 투자금을 불렸습니다.</p><a class="thumb" href="https://youtu.be/vSk1eoU3GmE" target="_blank" rel="noopener" data-yt="vSk1eoU3GmE"><img src="assets/case-3.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+      <div class="row"><p class="txt">빚 4억의 MZ세대 영끌족 투자자가 있었습니다.<br>그는 2년동안 퇴근 후에만<br><span class="bl">이 이론</span>을 적용했습니다.<br>그리고 지금은 그 곤경에서 빠져나왔습니다.</p><a class="thumb" href="https://youtu.be/wBjdpOaY_LQ" target="_blank" rel="noopener" data-yt="wBjdpOaY_LQ"><img src="assets/case-4.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 수강료 -->
+<section class="price" id="price">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="h2"><span class="blue">월천반</span> 수강료</h2>
+    </div>
+    <div class="pcard">
+      <div class="left">
+        <div class="tags"><span class="w">월천반</span></div>
+        <b>9개월 과정 구성</b>
+        <ul>
+          <li><span class="check g"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3a2c00" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span><b>파동에너지 · 세 가지 시스템 전 강의</b> (100강+)</span></li>
+          <li><span class="check g"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3a2c00" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span><b>협회장 1:1 매매 진단</b></span></li>
+          <li><span class="check g"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3a2c00" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span><b>W.E.T 행동 교정</b> + 전담 조교 1:1 확인</span></li>
+          <li><span class="check w"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>협회장 라이브 트레이딩</span></li>
+          <li><span class="check w"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>시황 · 뉴스 · 타점 교육</span></li>
+          <li><span class="check w"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>집단 훈련 · 집단 복기 · 경쟁 시스템</span></li>
+          <li><span class="check w"><svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>수강생 · 졸업생 채팅방과 커뮤니티</span></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="tiers">
+          <span class="fine">30일 이용권</span>
+          <div class="tier now"><span class="tl">오픈가 <em>21명 한정</em></span><div class="amount"><b>550,000</b><span>원</span></div></div>
+          <div class="tier"><span class="tl">2차 얼리버드</span><div class="amount"><b>770,000</b><span>원</span></div></div>
+          <div class="tier"><span class="tl">판매가</span><div class="amount"><b>990,000</b><span>원</span></div></div>
+        </div>
+        <p>쉬운 길을 찾는 분께는 맞지 않는 과정입니다.<br>신청자 대상으로 <b style="color:#fff">수강 전 상담</b>을 먼저 진행합니다.</p>
+        <a class="cta gold-btn" href="#apply">상담 신청하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 상담 신청 -->
+<section class="apply" id="apply">
+  <div class="band">
+    <div class="wrap">
+      <h2>월천반 상담 신청</h2>
+      <div class="tuition"><span>수강료</span><strong>550,000원<small>/ 30일</small></strong></div>
+      <p class="band-sub">충분히 고민 후 결정해주세요. 상담 가능한 시간, 간단한 설문, 지원 동기를 남겨주세요.</p>
+    </div>
+  </div>
+  <div class="wrap apply-body">
+    <form class="form card" id="applyForm" novalidate>
+      <ol class="steps" aria-label="진행 단계">
+        <li class="on"><b>1</b><span>기본 정보</span></li>
+        <li><b>2</b><span>설문</span></li>
+        <li><b>3</b><span>지원 동기</span></li>
+      </ol>
+
+      <div class="step" id="step1">
+      <div class="group">
+        <h3>기본 정보</h3>
+        <fieldset class="req">
+          <legend>이름과 연락처</legend>
+          <div class="two">
+            <input type="text" name="name" placeholder="이름" autocomplete="name" required>
+            <input type="tel" name="phone" placeholder="010-0000-0000" autocomplete="tel" inputmode="tel" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>메신저 아이디<em>선택</em></legend>
+          <input type="text" name="messenger" placeholder="카카오톡 또는 텔레그램 아이디" autocomplete="off">
+        </fieldset>
+        <fieldset class="req">
+          <legend>연령대</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="age" value="20대" required><span>20대</span></label>
+            <label class="chip"><input type="radio" name="age" value="30대"><span>30대</span></label>
+            <label class="chip"><input type="radio" name="age" value="40대"><span>40대</span></label>
+            <label class="chip"><input type="radio" name="age" value="50대"><span>50대</span></label>
+            <label class="chip"><input type="radio" name="age" value="60대 이상"><span>60대 이상</span></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="group">
+        <h3>상담 가능 시간</h3>
+        <fieldset class="req">
+          <legend>요일과 시간대 <em>1순위는 필수</em></legend>
+          <div class="slots">
+            <span class="lab">1순위</span>
+            <select name="day1" required><option value="">요일</option><option>월</option><option>화</option><option>수</option><option>목</option><option>금</option><option>토</option><option>일</option></select>
+            <select name="time1" required><option value="">시간</option><option>오전 (10~12시)</option><option>오후 (13~15시)</option><option>오후 (15~18시)</option><option>저녁 (18~21시)</option></select>
+            <span class="lab">2순위</span>
+            <select name="day2"><option value="">요일</option><option>월</option><option>화</option><option>수</option><option>목</option><option>금</option><option>토</option><option>일</option></select>
+            <select name="time2"><option value="">시간</option><option>오전 (10~12시)</option><option>오후 (13~15시)</option><option>오후 (15~18시)</option><option>저녁 (18~21시)</option></select>
+            <span class="lab">3순위</span>
+            <select name="day3"><option value="">요일</option><option>월</option><option>화</option><option>수</option><option>목</option><option>금</option><option>토</option><option>일</option></select>
+            <select name="time3"><option value="">시간</option><option>오전 (10~12시)</option><option>오후 (13~15시)</option><option>오후 (15~18시)</option><option>저녁 (18~21시)</option></select>
+          </div>
+        </fieldset>
+      </div>
+      <p class="err" role="alert">필수 항목을 모두 입력해 주세요.</p>
+      <button type="button" class="cta blue-btn submit" data-next="2">다음 단계</button>
+      </div>
+
+      <div class="step" id="step2" hidden>
+      <div class="group">
+        <h3>설문</h3>
+        <fieldset class="req">
+          <legend>현재 직업</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="job" value="회사원" required><span>회사원</span></label>
+            <label class="chip"><input type="radio" name="job" value="자영업"><span>자영업</span></label>
+            <label class="chip"><input type="radio" name="job" value="전문직"><span>전문직</span></label>
+            <label class="chip"><input type="radio" name="job" value="프리랜서"><span>프리랜서</span></label>
+            <label class="chip"><input type="radio" name="job" value="전업 트레이더"><span>전업 트레이더</span></label>
+            <label class="chip"><input type="radio" name="job" value="학생"><span>학생</span></label>
+            <label class="chip"><input type="radio" name="job" value="무직 또는 준비 중"><span>무직 또는 준비 중</span></label>
+            <label class="chip etc"><input type="radio" name="job" value="기타"><span>기타</span><input type="text" name="job_etc" placeholder="입력해 주세요"></label>
+          </div>
+        </fieldset>
+        <fieldset class="req">
+          <legend>트레이딩 경험</legend>
+          <div class="chips grow">
+            <label class="chip"><input type="radio" name="exp" value="없음" required><span>없음</span></label>
+            <label class="chip"><input type="radio" name="exp" value="1년 미만"><span>1년 미만</span></label>
+            <label class="chip"><input type="radio" name="exp" value="1~3년"><span>1~3년</span></label>
+            <label class="chip"><input type="radio" name="exp" value="3년 이상"><span>3년 이상</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="req">
+          <legend>지금까지의 트레이딩 결과</legend>
+          <div class="chips grow">
+            <label class="chip"><input type="radio" name="result" value="경험 없음" required><span>경험 없음</span></label>
+            <label class="chip"><input type="radio" name="result" value="손실"><span>손실</span></label>
+            <label class="chip"><input type="radio" name="result" value="본전 수준"><span>본전 수준</span></label>
+            <label class="chip"><input type="radio" name="result" value="수익"><span>수익</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="req">
+          <legend>현재 트레이딩으로 내고 있는 월 수익</legend>
+          <div class="chips grow">
+            <label class="chip"><input type="radio" name="goal" value="손실 중" required><span>손실 중</span></label>
+            <label class="chip"><input type="radio" name="goal" value="100만 원 이하"><span>100만 원 이하</span></label>
+            <label class="chip"><input type="radio" name="goal" value="100~500만 원"><span>100~500만 원</span></label>
+            <label class="chip"><input type="radio" name="goal" value="500만 원 이상"><span>500만 원 이상</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="req">
+          <legend>하루에 학습·훈련에 쓸 수 있는 시간</legend>
+          <div class="chips grow">
+            <label class="chip"><input type="radio" name="hours" value="1시간 미만" required><span>1시간 미만</span></label>
+            <label class="chip"><input type="radio" name="hours" value="1~2시간"><span>1~2시간</span></label>
+            <label class="chip"><input type="radio" name="hours" value="2~4시간"><span>2~4시간</span></label>
+            <label class="chip"><input type="radio" name="hours" value="4시간 이상"><span>4시간 이상</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="req">
+          <legend>매주 1회 이상 줌 참여와 매일 매매일지 작성이 가능한가요?</legend>
+          <div class="chips grow">
+            <label class="chip"><input type="radio" name="commit" value="가능" required><span>가능합니다</span></label>
+            <label class="chip"><input type="radio" name="commit" value="어려움"><span>어렵습니다</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="req">
+          <legend>9개월 과정을 끝까지 소화할 의향이 있으신가요?</legend>
+          <div class="chips grow">
+            <label class="chip"><input type="radio" name="duration" value="있음" required><span>있습니다</span></label>
+            <label class="chip"><input type="radio" name="duration" value="고민 중"><span>고민 중입니다</span></label>
+          </div>
+        </fieldset>
+      </div>
+      <p class="err" role="alert">필수 항목을 모두 입력해 주세요.</p>
+      <button type="button" class="cta blue-btn submit" data-next="3">다음 단계</button>
+      <p class="fine"><a href="#" data-back="1">이전 단계로</a></p>
+      </div>
+
+      <div class="step" id="step3" hidden>
+      <div class="group">
+        <h3>지원 동기</h3>
+        <p class="intro">현재 투자와 트레이딩에 대한 가장 큰 문제, 고민. 월천반 과정에 참여하고 싶은 이유 등을 최대한 자세하게 적어주세요.<br>소수 정예 훈련 코스인 만큼 TO가 한정되어 있습니다. 진지하게 임하실 분들과만 함께합니다.</p>
+        <fieldset class="req">
+          <legend>서술형 답변</legend>
+          <textarea name="essay" rows="10" required placeholder="자유롭게, 최대한 구체적으로 적어주세요."></textarea>
+        </fieldset>
+      </div>
+      <div class="consent">
+        <details>
+          <summary>개인정보 수집 이용 동의</summary>
+          <p>수집 항목: 이름, 연락처, 설문 응답 · 목적: 월천반 상담 및 안내 · 보유 기간: 상담 종료 후 1년 또는 동의 철회 시까지. 동의를 거부할 수 있으나 거부 시 상담 신청이 제한됩니다.</p>
+        </details>
+        <label class="checkbox"><input type="checkbox" name="consent" required>동의합니다</label>
+      </div>
+      <p class="err" role="alert">필수 항목을 모두 입력해 주세요.</p>
+      <button type="submit" class="cta gold-btn submit">상담 신청하기</button>
+      <p class="fine"><a href="#" data-back="2">이전 단계로</a> · 상황에 따라 상담 전화 일자는 다소 변동될 수 있습니다.</p>
+      </div>
+    </form>
+
+    <div class="done card" id="done">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+      <h3>상담 신청이 접수되었습니다.</h3>
+      <p>입력하신 연락처로 상담 일정을 안내드리겠습니다. 안내는 전화 또는 메신저로 드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="notice">
+      <b><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9L2.5 17.5A2 2 0 0 0 4.2 20.5h15.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>안내 사항</b>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:10px"><span aria-hidden="true" style="flex:none;color:#9aa3b1">•</span><span>이 서비스는 투자 자문·투자 일임 서비스가 아닙니다. 수익을 보장하거나, 수익률을 제시하거나, 특정 종목·시점의 매매를 지시하지 않습니다.</span></li>
+        <li style="display:flex;gap:10px"><span aria-hidden="true" style="flex:none;color:#9aa3b1">•</span><span>이 페이지의 내용은 트레이딩 학습 및 데이터 분석 목적으로 작성되었으며, 개별 투자 판단의 책임은 투자자 본인에게 있습니다.</span></li>
+        <li style="display:flex;gap:10px"><span aria-hidden="true" style="flex:none;color:#9aa3b1">•</span><span>후기가 게시될 경우, 개인적인 경험을 반영한 것이며 동일한 결과를 보장하지 않습니다. 원화 기준 금액은 참고용이며 환율에 따라 변동됩니다.</span></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky"><a class="cta gold-btn" href="#apply">상담 신청하기</a></div>
+
+<script>
+document.querySelectorAll('.cases .thumb[data-yt]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var f=document.createElement('iframe');f.src='https://www.youtube.com/embed/'+a.dataset.yt+'?autoplay=1';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;a.replaceChildren(f);a.classList.add('playing');});});
+
+  // 제출 전송처. 비워두면 콘솔에만 출력. (예: Google Apps Script 웹앱 URL, Formspree 등)
+  var FORM_ENDPOINT = "";
+
+  var form = document.getElementById("applyForm");
+  var done = document.getElementById("done");
+  var stepEls = [1, 2, 3].map(function (n) { return document.getElementById("step" + n); });
+  var steps = form.querySelectorAll(".steps li");
+
+  // 값 없는 select는 흐리게
+  form.querySelectorAll("select").forEach(function (s) {
+    var sync = function () { s.classList.toggle("empty", !s.value); };
+    s.addEventListener("change", sync); sync();
+  });
+
+  function invalidIn(root) {
+    form.classList.remove("invalid");
+    var bad = Array.prototype.find.call(root.querySelectorAll("input,select,textarea"), function (el) { return !el.checkValidity(); });
+    if (!bad) return false;
+    form.classList.add("invalid");
+    bad.scrollIntoView({ block: "center" }); bad.focus({ preventScroll: true });
+    return true;
+  }
+  function goStep(n) {
+    stepEls.forEach(function (el, i) { el.hidden = i + 1 !== n; steps[i].className = i + 1 === n ? "on" : i + 1 < n ? "passed" : ""; });
+    form.classList.remove("invalid");
+    form.scrollIntoView({ block: "start" });
+  }
+  form.querySelectorAll("[data-next]").forEach(function (b) {
+    b.addEventListener("click", function () { var n = +b.dataset.next; if (!invalidIn(stepEls[n - 2])) goStep(n); });
+  });
+  form.querySelectorAll("[data-back]").forEach(function (a) {
+    a.addEventListener("click", function (e) { e.preventDefault(); goStep(+a.dataset.back); });
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    for (var i = 0; i < stepEls.length; i++) { if (invalidIn(stepEls[i])) { goStep(i + 1); invalidIn(stepEls[i]); return; } }
+    var data = Object.fromEntries(new FormData(form).entries());
+    data.submitted_at = new Date().toISOString();
+    var btn = form.querySelector("button[type=submit]");
+    btn.disabled = true;
+
+    var send = FORM_ENDPOINT
+      ? fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
+      : Promise.resolve(console.log("[월천반 신청]", data));
+
+    send.then(function () {
+      form.hidden = true;
+      done.style.display = "block";
+      done.scrollIntoView({ block: "center" });
+    }).catch(function () {
+      btn.disabled = false;
+      form.classList.add("invalid");
+      form.querySelector("#step3 .err").textContent = "전송에 실패했습니다. 잠시 후 다시 시도해 주세요.";
+    });
+  });
+
+  // 히어로를 지나면 헤더 등장 (레퍼런스 navigation.js 동일 로직)
+  (function () {
+    var header = document.querySelector(".nav"), hero = document.querySelector(".hero");
+    if (!header || !hero) return;
+    var offset = function () { return (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0) + 4; };
+    var sync = function () { var v = hero.getBoundingClientRect().bottom <= offset(); header.classList.toggle("is-visible", v); header.inert = !v; };
+    var obs;
+    var observe = function () { if (obs) obs.disconnect(); obs = new IntersectionObserver(sync, { rootMargin: "-" + offset() + "px 0px 0px 0px", threshold: 0 }); obs.observe(hero); sync(); };
+    observe();
+    window.addEventListener("resize", observe, { passive: true });
+    window.addEventListener("pageshow", sync);
+  })();
+
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (en) {
+      document.body.classList.toggle("at-form", en[0].isIntersecting);
+    }, { threshold: 0.05 }).observe(document.getElementById("apply"));
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,3444 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-10-24T08:49:29.501Z",
+  "activeFeatures": [
+    "intro-concepts",
+    "intro-blog-concepts",
+    "benefits-concepts",
+    "benefits-memo-refinements",
+    "benefits-memo-application",
+    "intro-transition",
+    "intro-connection-concepts",
+    "intro-d-public-share",
+    "cinematic-scroll-intro",
+    "intro-refinement",
+    "proof-concepts",
+    "footer-notice",
+    "intro-font-concepts",
+    "reality-color-concepts",
+    "reality-warm-paper-application",
+    "benefits-card-inversion",
+    "reality-design-refinements",
+    "reality-letter-application",
+    "intro-keyword-color-concepts",
+    "site-motion-polish",
+    "scroll-type-curriculum-refinement",
+    "scene-action-fullscreen",
+    "consultation-form",
+    "content-width-balance",
+    "woleokban-renewal",
+    "monthly-price-duration"
+  ],
+  "primaryFeature": "intro-concepts",
+  "features": {
+    "intro-concepts": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:48:42.580Z",
+          "completedAt": "2026-10-15T03:49:28.192Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:48:42.580Z",
+          "completedAt": "2026-10-15T03:49:51.989Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:48:42.580Z",
+          "completedAt": "2026-10-15T03:55:00.982Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:48:42.580Z",
+          "completedAt": "2026-10-15T03:55:39.150Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:48:42.580Z",
+          "completedAt": "2026-10-15T03:55:50.656Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T03:48:42.580Z",
+        "lastUpdated": "2026-10-15T03:55:50.656Z"
+      },
+      "completedAt": "2026-10-15T03:55:50.655Z"
+    },
+    "intro-blog-concepts": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 2,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:56:53.318Z",
+          "completedAt": "2026-10-15T03:56:53.405Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:56:53.318Z",
+          "completedAt": "2026-10-15T03:57:27.317Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:56:53.318Z",
+          "completedAt": "2026-10-15T04:02:22.450Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:56:53.318Z",
+          "completedAt": "2026-10-15T04:02:46.668Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T03:56:53.318Z",
+          "completedAt": "2026-10-15T04:02:46.751Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T03:56:53.318Z",
+        "lastUpdated": "2026-10-15T04:07:06.871Z"
+      },
+      "completedAt": "2026-10-15T04:07:06.870Z"
+    },
+    "benefits-concepts": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:07:37.461Z",
+          "completedAt": "2026-10-15T04:08:34.043Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:07:37.461Z",
+          "completedAt": "2026-10-15T04:08:34.171Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:07:37.461Z",
+          "completedAt": "2026-10-15T04:11:21.131Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:07:37.461Z",
+          "completedAt": "2026-10-15T04:11:46.677Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:07:37.461Z",
+          "completedAt": "2026-10-15T04:11:46.759Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T04:07:37.461Z",
+        "lastUpdated": "2026-10-15T04:11:46.759Z"
+      },
+      "completedAt": "2026-10-15T04:11:46.758Z"
+    },
+    "benefits-memo-refinements": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:12:20.199Z",
+          "completedAt": "2026-10-15T04:13:08.951Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:12:20.199Z",
+          "completedAt": "2026-10-15T04:13:09.093Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:12:20.199Z",
+          "completedAt": "2026-10-15T04:15:32.796Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:12:20.199Z",
+          "completedAt": "2026-10-15T04:24:50.475Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:12:20.199Z",
+          "completedAt": "2026-10-15T04:24:50.558Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T04:12:20.199Z",
+        "lastUpdated": "2026-10-15T04:24:50.558Z"
+      },
+      "completedAt": "2026-10-15T04:24:50.558Z"
+    },
+    "benefits-memo-application": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 2,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:26:08.214Z",
+          "completedAt": "2026-10-15T04:26:08.379Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:26:08.214Z",
+          "completedAt": "2026-10-15T04:26:08.500Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:26:08.214Z",
+          "completedAt": "2026-10-15T04:26:52.130Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:26:08.214Z",
+          "completedAt": "2026-10-15T04:28:49.273Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:26:08.214Z",
+          "completedAt": "2026-10-15T04:28:49.354Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T04:26:08.214Z",
+        "lastUpdated": "2026-10-15T05:54:53.398Z"
+      },
+      "completedAt": "2026-10-15T05:54:53.397Z"
+    },
+    "intro-transition": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:31:52.226Z",
+          "completedAt": "2026-10-15T04:31:52.314Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:31:52.226Z",
+          "completedAt": "2026-10-15T04:31:52.441Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:31:52.226Z",
+          "completedAt": "2026-10-15T04:31:52.566Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:31:52.226Z",
+          "completedAt": "2026-10-15T04:32:32.477Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:31:52.226Z",
+          "completedAt": "2026-10-15T04:32:32.561Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T04:31:52.226Z",
+        "lastUpdated": "2026-10-15T04:34:16.683Z"
+      },
+      "completedAt": "2026-10-15T04:34:16.682Z"
+    },
+    "intro-connection-concepts": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:36:24.921Z",
+          "completedAt": "2026-10-15T04:36:24.999Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:36:24.921Z",
+          "completedAt": "2026-10-15T04:36:25.111Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:36:24.921Z",
+          "completedAt": "2026-10-15T04:38:12.617Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:36:24.921Z",
+          "completedAt": "2026-10-15T04:40:08.642Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:36:24.921Z",
+          "completedAt": "2026-10-15T04:40:08.724Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T04:36:24.921Z",
+        "lastUpdated": "2026-10-15T04:40:08.724Z"
+      },
+      "completedAt": "2026-10-15T04:40:08.723Z"
+    },
+    "intro-d-public-share": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:41:34.987Z",
+          "completedAt": "2026-10-15T04:41:35.073Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:41:34.987Z",
+          "completedAt": "2026-10-15T04:41:35.203Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:41:34.987Z",
+          "completedAt": "2026-10-15T04:43:50.938Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:41:34.987Z",
+          "completedAt": "2026-10-15T04:45:37.895Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:41:34.987Z",
+          "completedAt": "2026-10-15T04:45:37.980Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T04:41:34.987Z",
+        "lastUpdated": "2026-10-15T04:45:37.980Z"
+      },
+      "completedAt": "2026-10-15T04:45:37.979Z"
+    },
+    "cinematic-scroll-intro": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:49:29.240Z",
+          "completedAt": "2026-10-15T04:49:29.324Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:49:29.240Z",
+          "completedAt": "2026-10-15T04:49:29.447Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:49:29.240Z",
+          "completedAt": "2026-10-15T04:52:36.130Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:49:29.240Z",
+          "completedAt": "2026-10-15T04:55:46.735Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T04:49:29.240Z",
+          "completedAt": "2026-10-15T04:55:46.817Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T04:49:29.241Z",
+        "lastUpdated": "2026-10-15T04:55:46.817Z"
+      },
+      "completedAt": "2026-10-15T04:55:46.816Z"
+    },
+    "intro-refinement": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:00:23.127Z",
+          "completedAt": "2026-10-15T05:00:48.042Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:00:23.127Z",
+          "completedAt": "2026-10-15T05:01:48.628Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:00:23.127Z",
+          "completedAt": "2026-10-15T05:05:37.766Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:00:23.127Z",
+          "completedAt": "2026-10-15T05:09:32.572Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:00:23.127Z",
+          "completedAt": "2026-10-15T05:12:26.303Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T05:00:23.127Z",
+        "lastUpdated": "2026-10-15T05:25:19.030Z"
+      },
+      "completedAt": "2026-10-15T05:25:19.029Z"
+    },
+    "proof-concepts": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:21:29.115Z",
+          "completedAt": "2026-10-15T05:25:19.075Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:21:29.115Z",
+          "completedAt": "2026-10-15T05:29:46.349Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:21:29.115Z",
+          "completedAt": "2026-10-15T05:32:00.703Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:21:29.115Z",
+          "completedAt": "2026-10-15T05:34:05.859Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:21:29.115Z",
+          "completedAt": "2026-10-15T05:35:32.123Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T05:21:29.115Z",
+        "lastUpdated": "2026-10-15T05:35:32.123Z"
+      },
+      "completedAt": "2026-10-15T05:35:32.122Z"
+    },
+    "footer-notice": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:51:35.693Z",
+          "completedAt": "2026-10-15T05:52:09.345Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:51:35.693Z",
+          "completedAt": "2026-10-15T05:52:09.550Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:51:35.693Z",
+          "completedAt": "2026-10-15T05:52:46.894Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:51:35.693Z",
+          "completedAt": "2026-10-15T05:53:26.820Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:51:35.693Z",
+          "completedAt": "2026-10-15T05:54:53.473Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T05:51:35.693Z",
+        "lastUpdated": "2026-10-15T05:54:53.473Z"
+      },
+      "completedAt": "2026-10-15T05:54:53.471Z"
+    },
+    "intro-font-concepts": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:55:47.677Z",
+          "completedAt": "2026-10-15T05:58:28.958Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:55:47.677Z",
+          "completedAt": "2026-10-15T05:59:29.742Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:55:47.677Z",
+          "completedAt": "2026-10-15T06:05:16.634Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:55:47.677Z",
+          "completedAt": "2026-10-15T06:06:51.999Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T05:55:47.677Z",
+          "completedAt": "2026-10-15T06:09:29.963Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T05:55:47.678Z",
+        "lastUpdated": "2026-10-15T06:14:22.734Z"
+      },
+      "completedAt": "2026-10-15T06:14:22.733Z"
+    },
+    "reality-color-concepts": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:15:52.170Z",
+          "completedAt": "2026-10-15T06:17:12.199Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:15:52.170Z",
+          "completedAt": "2026-10-15T06:17:12.367Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:15:52.170Z",
+          "completedAt": "2026-10-15T06:22:38.210Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:15:52.170Z",
+          "completedAt": "2026-10-15T06:24:05.553Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:15:52.170Z",
+          "completedAt": "2026-10-15T06:26:06.305Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T06:15:52.170Z",
+        "lastUpdated": "2026-10-15T06:26:06.305Z"
+      },
+      "completedAt": "2026-10-15T06:26:06.304Z"
+    },
+    "reality-warm-paper-application": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:29:07.150Z",
+          "completedAt": "2026-10-15T06:29:07.295Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:29:07.150Z",
+          "completedAt": "2026-10-15T06:29:07.473Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:29:07.150Z",
+          "completedAt": "2026-10-15T06:29:07.562Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:29:07.150Z",
+          "completedAt": "2026-10-15T06:30:12.920Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:29:07.150Z",
+          "completedAt": "2026-10-15T06:33:37.689Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T06:29:07.151Z",
+        "lastUpdated": "2026-10-15T06:33:37.689Z"
+      },
+      "completedAt": "2026-10-15T06:33:37.688Z"
+    },
+    "benefits-card-inversion": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:51:08.693Z",
+          "completedAt": "2026-10-15T06:51:37.851Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:51:08.693Z",
+          "completedAt": "2026-10-15T06:51:38.033Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:51:08.693Z",
+          "completedAt": "2026-10-15T06:52:05.592Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:51:08.693Z",
+          "completedAt": "2026-10-15T06:56:31.056Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:51:08.693Z",
+          "completedAt": "2026-10-15T06:57:38.024Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T06:51:08.693Z",
+        "lastUpdated": "2026-10-15T06:57:38.024Z"
+      },
+      "completedAt": "2026-10-15T06:57:38.023Z"
+    },
+    "reality-design-refinements": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:53:40.511Z",
+          "completedAt": "2026-10-15T06:53:40.654Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:53:40.511Z",
+          "completedAt": "2026-10-15T06:53:40.843Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:53:40.511Z",
+          "completedAt": "2026-10-15T06:54:47.832Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:53:40.511Z",
+          "completedAt": "2026-10-15T06:56:31.097Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:53:40.511Z",
+          "completedAt": "2026-10-15T06:57:38.068Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T06:53:40.511Z",
+        "lastUpdated": "2026-10-15T06:57:38.068Z"
+      },
+      "completedAt": "2026-10-15T06:57:38.067Z"
+    },
+    "reality-letter-application": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:59:05.670Z",
+          "completedAt": "2026-10-15T06:59:05.806Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:59:05.670Z",
+          "completedAt": "2026-10-15T06:59:05.967Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:59:05.670Z",
+          "completedAt": "2026-10-15T06:59:28.239Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:59:05.670Z",
+          "completedAt": "2026-10-15T07:00:27.703Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T06:59:05.670Z",
+          "completedAt": "2026-10-15T07:01:34.705Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T06:59:05.671Z",
+        "lastUpdated": "2026-10-15T07:01:34.705Z"
+      },
+      "completedAt": "2026-10-15T07:01:34.704Z"
+    },
+    "intro-keyword-color-concepts": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T07:49:16.502Z",
+          "completedAt": "2026-10-15T07:49:54.413Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T07:49:16.502Z",
+          "completedAt": "2026-10-15T07:49:54.546Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T07:49:16.502Z",
+          "completedAt": "2026-10-15T07:51:36.253Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T07:49:16.502Z",
+          "completedAt": "2026-10-15T07:53:40.708Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T07:49:16.502Z",
+          "completedAt": "2026-10-15T07:54:34.395Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T07:49:16.502Z",
+        "lastUpdated": "2026-10-15T07:54:34.395Z"
+      },
+      "completedAt": "2026-10-15T07:54:34.394Z"
+    },
+    "site-motion-polish": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T08:51:25.982Z",
+          "completedAt": "2026-10-15T08:51:26.092Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T08:51:25.982Z",
+          "completedAt": "2026-10-15T08:52:20.462Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T08:51:25.982Z",
+          "completedAt": "2026-10-15T09:08:41.994Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T08:51:25.982Z",
+          "completedAt": "2026-10-15T09:08:58.768Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T08:51:25.982Z",
+          "completedAt": "2026-10-15T09:10:08.436Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T08:51:25.982Z",
+        "lastUpdated": "2026-10-15T09:10:08.436Z"
+      },
+      "completedAt": "2026-10-15T09:10:08.435Z"
+    },
+    "scroll-type-curriculum-refinement": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:14:02.046Z",
+          "completedAt": "2026-10-15T09:14:40.890Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:14:02.046Z",
+          "completedAt": "2026-10-15T09:15:32.357Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:14:02.046Z",
+          "completedAt": "2026-10-15T09:18:02.896Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:14:02.046Z",
+          "completedAt": "2026-10-15T09:18:44.420Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:14:02.046Z",
+          "completedAt": "2026-10-15T09:20:09.089Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T09:14:02.047Z",
+        "lastUpdated": "2026-10-15T09:20:09.089Z"
+      },
+      "completedAt": "2026-10-15T09:20:09.088Z"
+    },
+    "scene-action-fullscreen": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:51:03.659Z",
+          "completedAt": "2026-10-15T09:51:31.527Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:51:03.659Z",
+          "completedAt": "2026-10-15T09:52:06.545Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:51:03.659Z",
+          "completedAt": "2026-10-15T10:08:35.665Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:51:03.659Z",
+          "completedAt": "2026-10-15T10:09:01.650Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T09:51:03.659Z",
+          "completedAt": "2026-10-15T10:10:46.618Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T09:51:03.659Z",
+        "lastUpdated": "2026-10-15T10:10:46.618Z"
+      },
+      "completedAt": "2026-10-15T10:10:46.617Z"
+    },
+    "consultation-form": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T10:12:43.056Z",
+          "completedAt": "2026-10-15T10:14:19.501Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T10:12:43.056Z",
+          "completedAt": "2026-10-15T10:26:38.104Z"
+        },
+        {
+          "phase": "do",
+          "status": "active",
+          "createdAt": "2026-10-15T10:12:43.056Z"
+        },
+        {
+          "phase": "check",
+          "status": "pending",
+          "createdAt": "2026-10-15T10:12:43.056Z"
+        },
+        {
+          "phase": "report",
+          "status": "pending",
+          "createdAt": "2026-10-15T10:12:43.056Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T10:12:43.056Z",
+        "lastUpdated": "2026-10-15T10:48:15.749Z"
+      },
+      "completedAt": "2026-10-15T10:48:15.748Z"
+    },
+    "content-width-balance": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-15T10:16:40.424Z",
+          "completedAt": "2026-10-15T10:17:31.577Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-15T10:16:40.424Z",
+          "completedAt": "2026-10-15T10:17:58.791Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-15T10:16:40.424Z",
+          "completedAt": "2026-10-15T10:19:58.832Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-15T10:16:40.424Z",
+          "completedAt": "2026-10-15T10:19:58.918Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-15T10:16:40.424Z",
+          "completedAt": "2026-10-15T10:22:48.410Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-15T10:16:40.425Z",
+        "lastUpdated": "2026-10-24T08:37:04.000Z"
+      },
+      "completedAt": "2026-10-24T08:37:03.999Z"
+    },
+    "woleokban-renewal": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-20T04:49:46.208Z",
+          "completedAt": "2026-10-20T04:50:24.081Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-20T04:49:46.208Z",
+          "completedAt": "2026-10-20T04:51:08.498Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-20T04:49:46.208Z",
+          "completedAt": "2026-10-20T04:56:05.702Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-20T04:49:46.208Z",
+          "completedAt": "2026-10-20T04:58:56.075Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-20T04:49:46.208Z",
+          "completedAt": "2026-10-20T05:01:08.699Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-20T04:49:46.208Z",
+        "lastUpdated": "2026-10-20T05:01:08.699Z"
+      },
+      "completedAt": "2026-10-20T05:01:08.698Z"
+    },
+    "monthly-price-duration": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-10-24T08:43:36.376Z",
+          "completedAt": "2026-10-24T08:43:36.466Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-10-24T08:43:36.376Z",
+          "completedAt": "2026-10-24T08:43:36.548Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-10-24T08:43:36.376Z",
+          "completedAt": "2026-10-24T08:47:24.260Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-10-24T08:43:36.376Z",
+          "completedAt": "2026-10-24T08:48:15.587Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-10-24T08:43:36.376Z",
+          "completedAt": "2026-10-24T08:49:29.501Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-10-24T08:43:36.376Z",
+        "lastUpdated": "2026-10-24T08:49:29.501Z"
+      },
+      "completedAt": "2026-10-24T08:49:29.500Z"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Starter",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-10-15T03:48:42.579Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-10-24T08:49:29.501Z"
+  },
+  "history": [
+    {
+      "feature": "intro-concepts",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T03:49:28.191Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T03:49:28.191Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T03:49:28.234Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T03:49:51.989Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T03:49:51.989Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T03:55:00.981Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T03:55:00.981Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T03:55:39.150Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T03:55:39.150Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T03:55:50.563Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T03:55:50.563Z"
+    },
+    {
+      "feature": "intro-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T03:55:50.655Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T03:56:53.404Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T03:56:53.405Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T03:56:53.449Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T03:57:27.317Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T03:57:27.317Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:02:22.449Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:02:22.449Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:02:46.668Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:02:46.668Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:02:46.709Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:02:46.709Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:02:46.750Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:07:06.785Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:07:06.785Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:07:06.828Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:07:06.828Z"
+    },
+    {
+      "feature": "intro-blog-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:07:06.870Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T04:08:34.042Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T04:08:34.043Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T04:08:34.086Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T04:08:34.170Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T04:08:34.170Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:11:21.130Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:11:21.130Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:11:46.677Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:11:46.677Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:11:46.718Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:11:46.718Z"
+    },
+    {
+      "feature": "benefits-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:11:46.758Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T04:13:08.950Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T04:13:08.950Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T04:13:08.999Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T04:13:09.093Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T04:13:09.093Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:15:32.796Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:15:32.796Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:24:50.474Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:24:50.474Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:24:50.516Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:24:50.517Z"
+    },
+    {
+      "feature": "benefits-memo-refinements",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:24:50.558Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T04:26:08.378Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T04:26:08.379Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T04:26:08.419Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T04:26:08.500Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T04:26:08.500Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:26:52.130Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:26:52.130Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:28:49.272Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:28:49.272Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:28:49.313Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:28:49.313Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:28:49.354Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T04:31:52.313Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T04:31:52.313Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T04:31:52.357Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T04:31:52.440Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T04:31:52.440Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:31:52.566Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:31:52.566Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:32:32.476Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:32:32.477Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:32:32.519Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:32:32.520Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:32:32.561Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "completed",
+      "to": "design",
+      "timestamp": "2026-10-15T04:33:56.731Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T04:33:56.774Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T04:33:56.774Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:33:56.897Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:33:56.897Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:34:16.599Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:34:16.599Z"
+    },
+    {
+      "feature": "intro-transition",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:34:16.642Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:34:16.642Z"
+    },
+    {
+      "feature": "intro-transition",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:34:16.682Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T04:36:24.998Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T04:36:24.998Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T04:36:25.036Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T04:36:25.110Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T04:36:25.110Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:38:12.616Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:38:12.616Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:40:08.642Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:40:08.642Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:40:08.682Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:40:08.683Z"
+    },
+    {
+      "feature": "intro-connection-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:40:08.723Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T04:41:35.073Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T04:41:35.073Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T04:41:35.114Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T04:41:35.202Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T04:41:35.202Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:43:50.937Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:43:50.938Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:45:37.895Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:45:37.895Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:45:37.938Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:45:37.938Z"
+    },
+    {
+      "feature": "intro-d-public-share",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:45:37.979Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T04:49:29.323Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T04:49:29.323Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T04:49:29.364Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T04:49:29.446Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T04:49:29.446Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T04:52:36.129Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T04:52:36.130Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T04:55:46.734Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T04:55:46.734Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T04:55:46.775Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T04:55:46.775Z"
+    },
+    {
+      "feature": "cinematic-scroll-intro",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T04:55:46.816Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T05:00:48.041Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T05:00:48.042Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T05:00:48.081Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T05:01:48.627Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T05:01:48.627Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T05:05:37.765Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T05:05:37.765Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T05:09:32.572Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T05:09:32.572Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T05:09:32.618Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T05:09:32.618Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T05:12:26.303Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "completed",
+      "to": "design",
+      "timestamp": "2026-10-15T05:16:54.542Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T05:16:54.583Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T05:16:54.583Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T05:18:15.088Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T05:18:15.088Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T05:18:15.129Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T05:18:15.129Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T05:18:15.170Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T05:18:15.170Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T05:19:48.124Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "completed",
+      "to": "design",
+      "timestamp": "2026-10-15T05:23:40.074Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T05:23:40.121Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T05:23:40.121Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T05:23:54.851Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T05:23:54.851Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T05:23:54.898Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T05:23:54.898Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T05:23:54.944Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T05:23:54.944Z"
+    },
+    {
+      "feature": "intro-refinement",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T05:25:19.030Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T05:25:19.075Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T05:25:19.075Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T05:29:46.232Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T05:29:46.349Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T05:29:46.349Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T05:32:00.701Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T05:32:00.702Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T05:34:05.858Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T05:34:05.859Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T05:34:05.898Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T05:34:05.899Z"
+    },
+    {
+      "feature": "proof-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T05:35:32.122Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "completed",
+      "to": "design",
+      "timestamp": "2026-10-15T05:47:22.401Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T05:47:53.490Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T05:47:53.491Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T05:48:47.353Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T05:48:47.353Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T05:50:53.745Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T05:50:53.745Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T05:50:53.791Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T05:50:53.791Z"
+    },
+    {
+      "feature": "footer-notice",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T05:52:09.344Z"
+    },
+    {
+      "feature": "footer-notice",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T05:52:09.345Z"
+    },
+    {
+      "feature": "footer-notice",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T05:52:09.396Z"
+    },
+    {
+      "feature": "footer-notice",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T05:52:09.549Z"
+    },
+    {
+      "feature": "footer-notice",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T05:52:09.549Z"
+    },
+    {
+      "feature": "footer-notice",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T05:52:46.894Z"
+    },
+    {
+      "feature": "footer-notice",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T05:52:46.894Z"
+    },
+    {
+      "feature": "footer-notice",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T05:53:26.819Z"
+    },
+    {
+      "feature": "footer-notice",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T05:53:26.820Z"
+    },
+    {
+      "feature": "footer-notice",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T05:53:26.865Z"
+    },
+    {
+      "feature": "footer-notice",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T05:53:26.866Z"
+    },
+    {
+      "feature": "benefits-memo-application",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T05:54:53.398Z"
+    },
+    {
+      "feature": "footer-notice",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T05:54:53.472Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T05:58:28.957Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T05:58:28.957Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T05:58:28.999Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T05:59:29.741Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T05:59:29.741Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T06:05:16.633Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T06:05:16.634Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T06:06:51.998Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T06:06:51.998Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T06:06:52.041Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T06:06:52.041Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T06:09:29.963Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "completed",
+      "to": "design",
+      "timestamp": "2026-10-15T06:11:03.404Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T06:11:03.536Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T06:11:03.536Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T06:12:06.359Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T06:12:06.359Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T06:12:46.173Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T06:12:46.173Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T06:12:46.214Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T06:12:46.215Z"
+    },
+    {
+      "feature": "intro-font-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T06:14:22.734Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T06:17:12.198Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T06:17:12.198Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T06:17:12.239Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T06:17:12.366Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T06:17:12.366Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T06:22:38.209Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T06:22:38.209Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T06:24:05.552Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T06:24:05.552Z"
+    },
+    {
+      "feature": "reality-color-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T06:26:06.304Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T06:29:07.295Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T06:29:07.295Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T06:29:07.336Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T06:29:07.473Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T06:29:07.473Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T06:29:07.561Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T06:29:07.561Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T06:30:12.919Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T06:30:12.919Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T06:32:14.704Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T06:32:14.705Z"
+    },
+    {
+      "feature": "reality-warm-paper-application",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T06:33:37.688Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T06:51:37.850Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T06:51:37.851Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T06:51:37.895Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T06:51:38.032Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T06:51:38.032Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T06:52:05.592Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T06:52:05.592Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T06:53:40.653Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T06:53:40.653Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T06:53:40.700Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T06:53:40.842Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T06:53:40.843Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T06:54:47.831Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T06:54:47.831Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T06:56:31.056Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T06:56:31.056Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T06:56:31.096Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T06:56:31.097Z"
+    },
+    {
+      "feature": "benefits-card-inversion",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T06:57:38.024Z"
+    },
+    {
+      "feature": "reality-design-refinements",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T06:57:38.068Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T06:59:05.805Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T06:59:05.805Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T06:59:05.843Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T06:59:05.966Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T06:59:05.967Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T06:59:28.238Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T06:59:28.238Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T07:00:27.702Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T07:00:27.702Z"
+    },
+    {
+      "feature": "reality-letter-application",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T07:01:34.705Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T07:49:54.412Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T07:49:54.412Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T07:49:54.454Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T07:49:54.545Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T07:49:54.546Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T07:51:36.252Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T07:51:36.252Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T07:53:40.707Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T07:53:40.708Z"
+    },
+    {
+      "feature": "intro-keyword-color-concepts",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T07:54:34.394Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T08:51:26.091Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T08:51:26.091Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T08:51:26.144Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T08:52:20.461Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T08:52:20.461Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T09:08:41.993Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T09:08:41.993Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T09:08:58.767Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T09:08:58.767Z"
+    },
+    {
+      "feature": "site-motion-polish",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T09:10:08.436Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T09:14:40.889Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T09:14:40.890Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T09:14:40.944Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T09:15:32.356Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T09:15:32.356Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T09:18:02.895Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T09:18:02.895Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T09:18:44.419Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T09:18:44.419Z"
+    },
+    {
+      "feature": "scroll-type-curriculum-refinement",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T09:20:09.089Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T09:51:31.526Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T09:51:31.527Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T09:51:31.571Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T09:52:06.544Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T09:52:06.544Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T10:08:35.664Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T10:08:35.664Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T10:09:01.650Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T10:09:01.650Z"
+    },
+    {
+      "feature": "scene-action-fullscreen",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T10:10:46.617Z"
+    },
+    {
+      "feature": "consultation-form",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T10:14:19.500Z"
+    },
+    {
+      "feature": "consultation-form",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T10:14:19.501Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-15T10:17:31.576Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-15T10:17:31.576Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T10:17:31.624Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T10:17:58.790Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T10:17:58.791Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-15T10:19:58.831Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-15T10:19:58.832Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T10:19:58.917Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T10:19:58.917Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T10:22:48.409Z"
+    },
+    {
+      "feature": "consultation-form",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-15T10:25:53.735Z"
+    },
+    {
+      "feature": "consultation-form",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-15T10:26:38.103Z"
+    },
+    {
+      "feature": "consultation-form",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-15T10:26:38.104Z"
+    },
+    {
+      "feature": "consultation-form",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-15T10:45:45.748Z"
+    },
+    {
+      "feature": "consultation-form",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-15T10:45:45.748Z"
+    },
+    {
+      "feature": "consultation-form",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-10-15T10:48:15.693Z"
+    },
+    {
+      "feature": "consultation-form",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-10-15T10:48:15.694Z"
+    },
+    {
+      "feature": "consultation-form",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-15T10:48:15.748Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-20T04:50:24.080Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-20T04:50:24.080Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-20T04:50:24.128Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-20T04:51:08.497Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-20T04:51:08.497Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-20T04:56:05.700Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-20T04:56:05.701Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-20T04:58:56.074Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-20T04:58:56.075Z"
+    },
+    {
+      "feature": "woleokban-renewal",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-20T05:01:08.698Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "completed",
+      "to": "design",
+      "timestamp": "2026-10-24T08:32:46.780Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-24T08:32:46.825Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-24T08:32:46.826Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-24T08:33:23.352Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-24T08:33:23.352Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-24T08:35:15.655Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-24T08:35:15.656Z"
+    },
+    {
+      "feature": "content-width-balance",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-24T08:37:03.999Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-10-24T08:43:36.465Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-10-24T08:43:36.465Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-10-24T08:43:36.505Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-10-24T08:43:36.547Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-10-24T08:43:36.547Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-10-24T08:47:24.259Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-10-24T08:47:24.260Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-10-24T08:48:15.586Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-10-24T08:48:15.586Z"
+    },
+    {
+      "feature": "monthly-price-duration",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-10-24T08:49:29.501Z"
+    }
+  ]
+}

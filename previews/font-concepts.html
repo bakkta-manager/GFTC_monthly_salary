@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>월급반 — 폰트 시안 6개</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'Preview Pretendard';src:url('../assets/fonts/pretendard.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Preview SUIT';src:url('../assets/fonts/suit.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Preview Noto Sans';src:url('../assets/fonts/noto-sans.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Preview Wanted';src:url('../assets/fonts/wanted.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Preview Nanum';src:url('../assets/fonts/nanum.woff') format('woff');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Preview Noto Serif';src:url('../assets/fonts/noto-serif.ttf') format('truetype');font-weight:100 900;font-display:swap}
+:root{color-scheme:dark;--bg:#0a0b0f;--text:#f2f3f6;--muted:#a5afbd;--blue:#7cb0ff;--rule:#ffffff18}
+*{box-sizing:border-box}body{margin:0;background:#12141a;color:var(--text);font:16px/1.8 'IBM Plex Sans KR',sans-serif;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}h1,h2,p{margin:0}a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:4px}[hidden]{display:none!important}
+.studio{position:sticky;top:0;z-index:20;background:#171920f5;backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}.bar{max-width:1440px;margin:auto;padding:14px 28px;display:flex;align-items:center;gap:20px}.brand{font-size:14px;font-weight:700;white-space:nowrap}.tabs{display:flex;gap:5px;margin:auto}.tabs a{padding:4px 14px;border-radius:5px;font-size:13px;color:var(--muted)}.tabs a[aria-current=page]{background:#edf2fc;color:#182237}.site-link{font-size:12px;color:var(--muted);white-space:nowrap}
+.gallery{max-width:1440px;margin:auto;padding:40px 28px 64px}.gallery-head{margin-bottom:30px}.gallery-head h1{font-size:28px;letter-spacing:-.03em}.gallery-head p{color:var(--muted);font-size:14px;margin-top:9px}.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.card{overflow:hidden;border:1px solid #ffffff20;border-radius:12px;background:#1b1e27}.sample{display:grid;place-items:center;container-type:inline-size;height:260px;padding:30px 20px;background:var(--bg)}.sample-heading{width:100%;text-align:center;font-family:var(--candidate);font-size:clamp(20px,5.7cqw,96px);font-weight:700;line-height:1.18;letter-spacing:-.045em;display:flex;flex-direction:column;gap:.12em}.sample-heading>span{display:block}.sample-heading mark{color:inherit;background:linear-gradient(#2b5ca0b3,#2b5ca0b3) left 82%/100% .28em no-repeat;padding:0 .04em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.caption{padding:20px 24px 22px;border-top:1px solid var(--rule)}.caption-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.caption h2{font-size:22px;line-height:1.4;letter-spacing:-.02em}.caption h2 span{font-size:14px;color:var(--blue);margin-right:12px}.caption p{font-size:14px;color:var(--muted);margin-top:9px}.open{font-size:12px;padding:5px 11px;border:1px solid #ffffff28;border-radius:99px;white-space:nowrap}.note{margin-top:25px;color:var(--muted);font-size:13px}.tools{max-width:1440px;margin:auto;padding:12px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--rule)}.tools p{font-size:14px}.tools button{font-size:12px;padding:6px 14px;border:1px solid #ffffff25;background:transparent;color:var(--muted);border-radius:5px}.tools button[aria-pressed=true]{background:#edf2fc;color:#182237}.viewer{display:block;width:100%;max-width:1200px;margin:24px auto;border:1px solid var(--rule);background:var(--bg);min-height:1000px}.viewer.mobile{max-width:390px}
+.scene{background:var(--bg);font-family:var(--candidate);color:var(--text)}.scene-nav{height:65px;border-bottom:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;padding:0 32px;font:14px 'IBM Plex Sans KR',sans-serif}.scene-nav a{padding:8px 14px;border:1px solid var(--rule);border-radius:5px;color:var(--muted)}.hero{min-height:540px;padding:72px 40px;display:grid;place-items:center;container-type:inline-size}.hero .sample-heading{font-size:clamp(32px,5.7vw,96px)}.body-preview{max-width:800px;margin:auto;padding:56px 28px 72px;border-top:1px solid var(--rule);text-align:center}.body-preview h2{font-family:var(--candidate);font-size:40px;line-height:1.45;letter-spacing:-.04em;font-weight:700}.body-preview p{font-family:var(--candidate);font-size:20px;line-height:1.85;color:#bac1cc;font-weight:400;margin-top:28px}.body-preview p strong{color:var(--text);font-weight:700}.body-preview mark{background:linear-gradient(transparent 62%,#2b5ca08c 62%);color:inherit;padding:0 .04em}.body-preview .body-label{font:12px 'IBM Plex Sans KR',sans-serif;color:var(--muted);margin:0 0 30px;letter-spacing:.04em}
+@media(max-width:700px){.bar{padding:12px 16px;flex-wrap:wrap;gap:12px}.tabs{order:3;width:100%;justify-content:center}.tabs a{padding:3px 13px}.site-link{margin-left:auto}.gallery{padding:28px 16px 48px}.gallery-head h1{font-size:23px}.gallery-grid{grid-template-columns:1fr;gap:20px}.sample{height:230px}.caption{padding:18px}.caption h2{font-size:20px}.tools{padding:12px 16px}.tools p{font-size:12px}.tools button{padding:5px 10px}}
+@media(max-width:640px){.scene-nav{padding:0 20px}.hero{padding:56px 20px;min-height:460px}.hero .sample-heading{font-size:clamp(32px,10vw,50px)}.body-preview{padding:42px 20px 60px}.body-preview h2{font-size:28px}.body-preview p{font-size:17px}}
+</style>
+</head>
+<body>
+<header class="studio"><div class="bar"><a href="font-concepts.html" class="brand">월급반 · 폰트 비교</a><nav class="tabs" aria-label="시안 선택"><a href="font-concepts.html" data-key="all">전체</a><a href="?font=a" data-key="a">A</a><a href="?font=b" data-key="b">B</a><a href="?font=c" data-key="c">C</a><a href="?font=d" data-key="d">D</a><a href="?font=e" data-key="e">E</a><a href="?font=f" data-key="f">F</a></nav><a class="site-link" href="../">실제 사이트 ↗</a></div></header>
+<main id="app"></main>
+<script>
+const concepts={
+ a:{name:'Pretendard',family:'Preview Pretendard',description:'깔끔하고 균형 잡힌 고딕. 제목과 본문을 자연스럽게 연결합니다.'},
+ b:{name:'SUIT',family:'Preview SUIT',description:'단정하고 정돈된 고딕. 문장의 흐름이 편안하게 읽힙니다.'},
+ c:{name:'Noto Sans KR',family:'Preview Noto Sans',description:'익숙하고 안정적인 고딕. 메시지를 담백하고 선명하게 전달합니다.'},
+ d:{name:'Wanted Sans',family:'Preview Wanted',description:'곧고 또렷한 고딕. 제목에 조금 더 선명한 인상을 줍니다.'},
+ e:{name:'나눔스퀘어 네오',family:'Preview Nanum',description:'네모꼴이 또렷한 고딕. 큰 글씨에서 개성이 잘 드러납니다.'},
+ f:{name:'Noto Serif KR',family:'Preview Noto Serif',description:'차분한 명조. 긴 글과 이어질 때 에세이 같은 분위기를 만듭니다.'}
+};
+const params=new URLSearchParams(location.search),key=params.get('font'),concept=concepts[key],embed=params.get('embed')==='1';
+const app=document.getElementById('app');
+const heading='<span>누구나 꿈꾸지만,</span><span><mark>아무나 이룰 수 없는 목표</mark>입니다.</span>';
+function candidateStyle(c){return '--candidate:"'+c.family+'",sans-serif'}
+if(concept&&embed){
+ document.querySelector('.studio').remove();document.body.style.background='var(--bg)';app.className='scene';app.style.cssText=candidateStyle(concept);
+ app.innerHTML='<div class="scene-nav"><b>월급반</b><a href="../" target="_top">실제 사이트 ↗</a></div><div class="hero"><h1 class="sample-heading">'+heading+'</h1></div><section class="body-preview"><p class="body-label">제목과 본문 함께 보기</p><h2>월급만큼의 수입은<br><mark>현실적으로 가능</mark>합니다.</h2><p><strong>9년간 3,165명</strong>을 가르치고 내린 결론입니다.</p></section>';
+ function reportHeight(){parent.postMessage({type:'font-preview-height',height:Math.ceil(document.documentElement.scrollHeight)},location.origin)}
+ document.fonts.ready.then(reportHeight);new ResizeObserver(reportHeight).observe(app);
+}else if(concept){
+ document.querySelector('[data-key="'+key+'"]').setAttribute('aria-current','page');
+ app.innerHTML='<div class="tools"><p>'+key.toUpperCase()+' · '+concept.name+'</p><div><button id="desktop" aria-pressed="true">PC</button> <button id="mobile" aria-pressed="false">모바일</button></div></div><iframe class="viewer" title="'+concept.name+' 큰 미리보기" src="?font='+key+'&embed=1"></iframe>';
+ const frame=document.querySelector('.viewer');
+ function setMobile(mobile){frame.classList.toggle('mobile',mobile);document.getElementById('desktop').setAttribute('aria-pressed',String(!mobile));document.getElementById('mobile').setAttribute('aria-pressed',String(mobile));}
+ document.getElementById('desktop').addEventListener('click',()=>setMobile(false));document.getElementById('mobile').addEventListener('click',()=>setMobile(true));
+ window.addEventListener('message',event=>{if(event.origin===location.origin&&event.source===frame.contentWindow&&event.data?.type==='font-preview-height'&&Number.isFinite(event.data.height))frame.style.height=event.data.height+'px';});
+}else{
+ document.querySelector('[data-key="all"]').setAttribute('aria-current','page');
+ app.innerHTML='<div class="gallery"><div class="gallery-head"><h1>같은 문장, 여섯 가지 글꼴.</h1><p>행간과 하이라이트를 정리했습니다. 문구·크기·색상은 같게 두고 글꼴만 비교해 보세요.</p></div><div class="gallery-grid"></div><p class="note">시안을 누르면 제목과 본문을 크게 볼 수 있습니다. 메인 사이트는 간격과 문단 정리를 반영했으며, 폰트는 선택 후 적용합니다.</p></div>';
+ Object.entries(concepts).forEach(([k,c])=>{const card=document.createElement('article');card.className='card';card.style.cssText=candidateStyle(c);card.innerHTML='<a class="sample" href="?font='+k+'" aria-label="'+k.toUpperCase()+' '+c.name+' 크게 보기"><h2 class="sample-heading">'+heading+'</h2></a><div class="caption"><div class="caption-top"><h2><span>'+k.toUpperCase()+'</span>'+c.name+'</h2><a class="open" href="?font='+k+'">크게 보기 ↗</a></div><p>'+c.description+'</p></div>';document.querySelector('.gallery-grid').append(card);});
+}
+</script>
+</body>
+</html>

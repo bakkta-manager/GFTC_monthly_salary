@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>월급반 — F 메모형 발전 시안 4개</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{color-scheme:dark;--ink:#f2f4f8;--muted:#9ba5b6;--blue:#7cafff;--line:#ffffff20;--paper:#0a0c11;--font:'IBM Plex Sans KR','Apple SD Gothic Neo',sans-serif}
+  *{box-sizing:border-box}
+  body{margin:0;background:#12141a;color:var(--ink);font:16px/1.75 var(--font);word-break:keep-all;overflow-wrap:break-word}
+  a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button,a{-webkit-tap-highlight-color:transparent}
+  button:focus-visible,a:focus-visible{outline:2px solid #8bb9ff;outline-offset:5px}
+  h1,h2,h3,p,figure,blockquote{margin:0}h1,h2,h3{line-height:1.24;letter-spacing:-.055em}img{display:block;max-width:100%}
+  button{color:inherit}button:disabled{cursor:default;opacity:.45}[hidden]{display:none!important}
+  .studio-bar{position:sticky;top:0;z-index:100;background:#16181ff2;backdrop-filter:blur(20px);border-bottom:1px solid #ffffff15}
+  .studio-top{max-width:1500px;margin:auto;min-height:68px;display:flex;align-items:center;gap:24px;padding:12px 28px}
+  .studio-brand{font-size:14px;font-weight:600;white-space:nowrap}.studio-brand small{font-weight:400;color:#9098a9;margin-left:10px}
+  .tabs{display:flex;gap:4px;flex:1;justify-content:center}.tabs a{padding:7px 15px;border-radius:6px;font-size:13px;white-space:nowrap;color:#adb5c6}
+  .tabs a[aria-current=page]{background:#e8eef9;color:#111723;font-weight:600}.tabs a:hover{background:#ffffff16;color:#fff}.tabs a[aria-current=page]:hover{background:#e8eef9;color:#111723}
+  .original{font-size:12px;color:#a5adbd;white-space:nowrap}.studio-tools{padding:10px 28px;border-top:1px solid #ffffff0a;display:flex;align-items:center;justify-content:space-between;gap:15px;max-width:1500px;margin:auto}
+  .concept-summary{font-size:13px;color:#b2bbcd}.concept-summary b{color:#fff;margin-right:12px}.tool-buttons{display:flex;gap:6px;flex:none}.tool-buttons button{background:transparent;border:1px solid #ffffff20;border-radius:5px;padding:5px 12px;font-size:12px;color:#bfc7d6}.tool-buttons button[aria-pressed=true]{background:#324466;color:#fff;border-color:#526e9e}
+  .gallery{max-width:1440px;margin:auto;padding:60px 40px 70px}.gallery-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:32px;gap:20px}.gallery h1{font-size:36px;letter-spacing:-.04em;margin-top:8px}.gallery-head p{font-size:14px;color:#a2abbd}.overline{font-size:11px;letter-spacing:.18em;font-weight:500;color:var(--blue);text-transform:uppercase}
+  .gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px 28px}.concept-card{border:1px solid #ffffff17;background:#1b1e27;border-radius:10px;overflow:hidden;transition:border-color .25s,transform .25s}.concept-card:hover{border-color:#7cafff80;transform:translateY(-3px)}
+  .thumbnail{display:block;position:relative;width:100%;aspect-ratio:1/1.06;background:#090b10;overflow:hidden}.thumbnail iframe{position:absolute;left:0;top:0;width:1200px;height:1272px;transform-origin:top left;pointer-events:none;border:0}.thumbnail:after{content:'시안 크게 보기 ↗';position:absolute;bottom:18px;right:18px;background:#ecf2fd;color:#162037;font-size:12px;font-weight:600;padding:7px 14px;border-radius:30px;box-shadow:0 3px 20px #0004}
+  .card-caption{padding:22px 24px}.card-caption h2{font-size:22px;letter-spacing:-.03em}.card-caption h2 span{color:var(--blue);font-size:13px;vertical-align:middle;margin-right:10px}.card-caption p{font-size:14px;color:#acb5c6;margin-top:8px}.tags{display:flex;gap:6px;margin-top:15px;flex-wrap:wrap}.tags span{font-size:11px;border:1px solid #ffffff1c;color:#b5bfd2;padding:2px 8px;border-radius:3px}
+  .gallery-note{margin-top:32px;font-size:12px;color:#8a94a7}.viewer-wrap{padding:24px 0 40px}.viewer-frame{display:block;border:0;width:100%;max-width:1600px;margin:auto;min-height:1100px;background:#0a0c11;transition:width .35s ease;box-shadow:0 20px 70px #0003}.viewer-frame.mobile{width:390px;max-width:calc(100% - 24px);border:1px solid #3c4351;border-radius:22px}
+  :root{--bg:#0a0b0f;--text:#f2f3f6;--muted:#9da3b0;--accent:#3b82f6;--accent2:#7cb0ff;--sans:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+  .studio-top{flex-wrap:wrap;gap:16px}.studio-brand small{font-size:12px}.tabs{gap:2px}.tabs a{font-size:12px;padding:6px 11px}.section-links{display:flex;gap:16px;justify-content:space-between;padding:10px 28px;max-width:1500px;margin:auto;border-top:1px solid #ffffff0a;font-size:12px;color:#a3adbf}.section-links p{margin:0}.section-links a{color:#b8c6dc}
+  .gallery{padding-top:40px}.gallery h1{font-size:30px}.gallery-grid{align-items:start;gap:28px}.thumbnail{aspect-ratio:900/1400}.thumbnail iframe{width:900px;height:1400px}.card-caption h2{font-size:22px}.viewer-wrap{padding-top:0}.viewer-frame{min-height:0}.gallery-note{line-height:1.8}
+  .benefit-scene{background:var(--bg);color:var(--text);font:17px/1.8 var(--sans);word-break:keep-all;overflow-wrap:break-word}.benefit-scene .wrap{max-width:736px;margin:auto;padding:0 24px}.benefit-scene .nav{border-bottom:1px solid #ffffff14}.benefit-scene .nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}.benefit-scene .brand{display:flex;align-items:baseline;gap:12px}.benefit-scene .brand b{font-size:17px;font-weight:700}.benefit-scene .brand span{font-size:13px;color:var(--muted)}.benefit-scene .nav .btn{background:var(--accent);color:#fff;border-radius:6px;font-size:14px;font-weight:700;line-height:1.2;padding:10px 18px;text-decoration:none}
+  .benefit-scene .benefits{padding:76px 0 64px}.benefit-scene .eyebrow{display:block;font-size:14px;color:var(--accent);margin-bottom:16px}.benefit-scene h2{font-size:36px;line-height:1.35;font-weight:700;letter-spacing:-.03em;margin-bottom:16px}.benefit-scene .sub{font-size:17px;color:var(--muted);line-height:1.85;margin:0 0 42px}.benefit-scene .blist{list-style:none;padding:0;margin:0;display:block}.benefit-scene .blist li{position:relative;min-width:0}.benefit-scene .blist b{display:block;font-size:20px;line-height:1.5;font-weight:500;letter-spacing:-.02em;margin-bottom:13px}.benefit-scene .blist p{font-size:17px;line-height:1.9;color:var(--muted);margin:0}.benefit-note{max-width:736px;border-top:1px solid #ffffff14;margin:auto;padding:22px 24px;font-size:11px;color:#727d8f;display:flex;justify-content:space-between;gap:20px}.benefit-note a{color:#aebbd0}
+  .benefit-scene .reveal{opacity:1;transform:none}.animate-on .reveal{opacity:0;transform:translateY(8px);transition:opacity .65s ease,transform .65s ease;transition-delay:var(--delay,0ms)}.animate-on .reveal.visible{opacity:1;transform:none}
+  /* A: flowing paragraphs, generous rhythm. */
+  .benefit-a .blist li{padding:26px 0 29px;border-top:1px solid #ffffff20}.benefit-a .blist li:last-child{padding-bottom:0}.benefit-a .blist b{font-size:21px}.benefit-a .blist p{max-width:650px}.benefit-a .blist b:after{content:'';display:inline-block;width:19px;height:1px;background:#6396e2;margin-left:13px;vertical-align:middle}
+  /* B: the approved margin-line language. */
+  .benefit-b .blist{border-left:1px solid #ffffff21;margin-left:4px;padding-left:29px}.benefit-b .blist li{padding:10px 0 36px;margin-bottom:4px}.benefit-b .blist li:last-child{padding-bottom:0;margin-bottom:0}.benefit-b .blist li:before{content:'';position:absolute;left:-34px;top:20px;width:7px;height:7px;background:#75aaff;border-radius:50%;box-shadow:0 0 0 6px var(--bg)}.benefit-b .blist b{font-size:20px;font-weight:700;margin-bottom:14px}.benefit-b .title-ink{background:linear-gradient(transparent 76%,#24579a45 76%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .06em}
+  /* C: dictionary entries, kept within the article column. */
+  .benefit-c .blist li{display:grid;grid-template-columns:180px minmax(0,1fr);gap:27px;padding:27px 0;border-top:1px solid #ffffff22}.benefit-c .blist li:last-child{padding-bottom:0}.benefit-c .blist b{font-size:18px;font-weight:500;line-height:1.7;margin:0;color:#dce8fa}.benefit-c .blist p{font-size:16px;line-height:1.95}.benefit-c .blist li:nth-child(even){border-top-color:#ffffff12}
+  /* D: a clearer version of the original two-column contents. */
+  .benefit-d .blist{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:34px 34px;counter-reset:benefit}.benefit-d .blist li{counter-increment:benefit;padding-top:20px;border-top:1px solid #ffffff29}.benefit-d .blist li:before{content:'0' counter(benefit);display:block;color:#7da7e8;font:12px/1.4 Arial,sans-serif;letter-spacing:.08em;margin-bottom:15px}.benefit-d .blist b{font-size:19px;line-height:1.6;font-weight:500;margin-bottom:13px}.benefit-d .blist p{font-size:16px;line-height:1.9}
+  /* E: let the opening sentence explain the benefit. */
+  .benefit-e .blist li{padding:25px 0 32px;border-top:1px solid #ffffff16}.benefit-e .blist li:last-child{padding-bottom:0}.benefit-e .blist b{font-size:14px;font-weight:400;letter-spacing:0;color:#7cb0ff;margin-bottom:14px}.benefit-e .blist p{font-size:16px;line-height:1.9}.benefit-e .sentence-lead{font-size:20px;line-height:1.7;font-weight:500;color:#e6edfa;background:linear-gradient(transparent 69%,#24579a48 69%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .06em}.benefit-e .sentence-rest{display:block;padding-top:14px}
+  /* F: modest notes in the body, with quiet line icons. */
+  .benefit-f .blist{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}.benefit-f .blist li{background:#11151c;border-left:1px solid #536d914d;padding:23px 23px 25px}.benefit-f .benefit-icon{display:block;width:23px;height:23px;color:#87a6d3;margin-bottom:17px}.benefit-f .blist b{font-size:18px;line-height:1.6;margin-bottom:12px;font-weight:500}.benefit-f .blist p{font-size:15px;line-height:1.95;color:#9ba5b5}
+  /* Original for a direct comparison. */
+  .benefit-o .benefits{padding:96px 0}.benefit-o h2{font-size:36px;line-height:1.35;letter-spacing:-.02em;margin-bottom:12px}.benefit-o .sub{line-height:1.8;margin-bottom:48px}.benefit-o .blist{display:grid;grid-template-columns:1fr 1fr;gap:40px 48px}.benefit-o .blist b{font-size:17px;line-height:1.8;font-weight:500;letter-spacing:0;margin-bottom:8px}.benefit-o .blist p{font-size:17px;line-height:1.8}
+  @media(max-width:1150px){.studio-brand small{display:none}.studio-top{padding-inline:18px;gap:12px}.tabs a{padding-inline:9px}.original{font-size:11px}}
+  @media(max-width:760px){.studio-top{padding:11px 14px 9px;gap:10px}.studio-brand{flex:1}.original{order:1}.tabs{order:2;flex:unset;width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:3px}.tabs a{text-align:center;padding:5px 4px;font-size:12px}.section-links{padding:9px 14px;font-size:11px}.section-links p{display:none}.studio-tools{padding:9px 14px;flex-wrap:wrap;gap:10px}.concept-summary{font-size:12px;line-height:1.6}.tool-buttons{margin-left:auto}.tool-buttons button{font-size:11px;padding:4px 10px}.viewer-frame.mobile{border:0;border-radius:0;max-width:100%}.gallery{padding:30px 16px}.gallery-head{display:block;margin-bottom:25px}.gallery h1{font-size:27px}.gallery-head p{margin-top:13px}.gallery-grid{grid-template-columns:1fr;gap:24px}.card-caption{padding:18px 20px}.card-caption p{font-size:13px}.card-caption h2{font-size:21px}.gallery-note{font-size:11px}}
+  @media(max-width:640px){
+    .benefit-scene .wrap{padding-inline:20px}.benefit-scene .brand span{display:none}.benefit-scene .nav .btn{font-size:13px;padding:10px 16px}.benefit-scene .benefits{padding:53px 0 44px}.benefit-scene .eyebrow{font-size:12px;margin-bottom:15px}.benefit-scene h2{font-size:28px;line-height:1.45;letter-spacing:-.04em;margin-bottom:15px}.benefit-scene .sub{font-size:15px;line-height:1.85;margin-bottom:34px}.benefit-scene .blist b{font-size:19px;margin-bottom:12px}.benefit-scene .blist p{font-size:15px;line-height:1.95}.benefit-note{font-size:10px;padding:20px}
+    .benefit-a .blist li{padding:23px 0 25px}.benefit-a .blist li:last-child{padding-bottom:0}.benefit-b .blist{padding-left:21px;margin-left:3px}.benefit-b .blist li{padding-top:8px;padding-bottom:29px}.benefit-b .blist li:before{left:-26px;top:18px}.benefit-b .blist li:last-child{padding-bottom:0}.benefit-b .blist b{font-size:19px}.benefit-c .blist li{grid-template-columns:1fr;gap:12px;padding:24px 0}.benefit-c .blist b{margin:0;font-size:18px;color:#a9c8f7}.benefit-c .blist p{font-size:15px}.benefit-d .blist{grid-template-columns:1fr;gap:27px}.benefit-d .blist li{padding:21px 0 0 36px}.benefit-d .blist li:before{position:absolute;top:27px;left:0;font-size:11px;margin:0}.benefit-d .blist b{font-size:19px}.benefit-d .blist p{font-size:15px}.benefit-e .blist li{padding:22px 0 27px}.benefit-e .blist b{font-size:13px;margin-bottom:12px}.benefit-e .sentence-lead{font-size:18px;line-height:1.8}.benefit-e .sentence-rest{padding-top:12px}.benefit-f .blist{grid-template-columns:1fr;gap:17px}.benefit-f .blist li{padding:21px 22px 23px}.benefit-f .benefit-icon{width:21px;height:21px;margin-bottom:14px}.benefit-f .blist b{font-size:19px}.benefit-f .blist p{font-size:15px}.benefit-o .benefits{padding:72px 0}.benefit-o .blist{grid-template-columns:1fr;gap:32px}.benefit-o .blist b{font-size:17px}.benefit-o .blist p{font-size:17px;line-height:1.8}
+  }
+  @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.animate-on .reveal{opacity:1;transform:none}}
+
+  .section-links{align-items:center}.baseline-link{display:inline-flex;align-items:center;gap:7px;color:#c8d6ed!important}.baseline-link:before{content:'';width:5px;height:5px;border-radius:50%;background:#81a7dd}.tabs{gap:5px}.tabs a{padding-inline:14px}.gallery h1{font-size:31px}.card-caption h2 span{font-size:13px}.thumbnail:after{content:'시안 자세히 보기 ↗'}
+  .memo-heading{display:flex;align-items:flex-start;gap:12px}.benefit-f .memo-heading .benefit-icon{flex:none;margin:4px 0 0;width:21px;height:21px}.benefit-f .memo-heading b{min-width:0;margin:0}.memo-icon-row{display:flex;justify-content:space-between;align-items:center}
+  /* F1: align the icon and headline, improve text density. */
+  .refine-f1 .blist{gap:18px}.refine-f1 .blist li{padding:25px 24px 26px;border:1px solid #ffffff12;border-radius:6px;background:#11161e}.refine-f1 .memo-heading{min-height:62px;margin-bottom:15px}.refine-f1 .blist b{font-size:19px;font-weight:700;line-height:1.55}.refine-f1 .benefit-icon{color:#8aafe6}.refine-f1 .blist p{font-size:16px;line-height:1.9;color:#a5afbe}
+  /* F2: keep the original format and surface the first sentence. */
+  .refine-f2 .blist{gap:20px}.refine-f2 .blist li{padding:27px 25px 29px;border:0;background:#11151c}.refine-f2 .blist li:before{content:'';position:absolute;top:0;left:25px;width:30px;height:2px;background:#719fdf}.refine-f2 .benefit-icon{width:22px;height:22px;margin-bottom:18px;color:#8baedf}.refine-f2 .blist b{font-size:19px;font-weight:700;line-height:1.55;margin-bottom:16px}.refine-f2 .blist p{font-size:15px;line-height:1.9;color:#8f9bac}.refine-f2 .memo-lead{font-size:16px;line-height:1.85;font-weight:500;color:#d6e2f3}.refine-f2 .memo-rest{display:block;padding-top:13px}
+  /* F3: a document-like note with room around each paragraph. */
+  .refine-f3 .blist{gap:22px;counter-reset:memo}.refine-f3 .blist li{counter-increment:memo;padding:29px 27px 30px;background:#0e131a;border:1px solid #5b769b36}.refine-f3 .memo-icon-row{margin-bottom:23px}.refine-f3 .benefit-icon{width:22px;height:22px;color:#9db4d7;margin:0}.refine-f3 .memo-icon-row:after{content:'0' counter(memo);font:11px/1.4 Arial,sans-serif;letter-spacing:.12em;color:#7187a7}.refine-f3 .blist b{font-size:19px;line-height:1.6;font-weight:500;padding-bottom:16px;border-bottom:1px solid #ffffff13;margin-bottom:18px}.refine-f3 .blist p{font-size:16px;line-height:1.95;color:#a1acbc}
+  /* F4: six connected notes rather than six separated blocks. */
+  .refine-f4 .blist{gap:0;border:1px solid #ffffff18;border-radius:8px;overflow:hidden;background:#10151d}.refine-f4 .blist li{padding:27px 25px 30px;border:0;border-top:1px solid #ffffff15;background:transparent}.refine-f4 .blist li:nth-child(-n+2){border-top:0}.refine-f4 .blist li:nth-child(even){border-left:1px solid #ffffff15}.refine-f4 .memo-heading{gap:11px;min-height:65px;margin-bottom:12px}.refine-f4 .memo-heading .benefit-icon{width:30px;height:30px;padding:5px;background:#779bd310;border:1px solid #779bd31c;border-radius:4px;margin-top:1px;color:#91b1e0}.refine-f4 .blist b{font-size:18px;line-height:1.6;font-weight:500}.refine-f4 .blist p{font-size:16px;line-height:1.9;color:#a5afbd}
+  @media(max-width:1050px){.tabs a{padding-inline:10px}}
+  @media(max-width:760px){.tabs{display:flex;gap:2px;justify-content:space-between}.tabs a{padding:5px 8px;font-size:12px}.gallery h1{font-size:27px}.section-links{font-size:11px}}
+  @media(max-width:640px){
+    .refine-f1 .blist{gap:17px}.refine-f1 .blist li{padding:23px 22px 25px}.refine-f1 .memo-heading{min-height:0;margin-bottom:17px}.refine-f1 .blist b{font-size:19px}.refine-f1 .blist p{font-size:16px;line-height:1.9}
+    .refine-f2 .blist{gap:18px}.refine-f2 .blist li{padding:25px 23px 26px}.refine-f2 .blist li:before{left:23px}.refine-f2 .benefit-icon{margin-bottom:16px}.refine-f2 .blist b{font-size:19px}.refine-f2 .blist p{font-size:15px}.refine-f2 .memo-lead{font-size:16px}.refine-f2 .memo-rest{padding-top:12px}
+    .refine-f3 .blist{gap:19px}.refine-f3 .blist li{padding:25px 24px 27px}.refine-f3 .memo-icon-row{margin-bottom:20px}.refine-f3 .blist b{font-size:19px;padding-bottom:15px;margin-bottom:16px}.refine-f3 .blist p{font-size:16px;line-height:1.95}
+    .refine-f4 .blist li{padding:25px 23px 27px;border-left:0}.refine-f4 .blist li:nth-child(even){border-left:0}.refine-f4 .blist li:nth-child(2){border-top:1px solid #ffffff15}.refine-f4 .memo-heading{min-height:0;margin-bottom:18px}.refine-f4 .blist b{font-size:19px}.refine-f4 .blist p{font-size:16px;line-height:1.9}
+  }
+  @media(max-width:360px){.tabs a{font-size:11px;padding-inline:6px}.refine-f1 .blist li,.refine-f2 .blist li,.refine-f3 .blist li,.refine-f4 .blist li{padding-inline:19px}.refine-f1 .blist b,.refine-f4 .blist b{font-size:18px}}
+</style></head><body>
+<header class="studio-bar" id="studioBar">
+ <div class="studio-top"><a href="benefits-memo-refinements.html" class="studio-brand">월급반 <small>F 메모형 발전 시안</small></a><nav class="tabs" aria-label="시안 선택"><a href="benefits-memo-refinements.html" data-tab="all">전체 비교</a><a href="?concept=base" data-tab="base">기존 F</a><a href="?concept=f1" data-tab="f1">F1</a><a href="?concept=f2" data-tab="f2">F2</a><a href="?concept=f3" data-tab="f3">F3</a><a href="?concept=f4" data-tab="f4">F4</a></nav><a class="original" href="/" target="_blank" rel="noopener">현재 페이지 ↗</a></div>
+ <div class="section-links"><a href="benefits-concepts.html">← 이전 혜택 시안 6개</a><a class="baseline-link" href="?concept=base">선택한 F 메모형과 비교</a></div>
+ <div class="studio-tools" id="studioTools" hidden><p class="concept-summary" id="conceptSummary"></p><div class="tool-buttons"><button id="desktopBtn" aria-pressed="true">PC</button><button id="mobileBtn" aria-pressed="false">모바일</button><button id="replayBtn">↻ 모션 다시 보기</button></div></div>
+</header><main id="app"></main>
+<template id="siteNav"><nav class="nav">
+  <div class="wrap">
+    <div class="brand"><b>월급반</b><span>글로벌트레이더협회</span></div>
+    <a class="btn gold" href="#apply">상담 신청</a>
+  </div>
+</nav></template><template id="benefitContent"><section class="benefits">
+  <div class="wrap">
+    <span class="eyebrow">월급반 제공 혜택</span>
+    <h2>과정 기간 동안 함께 제공됩니다.</h2>
+    <p class="sub">교육과 훈련 외에 매일의 매매를 돕는 것들입니다.</p>
+    <ul class="blist">
+      <li><b>시황</b><p>아침·점심·저녁, 주요 시장 흐름과 주목해야 할 포인트를 정리해 드립니다. 하루 동안 달라지는 시장을 살펴보며 자신의 매매 계획을 점검할 때 참고할 수 있습니다.</p></li>
+      <li><b>타점 교육</b><p>진입의 근거와 기다려야 할 상황을 배웁니다. 타점 판단 과정을 이해하고 자신만의 매매 기준을 세우는 교육입니다.</p></li>
+      <li><b>협회장 라이브트레이딩</b><p>협회장의 매매 과정을 실시간으로 살펴봅니다. 시장 상황을 어떻게 해석하고 매매를 결정하는지 보며 배운 기준이 실전에서 어떻게 적용되는지 익힙니다.</p></li>
+      <li><b>W.E.T</b><p>자신의 트레이딩 행동을 돌아보고 개선할 부분을 찾도록 돕는 인공지능입니다. 반복되는 매매 습관을 점검하고 스스로 정한 원칙을 지키도록 행동 교정을 돕습니다.</p></li>
+      <li><b>뉴스</b><p>시장에 영향을 줄 수 있는 주요 뉴스를 전해 드립니다. 가격 움직임의 배경을 이해하고 매매 전 확인해야 할 이슈를 살펴볼 때 참고할 수 있습니다.</p></li>
+      <li><b>수강생·졸업생 채팅방과 커뮤니티</b><p>같은 과정을 거치는 수강생, 먼저 거쳐 간 졸업생과 한 공간에서 이야기합니다. 매매 고민을 나누고 서로의 복기를 보며, 과정이 끝난 뒤에도 혼자 남지 않도록 돕습니다.</p></li>
+    </ul>
+  </div>
+</section></template><script>const ICON_PATHS=[
+ '<path d="M4 19V5m0 14h16M7 14l4-4 4 2 5-7"/>',
+ '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/>',
+ '<rect x="3" y="5" width="18" height="12" rx="1"/><path d="M9 21h6m-3-4v4m-2-12 5 3-5 3z"/>',
+ '<path d="M8 4H5v5m11 11h3v-5M5 8a8 8 0 0 1 13-2M19 16A8 8 0 0 1 6 18m3-6 2 2 4-4"/>',
+ '<rect x="5" y="3" width="15" height="18" rx="1"/><path d="M5 7H2v12a2 2 0 0 0 2 2M8 7h9m-9 4h9m-9 4h4m-4 3h9"/>',
+ '<path d="M4 4h13v10H9l-5 4V4zm13 4h4v12l-4-3h-5v-3"/>'
+];
+
+const CONCEPTS={
+ f1:{title:'정돈한 메모',description:'아이콘과 제목을 나란히 놓고 본문을 조금 더 크고 선명하게.',tags:['아이콘 · 제목 정렬','16px 본문','얇은 테두리']},
+ f2:{title:'요점이 보이는 메모',description:'첫 문장을 밝게 드러내, 어떤 혜택인지 바로 읽히도록.',tags:['첫 문장 강조','짧은 파란 선','명확한 글자 대비']},
+ f3:{title:'여백이 있는 메모',description:'작은 번호와 구분선, 넉넉한 여백으로 차분한 기록처럼.',tags:['기록 번호','제목 아래 구분선','넉넉한 여백']},
+ f4:{title:'한 장의 노트',description:'여섯 혜택을 한 장으로 묶어 더 단정하고 밀도 있게.',tags:['연결된 메모','내부 구분선','아이콘 영역']}
+};
+const params=new URLSearchParams(location.search),requested=params.get('concept');
+const concept=requested==='base'||Object.hasOwn(CONCEPTS,requested)?requested:null;
+const embedded=params.get('embed')==='1',still=params.get('still')==='1';
+const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+const app=document.querySelector('#app');
+const nameFor=key=>key==='base'?'기존 F 메모형':key.toUpperCase()+' · '+CONCEPTS[key].title;
+function initializeArticle(){
+ const article=document.createElement('article');article.className='benefit-scene benefit-f'+(concept==='base'?'':' refine-'+concept);
+ article.append(document.querySelector('#siteNav').content.cloneNode(true));article.append(document.querySelector('#benefitContent').content.cloneNode(true));app.append(article);
+ article.querySelector('.nav a').href='/#apply';article.querySelector('.nav a').target='_top';article.querySelector('h2').classList.add('reveal');
+ article.querySelectorAll('.blist li').forEach((item,i)=>{
+  item.classList.add('reveal');
+  const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.classList.add('benefit-icon');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('fill','none');icon.setAttribute('stroke','currentColor');icon.setAttribute('stroke-width','1.4');icon.setAttribute('stroke-linecap','round');icon.setAttribute('stroke-linejoin','round');icon.setAttribute('aria-hidden','true');icon.innerHTML=ICON_PATHS[i];
+  if(concept==='f1'||concept==='f4'){
+   const title=item.querySelector('b'),heading=document.createElement('div');heading.className='memo-heading';heading.append(icon,title);item.prepend(heading);
+  }else if(concept==='f3'){
+   const row=document.createElement('div');row.className='memo-icon-row';row.setAttribute('aria-hidden','true');row.append(icon);item.prepend(row);
+  }else item.prepend(icon);
+  if(concept==='f2'){
+   const paragraph=item.querySelector('p'),text=paragraph.textContent,split=text.indexOf('. '),lead=document.createElement('span');lead.className='memo-lead';lead.textContent=split<0?text:text.slice(0,split+1);paragraph.replaceChildren(lead);
+   if(split>=0){const rest=document.createElement('span');rest.className='memo-rest';rest.textContent=text.slice(split+1);paragraph.append(rest);}
+  }
+ });
+ const note=document.createElement('div');note.className='benefit-note';note.innerHTML='<span>제공 혜택 · '+nameFor(concept)+'</span><a href="/" target="_top">현재 페이지 보기 ↗</a>';article.append(note);
+ if(!still&&!reducedMotion.matches){
+  document.body.classList.add('animate-on');const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});article.querySelectorAll('.reveal').forEach(el=>observer.observe(el));reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches)document.body.classList.remove('animate-on');});
+ }
+ const reportHeight=()=>parent.postMessage({type:'memo-height',height:article.getBoundingClientRect().height},location.origin);new ResizeObserver(reportHeight).observe(article);window.addEventListener('load',reportHeight);document.fonts.ready.then(reportHeight);
+}
+if(embedded&&concept){document.querySelector('#studioBar').remove();initializeArticle();document.title=nameFor(concept)+' — 월급반';}
+else if(concept){
+ document.querySelector('[data-tab="'+concept+'"]').setAttribute('aria-current','page');document.querySelector('#studioTools').hidden=false;document.querySelector('#conceptSummary').textContent=nameFor(concept)+' · '+(concept==='base'?'선택하신 메모형 원안입니다.':CONCEPTS[concept].description);
+ app.innerHTML='<div class="viewer-wrap"><iframe class="viewer-frame" id="viewerFrame" title="'+nameFor(concept)+'" src="?concept='+concept+'&embed=1"></iframe></div>';const frame=document.querySelector('#viewerFrame');
+ window.addEventListener('message',event=>{if(event.origin===location.origin&&event.source===frame.contentWindow&&event.data?.type==='memo-height')frame.style.height=Math.ceil(event.data.height)+'px';});
+ function setViewport(mobile){frame.classList.toggle('mobile',mobile);document.querySelector('#desktopBtn').setAttribute('aria-pressed',String(!mobile));document.querySelector('#mobileBtn').setAttribute('aria-pressed',String(mobile));}
+ document.querySelector('#mobileBtn').addEventListener('click',()=>setViewport(true));document.querySelector('#desktopBtn').addEventListener('click',()=>setViewport(false));document.querySelector('#replayBtn').addEventListener('click',()=>{window.scrollTo({top:0,behavior:'instant'});frame.contentWindow.location.reload();});
+}else{
+ document.querySelector('[data-tab="all"]').setAttribute('aria-current','page');
+ app.innerHTML='<div class="gallery"><header class="gallery-head"><div><p class="overline">선택한 메모형을 더 섬세하게</p><h1>F 메모형 · 네 가지 발전안</h1></div><p>두 열 메모, 작은 아이콘, 글이 중심인 구성.<br>기존 F와 나란히 비교하며 골라보세요.</p></header><div class="gallery-grid">'+Object.entries(CONCEPTS).map(([key,value])=>'<article class="concept-card"><a class="thumbnail" href="?concept='+key+'" aria-label="'+nameFor(key)+' 보기"><iframe src="?concept='+key+'&embed=1&still=1" title="'+nameFor(key)+' 미리보기" tabindex="-1" aria-hidden="true" loading="lazy"></iframe></a><div class="card-caption"><h2><span>'+key.toUpperCase()+'</span>'+value.title+'</h2><p>'+value.description+'</p><div class="tags">'+value.tags.map(tag=>'<span>'+tag+'</span>').join('')+'</div></div></article>').join('')+'</div><p class="gallery-note">네 시안 모두 혜택 6개의 문구와 순서를 그대로 사용했습니다. 상단의 ‘기존 F’에서 출발점이 된 디자인을 확인할 수 있습니다.</p></div>';
+ const thumbnails=[...document.querySelectorAll('.thumbnail')];const observer=new ResizeObserver(entries=>entries.forEach(entry=>{entry.target.querySelector('iframe').style.transform='scale('+entry.contentRect.width/900+')';}));thumbnails.forEach(el=>observer.observe(el));
+ window.addEventListener('message',event=>{if(event.origin!==location.origin||event.data?.type!=='memo-height')return;const thumbnail=thumbnails.find(el=>el.querySelector('iframe').contentWindow===event.source);if(!thumbnail)return;const height=Math.ceil(event.data.height);thumbnail.style.aspectRatio='900 / '+height;thumbnail.querySelector('iframe').style.height=height+'px';});
+}
+</script></body></html>

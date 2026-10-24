@@ -1,0 +1,40 @@
+[
+  {
+    "key": "pretendard",
+    "path": "assets/fonts/pretendard.woff2",
+    "bytes": 2057688,
+    "url": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/variable/woff2/PretendardVariable.woff2"
+  },
+  {
+    "key": "suit",
+    "path": "assets/fonts/suit.woff2",
+    "bytes": 624536,
+    "url": "https://github.com/sun-typeface/SUIT/releases/download/v2.0.5/SUIT-Variable-woff2.zip"
+  },
+  {
+    "key": "noto-sans",
+    "path": "assets/fonts/noto-sans.ttf",
+    "bytes": 24048,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf",
+    "processing": "Text subset preserving variable weights"
+  },
+  {
+    "key": "wanted",
+    "path": "assets/fonts/wanted.woff2",
+    "bytes": 1289292,
+    "url": "https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/complete/woff2/WantedSansVariable.woff2"
+  },
+  {
+    "key": "nanum",
+    "path": "assets/fonts/nanum.woff",
+    "bytes": 3026836,
+    "url": "https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff"
+  },
+  {
+    "key": "noto-serif",
+    "path": "assets/fonts/noto-serif.ttf",
+    "bytes": 66540,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifkr/NotoSerifKR%5Bwght%5D.ttf",
+    "processing": "Text subset preserving variable weights"
+  }
+]

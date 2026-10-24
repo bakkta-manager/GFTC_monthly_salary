@@ -1,0 +1,62 @@
+[
+  {
+    "width": 1440,
+    "text": "9년간 3,165명을 가르치고 내린 결론입니다.",
+    "proofFont": "20px",
+    "strong": [
+      {
+        "text": "9년간",
+        "font": "20px",
+        "weight": "700"
+      },
+      {
+        "text": "3,165명",
+        "font": "20px",
+        "weight": "700"
+      }
+    ],
+    "highlight": "비현실적인 수익",
+    "turn": "24px",
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "text": "9년간 3,165명을 가르치고 내린 결론입니다.",
+    "proofFont": "17px",
+    "strong": [
+      {
+        "text": "9년간",
+        "font": "17px",
+        "weight": "700"
+      },
+      {
+        "text": "3,165명",
+        "font": "17px",
+        "weight": "700"
+      }
+    ],
+    "highlight": "비현실적인 수익",
+    "turn": "21px",
+    "overflow": false
+  },
+  {
+    "width": 320,
+    "text": "9년간 3,165명을 가르치고 내린 결론입니다.",
+    "proofFont": "17px",
+    "strong": [
+      {
+        "text": "9년간",
+        "font": "17px",
+        "weight": "700"
+      },
+      {
+        "text": "3,165명",
+        "font": "17px",
+        "weight": "700"
+      }
+    ],
+    "highlight": "비현실적인 수익",
+    "turn": "21px",
+    "overflow": false
+  }
+]

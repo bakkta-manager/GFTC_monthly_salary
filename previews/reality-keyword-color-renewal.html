@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>현실 섹션 키워드 색상 시안 4종 — 월급반</title>
+<style>
+  @font-face{font-family:"Pretendard";src:url("../assets/fonts/pretendard.woff2") format("woff2");font-weight:100 900;font-display:swap}
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9ecf2;color:#1b1f27;font-family:"Pretendard","Apple SD Gothic Neo",sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased}
+  .page{max-width:1680px;margin:0 auto;padding:48px 32px 96px}
+  .page>h1{font-size:28px;letter-spacing:-.03em;margin:0 0 8px}
+  .page>p{margin:0 0 40px;color:#5d6680;font-size:16px}
+  .concept{margin-bottom:64px}
+  .concept-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  .concept-head .tag{display:inline-grid;place-items:center;flex:none;width:34px;height:34px;border-radius:50%;background:#1c69d4;color:#fff;font-weight:700;font-size:16px}
+  .concept-head h2{font-size:20px;margin:0;letter-spacing:-.02em;white-space:nowrap}
+  .concept-head span{color:#5d6680;font-size:14px}
+  .frames{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:24px;align-items:start}
+  .frame{container-type:inline-size;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px -12px rgba(11,29,54,.25);background:#fff}
+  .frame-label{font-size:12px;color:#8c95ad;margin:8px 0 0;letter-spacing:.06em;text-transform:uppercase}
+  @media (max-width:1100px){.frames{grid-template-columns:1fr}.frame.mobile{width:390px}}
+
+  /* 공통: 현재 적용된 현실 섹션과 동일한 베이스 */
+  .stage{position:relative;display:grid;place-items:center;min-height:720px;padding:88px 40px;text-align:center;background:#fff;color:#202329}
+  .stage .limit,.stage .goal{margin:0;font-weight:700;line-height:1.22;letter-spacing:-.04em;font-size:clamp(36px,4.2cqw,66px)}
+  .stage .turn{display:flex;flex-direction:column;align-items:center;gap:10px;width:max-content;margin:24px auto;font-size:clamp(24px,2.4cqw,44px);font-weight:600;line-height:1.4;color:#59616c}
+  .stage .turn::before,.stage .turn::after{content:"";display:block;width:1px;height:28px;background:#285dc266}
+  .stage mark{color:inherit;background:none;padding:0 .04em}
+  @container (max-width:640px){
+    .stage{min-height:0;padding:72px 20px}
+    .stage .limit,.stage .goal{font-size:clamp(26px,7.1cqw,38px)}
+    .stage .turn{font-size:28px}
+  }
+
+  /* A. 블루 단색 — 마커 없이 글자만 브랜드 블루 */
+  .a .limit mark,.a .goal mark{color:#1c69d4}
+
+  /* B. 회색 vs 블루 — 부정은 흐리게, 긍정은 진한 블루 */
+  .b .limit{color:#5d6680}
+  .b .limit mark{color:#8c95ad}
+  .b .goal mark{color:#1c69d4}
+
+  /* C. 블루 글자 + 마커 유지 — 현재 마커 위에 글자색만 추가 */
+  .c .limit mark{color:#285dc2;background:linear-gradient(transparent 62%,#cfdef5 62%)}
+  .c .goal mark{color:#0a4ba1;background:linear-gradient(transparent 60%,rgba(28,105,212,.26) 60%)}
+
+  /* D. 그라데이션 — 부정은 네이비, 긍정은 블루→스카이 */
+  .d mark{-webkit-background-clip:text;background-clip:text;color:transparent}
+  .d .limit mark{background-image:linear-gradient(135deg,#0b1d36 0%,#2b4f82 100%)}
+  .d .goal mark{background-image:linear-gradient(135deg,#0653b6 0%,#3b82f6 60%,#5b9dff 100%)}
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>현실 섹션 키워드 색상 시안 4종</h1>
+  <p>'비현실적인 수익'과 '월급만큼의 수입' 두 구절의 글자 색만 다르게 잡았습니다. 배경·크기·간격은 현재 적용본과 같습니다.</p>
+
+  <section class="concept">
+    <div class="concept-head"><span class="tag">A</span><h2>블루 단색</h2><span>마커를 빼고 두 구절 모두 브랜드 블루(#1c69d4) 글자. 가장 깔끔하고 레퍼런스의 강조 방식과 동일.</span></div>
+    <div class="frames">
+      <div><div class="frame"><section class="stage a"><div>
+        <p class="limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p><p class="turn">하지만</p>
+        <h2 class="goal"><mark>월급만큼의 수입</mark>은<br>현실적으로 가능합니다.</h2>
+      </div></section></div><p class="frame-label">Desktop</p></div>
+      <div><div class="frame mobile"><section class="stage a"><div>
+        <p class="limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p><p class="turn">하지만</p>
+        <h2 class="goal"><mark>월급만큼의 수입</mark>은<br>현실적으로 가능합니다.</h2>
+      </div></section></div><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <div class="concept-head"><span class="tag">B</span><h2>회색 vs 블루</h2><span>'비현실적인 수익'은 흐린 회색으로 힘을 빼고, '월급만큼의 수입'만 진한 블루. 부정과 긍정의 대비가 가장 분명함.</span></div>
+    <div class="frames">
+      <div><div class="frame"><section class="stage b"><div>
+        <p class="limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p><p class="turn">하지만</p>
+        <h2 class="goal"><mark>월급만큼의 수입</mark>은<br>현실적으로 가능합니다.</h2>
+      </div></section></div><p class="frame-label">Desktop</p></div>
+      <div><div class="frame mobile"><section class="stage b"><div>
+        <p class="limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p><p class="turn">하지만</p>
+        <h2 class="goal"><mark>월급만큼의 수입</mark>은<br>현실적으로 가능합니다.</h2>
+      </div></section></div><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <div class="concept-head"><span class="tag">C</span><h2>블루 글자 + 마커 유지</h2><span>지금의 마커를 그대로 두고 글자만 블루로. 첫 구절은 중간 블루, 결론 구절은 딥 블루로 한 단계 더 진하게.</span></div>
+    <div class="frames">
+      <div><div class="frame"><section class="stage c"><div>
+        <p class="limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p><p class="turn">하지만</p>
+        <h2 class="goal"><mark>월급만큼의 수입</mark>은<br>현실적으로 가능합니다.</h2>
+      </div></section></div><p class="frame-label">Desktop</p></div>
+      <div><div class="frame mobile"><section class="stage c"><div>
+        <p class="limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p><p class="turn">하지만</p>
+        <h2 class="goal"><mark>월급만큼의 수입</mark>은<br>현실적으로 가능합니다.</h2>
+      </div></section></div><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <div class="concept-head"><span class="tag">D</span><h2>그라데이션</h2><span>레퍼런스 CTA 버튼과 같은 그라데이션을 글자에. '비현실적인 수익'은 네이비, '월급만큼의 수입'은 블루에서 스카이로 밝아짐.</span></div>
+    <div class="frames">
+      <div><div class="frame"><section class="stage d"><div>
+        <p class="limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p><p class="turn">하지만</p>
+        <h2 class="goal"><mark>월급만큼의 수입</mark>은<br>현실적으로 가능합니다.</h2>
+      </div></section></div><p class="frame-label">Desktop</p></div>
+      <div><div class="frame mobile"><section class="stage d"><div>
+        <p class="limit"><mark>비현실적인 수익</mark>은<br>약속할 수 없습니다.</p><p class="turn">하지만</p>
+        <h2 class="goal"><mark>월급만큼의 수입</mark>은<br>현실적으로 가능합니다.</h2>
+      </div></section></div><p class="frame-label">Mobile 390</p></div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
