@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>선언문 화면 시안 M1·M2·M3</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+  :root{--gold:#ffd84d;--sans:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+  *{box-sizing:border-box}
+  body{margin:0;background:#fafbff;font-family:var(--sans);line-height:1.7;letter-spacing:-.01em;word-break:keep-all;-webkit-font-smoothing:antialiased;color:#fff}
+  p,h1{margin:0}
+  .tag{display:inline-block;margin:0 0 0 clamp(20px,4vw,40px);padding:8px 14px;border-radius:999px;background:#262626;color:#fff;font-size:13px;font-weight:800;transform:translateY(28px);position:relative;z-index:2}
+  .sec{position:relative;overflow:hidden;text-align:center;background-image:radial-gradient(60% 50% at 50% 0%,rgba(110,193,255,.2),rgba(0,0,0,0) 70%),linear-gradient(#2371d8 0%,#0a4ba1 50%,#0b1d36 100%);min-height:640px;display:flex;align-items:center;justify-content:center;padding:80px clamp(20px,4vw,40px);margin-bottom:56px}
+  .sec .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
+  .sec .wrap{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .label{font-size:clamp(18px,1.9vw,26px);font-weight:600;color:rgba(255,255,255,.85)}
+  .gold{color:var(--gold)}
+
+  /* M1 — 4줄, 아주 굵게, 크게 */
+  .m1 .h1{font-weight:900;font-size:clamp(44px,6vw,84px);line-height:1.1;letter-spacing:-.05em}
+
+  /* M2 — 2줄, 앞줄 가늘고 작게 / 뒷줄 굵고 크게, 월천반 과정 골드 */
+  .m2 .h1{display:flex;flex-direction:column;gap:10px}
+  .m2 .h1 .a{font-weight:500;font-size:clamp(22px,2.6vw,34px);color:rgba(255,255,255,.88);letter-spacing:-.02em}
+  .m2 .h1 .b{font-weight:800;font-size:clamp(44px,5.8vw,78px);line-height:1.1;letter-spacing:-.045em}
+
+  /* M3 — 3줄, 중간 굵기, 숫자에 골드 밑줄 */
+  .m3 .h1{font-weight:600;font-size:clamp(40px,5.2vw,68px);line-height:1.25;letter-spacing:-.04em}
+  .m3 .h1 u{text-decoration:none;font-weight:800;box-shadow:inset 0 -.28em 0 rgba(255,216,77,.9);padding:0 .04em}
+</style>
+</head>
+<body>
+
+<span class="tag">M1 — 4줄 · 900 굵기 · 크게 · 숫자 골드</span>
+<section class="sec m1"><div class="grid"></div><div class="wrap">
+  <span class="label">그렇게</span>
+  <h1 class="h1">저의 <span class="gold">10년</span>을<br>압축해서<br><span class="gold">9개월</span>만에 전수하는<br>월천반 과정이 탄생했습니다.</h1>
+</div></section>
+
+<span class="tag">M2 — 2줄 · 앞줄 가늘게 / 뒷줄 굵게 · 월천반 과정 골드</span>
+<section class="sec m2"><div class="grid"></div><div class="wrap">
+  <span class="label">그렇게</span>
+  <h1 class="h1"><span class="a">저의 10년을 압축해서 9개월만에 전수하는</span><span class="b"><span class="gold">월천반 과정</span>이 탄생했습니다.</span></h1>
+</div></section>
+
+<span class="tag">M3 — 3줄 · 600 굵기 · 숫자 골드 밑줄</span>
+<section class="sec m3"><div class="grid"></div><div class="wrap">
+  <span class="label">그렇게</span>
+  <h1 class="h1">저의 <u>10년</u>을 압축해서<br><u>9개월</u>만에 전수하는<br>월천반 과정이 탄생했습니다.</h1>
+</div></section>
+
+</body>
+</html>

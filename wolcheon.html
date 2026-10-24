@@ -70,8 +70,10 @@
   @media (max-width:760px){.nav{top:16px}.nav-inner{width:calc(100% - 28px);padding:8px 9px 8px 18px;gap:15px}.brand{font-size:22px;gap:9px}.brand>span{font-size:11px;padding-left:9px}.nav nav{display:none}.nav-cta{font-size:12px;padding:9px 14px;gap:13px}}
 
   /* hero */
-  .hero{position:relative;overflow:hidden;color:#fff;text-align:center;background-image:radial-gradient(60% 50% at 50% 0%,rgba(110,193,255,.2),rgba(0,0,0,0) 70%),linear-gradient(#2371d8 0%,#0a4ba1 50%,#0b1d36 100%)}
-  .hero .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%)}
+  .hero-bg{background-image:radial-gradient(60% 50% at 50% 0%,rgba(110,193,255,.2),rgba(0,0,0,0) 70%),linear-gradient(#2371d8 0%,#0a4ba1 50%,#0b1d36 100%);background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100vh;background-size:100% 100svh}
+  .hero{position:relative;overflow:hidden;color:#fff;text-align:center;background:transparent}
+  .born-sec{position:relative;overflow:hidden}
+  .hero .grid,.born-sec .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%)}
   .hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center}
   .hero .wrap{position:relative;width:100%;padding-block:clamp(72px,8vw,110px);display:flex;flex-direction:column;align-items:center;gap:32px}
   .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);font-size:16px;font-weight:700;letter-spacing:.02em}
@@ -79,8 +81,16 @@
   .hero .sub{font-size:clamp(18px,1.8vw,24px);font-weight:600;line-height:1.55;color:rgba(255,255,255,.92);max-width:30ch}
   .hero .idea,.hero .born{display:flex;flex-direction:column;align-items:center;gap:14px}
   .hero .idea-label{font-size:clamp(18px,1.9vw,26px);font-weight:600;letter-spacing:-.01em;color:rgba(255,255,255,.85)}
-  .hero .arrow{width:28px;height:56px;display:block}
-  .hero .quote{font-size:clamp(20px,2.3vw,30px);line-height:1.55;font-style:italic;color:rgba(255,255,255,.92)}
+  .hero .scroll{margin-top:28px;font-size:13px;letter-spacing:.18em;color:rgba(255,255,255,.85);display:flex;flex-direction:column;align-items:center;gap:8px}
+  .hero .scroll::after{content:"";width:1px;height:40px;background:rgba(255,255,255,.45)}
+  .born-sec{background:transparent;color:#fff;text-align:center;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center}
+  .born-sec .wrap{padding-block:clamp(72px,8vw,110px)}
+  .born-sec .born{display:flex;flex-direction:column;align-items:center;gap:14px}
+  .born-sec .idea-label{font-size:clamp(18px,1.9vw,26px);font-weight:600;letter-spacing:-.01em;color:rgba(255,255,255,.85)}
+  .born-sec .h1{line-height:1.18}
+  .hero .idea{gap:28px}
+  .hero .quote{font-size:clamp(22px,2.6vw,34px);line-height:1.6;font-style:italic;font-weight:400;color:rgba(255,255,255,.95)}
+  .hero .qsep{width:40px;height:1px;background:rgba(255,255,255,.35)}
   .hero .born .h1{line-height:1.18}
   .hero .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:12px}
   .hero .actions .cta{min-height:52px;padding:14px 28px}
@@ -346,21 +356,31 @@
 </header>
 
 <!-- HERO -->
+<div class="hero-bg">
 <section class="hero" id="top">
   <div class="grid" aria-hidden="true"></div>
   <div class="wrap">
     <div class="idea">
       <span class="idea-label">월천반은 다음 아이디어에서 출발했습니다.</span>
-      <p class="serif quote">'내가 10년 동안 공부하고 경험한것들을 그대로 전수해보자'<br>'나와 같은 레벨의 트레이더를 양성하는 과정을 만들어보자'</p>
+      <p class="serif quote">'내가 10년 동안 공부하고 경험한것들을 그대로 전수해보자'</p>
+      <div class="qsep" aria-hidden="true"></div>
+      <p class="serif quote">'나와 같은 레벨의 트레이더를 양성하는 과정을 만들어보자'</p>
     </div>
-    <svg class="arrow" aria-hidden="true" viewBox="0 0 18 40" fill="none"><path d="M9 4v26M2 24l7 7 7-7" stroke="rgba(255,255,255,.75)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="scroll" aria-hidden="true">SCROLL</div>
+  </div>
+</section>
+
+<!-- 탄생 -->
+<section class="born-sec" id="born">
+  <div class="grid" aria-hidden="true"></div>
+  <div class="wrap" style="position:relative">
     <div class="born">
       <span class="idea-label">그렇게</span>
       <h1 class="h1" style="max-width:22ch">저의 <span class="gold">10년</span>을 압축해서<br><span class="gold">9개월</span>만에 전수하는<br>월천반 과정이 탄생했습니다.</h1>
     </div>
-
   </div>
 </section>
+</div>
 
 <!-- 세 가지 (협회장의 편지) -->
 <section id="three">
@@ -807,9 +827,9 @@ document.querySelectorAll('.cases .thumb[data-yt]').forEach(function(a){a.addEve
     });
   });
 
-  // 히어로를 지나면 헤더 등장 (레퍼런스 navigation.js 동일 로직)
+  // 도입 두 화면(.hero-bg)을 지나면 헤더 등장 (월급반 랜딩과 동일)
   (function () {
-    var header = document.querySelector(".nav"), hero = document.querySelector(".hero");
+    var header = document.querySelector(".nav"), hero = document.querySelector(".hero-bg");
     if (!header || !hero) return;
     var offset = function () { return (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0) + 4; };
     var sync = function () { var v = hero.getBoundingClientRect().bottom <= offset(); header.classList.toggle("is-visible", v); header.inert = !v; };
@@ -825,6 +845,118 @@ document.querySelectorAll('.cases .thumb[data-yt]').forEach(function(a){a.addEve
       document.body.classList.toggle("at-form", en[0].isIntersecting);
     }, { threshold: 0.05 }).observe(document.getElementById("apply"));
   }
+
+  // 히어로 두 화면만 한 제스처에 한 페이지씩 이동한다. (월급반 랜딩과 동일)
+  (function () {
+    var pages = ["top", "born", "three"].map(function (id) { return document.getElementById(id); });
+    var nav = document.querySelector(".nav");
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var moving = false, frame = 0, wheelUntil = 0, touch = null;
+    var WHEEL_PAGE_INTERVAL = 760;
+    var WHEEL_GESTURE_GAP = 180;
+    var lastWheelAt = -Infinity, lastWheelDelta = 0, wheelConsumed = false, wheelDecaying = false;
+    function stops() {
+      var offset = 0; // 헤더가 떠 있어서 흐름에 없음
+      return pages.map(function (page) { return Math.max(0, page.getBoundingClientRect().top + window.scrollY - offset); });
+    }
+    function targetFor(direction) {
+      var points = stops(), y = window.scrollY;
+      if (y > points[2] + 2 || (direction > 0 && y >= points[2] - 2)) return null;
+      // At high zoom or a short viewport, let the reader scroll through all content.
+      if (pages.slice(0, 2).some(function (page) { return page.offsetHeight > window.innerHeight + 4; })) return null;
+      if (direction > 0) {
+        for (var i = 1; i < points.length; i++) if (points[i] > y + 2) return i;
+      } else {
+        for (var j = points.length - 2; j >= 0; j--) if (points[j] < y - 2) return j;
+      }
+      return null;
+    }
+    function cancelMove() {
+      cancelAnimationFrame(frame);
+      moving = false;
+      wheelUntil = 0;
+      lastWheelAt = -Infinity;
+      lastWheelDelta = 0;
+      wheelConsumed = false;
+      wheelDecaying = false;
+    }
+    function go(index) {
+      cancelAnimationFrame(frame);
+      var start = window.scrollY, end = stops()[index], began = performance.now();
+      if (reduceMotion.matches) { window.scrollTo({top:end,behavior:"instant"}); moving = false; return; }
+      moving = true;
+      function tick(now) {
+        var t = Math.min((now - began) / 620, 1);
+        var ease = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        window.scrollTo({top:start + (end - start) * ease,behavior:"instant"});
+        if (t < 1) frame = requestAnimationFrame(tick);
+        else moving = false;
+      }
+      frame = requestAnimationFrame(tick);
+    }
+    function isControl(target) {
+      return target instanceof Element && target.closest("input,textarea,select,button,a,[contenteditable]:not([contenteditable=false])");
+    }
+    window.addEventListener("wheel", function (event) {
+      if (event.ctrlKey || event.metaKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || !event.deltaY || isControl(event.target)) return;
+      var now = performance.now();
+      var delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? window.innerHeight : 1);
+      var magnitude = Math.abs(delta), previous = Math.abs(lastWheelDelta);
+      var freshGesture = now - lastWheelAt > WHEEL_GESTURE_GAP || Math.sign(delta) !== Math.sign(lastWheelDelta);
+      var renewedPush = magnitude > previous * 1.6 && magnitude - previous > 4;
+      if (freshGesture || renewedPush) {
+        wheelConsumed = false;
+        wheelDecaying = false;
+      } else if (magnitude < previous - .5) {
+        wheelDecaying = true;
+      } else if (!wheelDecaying && magnitude >= 40 && previous >= 40 && now >= wheelUntil) {
+        // Repeated deliberate wheel ticks can continue without waiting for silence.
+        wheelConsumed = false;
+      }
+      lastWheelAt = now;
+      lastWheelDelta = delta;
+      if (moving || now < wheelUntil) {
+        // Consume the current gesture without extending the fixed animation guard.
+        wheelConsumed = true;
+        event.preventDefault(); return;
+      }
+      // Momentum from a completed swipe must not advance another scene.
+      if (wheelConsumed) { event.preventDefault(); return; }
+      var target = targetFor(Math.sign(event.deltaY));
+      if (target === null) return;
+      event.preventDefault(); wheelConsumed = true; wheelUntil = now + WHEEL_PAGE_INTERVAL; go(target);
+    }, {passive:false});
+    window.addEventListener("keydown", function (event) {
+      if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey || isControl(event.target)) return;
+      if (["Home", "End", "Escape", "Tab"].includes(event.key)) { cancelMove(); return; }
+      var direction = event.key === "ArrowDown" || event.key === "PageDown" || (event.key === " " && !event.shiftKey) ? 1 : event.key === "ArrowUp" || event.key === "PageUp" || (event.key === " " && event.shiftKey) ? -1 : 0;
+      if (!direction) return;
+      if (moving) { event.preventDefault(); return; }
+      var target = targetFor(direction);
+      if (target !== null) { event.preventDefault(); go(target); }
+    });
+    window.addEventListener("touchstart", function (event) {
+      touch = event.touches.length === 1 && !isControl(event.target) ? {x:event.touches[0].clientX,y:event.touches[0].clientY,consumed:false} : null;
+    }, {passive:true});
+    window.addEventListener("touchmove", function (event) {
+      if (!touch || event.touches.length !== 1) { touch = null; return; }
+      if (touch.consumed) { event.preventDefault(); return; }
+      var dy = touch.y - event.touches[0].clientY, dx = touch.x - event.touches[0].clientX;
+      if (Math.abs(dy) < 18 || Math.abs(dx) > Math.abs(dy)) return;
+      var target = targetFor(Math.sign(dy));
+      if (moving || target !== null) {
+        event.preventDefault(); touch.consumed = true;
+        if (!moving) go(target);
+      }
+    }, {passive:false});
+    window.addEventListener("touchend", function () { touch = null; }, {passive:true});
+    window.addEventListener("touchcancel", function () { touch = null; }, {passive:true});
+    window.addEventListener("resize", cancelMove);
+    document.addEventListener("click", function (event) {
+      if (event.target.closest("a")) cancelMove();
+    });
+    reduceMotion.addEventListener("change", cancelMove);
+  })();
 </script>
 
 </body>
