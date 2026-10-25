@@ -85,7 +85,7 @@
   .nav-cta>span{font-size:18px;line-height:1}
   @media (max-width:1050px){.nav-links{gap:21px;font-size:13px}}
   @media (max-width:640px){.nav{top:12px}.nav-inner{width:calc(100% - 24px);padding:8px 8px 8px 18px;gap:12px}.brand{font-size:20px}.nav-links{display:none}.nav-cta{padding:10px 16px;gap:12px}}
-  #learn,#benefits{scroll-margin-top:96px}
+  #learn,#benefits,#cases{scroll-margin-top:96px}
 
   /* 편지형 본문 */
   .letter{max-width:var(--measure);margin:0 auto;padding:6rem 1.5rem;text-align:left}
@@ -283,9 +283,23 @@
   .r-feat-text{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
   .r-feat-text b{display:block;margin:0;font-size:clamp(22px,2vw,28px);font-weight:700;line-height:1.4;letter-spacing:-.02em;color:var(--r-ink)}
   .r-feat-text p{font-size:16px;line-height:1.8;color:var(--r-body)}
+  /* ── 사례 ── */
+  .r-cases{background:var(--r-bg)}
+  .r-case{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:36px 0;border-top:1px solid var(--r-border)}
+  .r-case:last-child{border-bottom:1px solid var(--r-border)}
+  .r-case:nth-of-type(odd) .thumb{order:-1}
+  .renew .r-case .txt{margin:0;text-align:center;font-size:clamp(18px,1.7vw,22px);font-weight:700;line-height:1.75;letter-spacing:-.025em;color:var(--r-ink)}
+  .r-case .r{color:#d91e1e;font-weight:800}
+  .r-case .bl{color:var(--r-blue);font-weight:800}
+  .r-case .thumb{position:relative;display:block;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000;text-decoration:none}
+  .r-case .thumb img,.r-case .thumb iframe{width:100%;height:100%;display:block;border:0}
+  .r-case .thumb img{object-fit:cover}
+  .r-case .thumb::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,255,255,.92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230b1d36' d='M9 6l10 6-10 6z'/%3E%3C/svg%3E") center/28px no-repeat;box-shadow:0 8px 24px rgba(0,0,0,.3);pointer-events:none}
+  .r-case .thumb.playing::after{display:none}
+  @media (max-width:760px){.r-case{grid-template-columns:1fr;gap:20px}.r-case:nth-of-type(odd) .thumb{order:0}}
   /* ── 5. 상담 신청 ── */
   .r-apply{scroll-margin-top:6rem;padding:0;background:var(--r-bg2)}
-  .r-band{position:relative;overflow:hidden;padding:clamp(72px,8vw,96px) 0 calc(64px + clamp(40px,4.5vw,64px));background:linear-gradient(180deg,#144a8f 0%,#0a3470 55%,#08182e 100%);color:#fff;text-align:center}
+  .r-band{position:relative;overflow:hidden;padding:clamp(72px,8vw,96px) 0;background:linear-gradient(180deg,#144a8f 0%,#0a3470 55%,#08182e 100%);color:#fff;text-align:center}
   .r-band::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 0%,rgba(110,193,255,.24),transparent 70%);pointer-events:none}
   .r-band .r-head{position:relative;margin-bottom:0}
   .r-band h2{color:#fff}
@@ -294,7 +308,8 @@
   .r-tuition>span{font-size:17px;font-weight:600;color:rgba(255,255,255,.8)}
   .r-tuition>strong{font-size:clamp(26px,2.4vw,32px);font-weight:700;letter-spacing:-.03em;line-height:1.2;color:#fff;white-space:nowrap}
   .r-tuition>strong small{font-size:1em;font-weight:700;margin-right:.25em}
-  .r-apply-body{position:relative;margin-top:-64px;padding-bottom:var(--r-section)}
+  .r-pay{position:relative;margin-top:40px}
+  .r-pay-btn{width:min(100%,420px);min-height:64px;font-size:18px}
   .r-form-wrap{max-width:820px;margin:0 auto}
   .form{margin:0;padding:clamp(28px,4vw,48px);background:var(--r-surface);border:1px solid var(--r-border);border-radius:var(--r-radius-lg);box-shadow:0 2px 0 rgba(11,29,54,.03),0 24px 60px -24px rgba(11,29,54,.35);color:var(--r-body)}
   .form-preview-note{max-width:820px;margin:0 auto 20px;padding:14px 18px;border-radius:var(--r-radius-sm);background:var(--r-blue-soft);border:1px solid rgba(28,105,212,.18);color:var(--r-blue-deep);font-size:var(--r-small)}
@@ -398,7 +413,6 @@
     .r-panel .r-bignum{font-size:120px}
     .r-panel svg{width:60px;height:60px}
     .r-band{padding:56px 0 calc(48px + 40px)}
-    .r-apply-body{margin-top:-48px}
     .r-tuition{gap:12px;padding:14px 24px}
     .r-tuition>span{font-size:15px}
     .r-tuition>strong{font-size:24px}
@@ -423,7 +437,7 @@
   <div class="nav-inner">
     <a class="brand" href="#intro" aria-label="GFTC 월급반 처음으로">GFTC<span>월급반</span></a>
     <nav class="nav-links" aria-label="주요 메뉴"><a href="#learn">학습 방식</a><a href="#benefits">제공 혜택</a></nav>
-    <a class="nav-cta" href="#apply">상담 신청 <span aria-hidden="true">↗</span></a>
+    <a class="nav-cta" href="#apply">결제하기 <span aria-hidden="true">↗</span></a>
   </div>
 </header>
 
@@ -578,170 +592,22 @@
   </div>
 </section>
 
+<section class="r-section r-cases" id="cases" aria-labelledby="cases-title">
+  <div class="r-wrap">
+    <div class="r-head r-reveal"><h2 id="cases-title">글로벌트레이더협회를 만나<br><span class="r-accent">삶이 바뀐</span> 사람들</h2></div>
+    <div class="r-case r-reveal"><p class="txt">30대 초반 공무원.<br>수중에 <span class="r">500만 원</span>뿐이던 이 사람은<br><span class="bl">이 이론</span>을 적용한 후 <span class="r">3년</span> 만에<br>빚 없이 <span class="bl">집 2채</span>를 마련했습니다.</p><a class="thumb" href="https://youtu.be/ZJDwAoTDZqs" target="_blank" rel="noopener" data-yt="ZJDwAoTDZqs"><img src="assets/case-1.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    <div class="r-case r-reveal"><p class="txt">투자에 '투'자도 모르던 생업 <span class="r">농부</span>가 있었습니다.<br>그는 낮에는 농사를 짓고 소를 키우며<br>밤에는 <span class="bl">이 이론</span>을 활용했습니다.<br>그리고 월 <span class="r">1억</span>을 벌고 있습니다.</p><a class="thumb" href="https://youtu.be/l9NWYuH32gs" target="_blank" rel="noopener" data-yt="l9NWYuH32gs"><img src="assets/case-2.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    <div class="r-case r-reveal"><p class="txt">12년간 투자했지만 실패만 거듭하던<br>한 사람이 있었습니다.<br>그는 <span class="bl">이 이론</span>을 적용한 뒤,<br>2주 만에 2배로 투자금을 불렸습니다.</p><a class="thumb" href="https://youtu.be/vSk1eoU3GmE" target="_blank" rel="noopener" data-yt="vSk1eoU3GmE"><img src="assets/case-3.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    <div class="r-case r-reveal"><p class="txt">빚 4억의 MZ세대 영끌족 투자자가 있었습니다.<br>그는 2년 동안 퇴근 후에만<br><span class="bl">이 이론</span>을 적용했습니다.<br>그리고 지금은 그 곤경에서 빠져나왔습니다.</p><a class="thumb" href="https://youtu.be/wBjdpOaY_LQ" target="_blank" rel="noopener" data-yt="wBjdpOaY_LQ"><img src="assets/case-4.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+  </div>
+</section>
+
 <section class="r-apply apply" id="apply" aria-labelledby="apply-title">
   <div class="r-band">
     <div class="r-wrap r-head head r-reveal">
-      <h2 id="apply-title">월급반 상담 신청</h2>
+      <h2 id="apply-title">월급반 신청</h2>
       <div class="r-tuition tuition-summary"><span>수강료</span><strong><small>월</small>29만 원</strong></div>
-    </div>
-  </div>
-  <div class="r-wrap r-apply-body">
-
-    <noscript><p class="form-preview-note">상담 신청을 위해 브라우저의 JavaScript를 켜 주세요.</p></noscript>
-    <div class="r-form-wrap">
-    <form class="form" id="applyForm" novalidate>
-      <div class="form-trap" aria-hidden="true"><label>웹사이트<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-      <ol class="steps" aria-label="진행 단계">
-        <li class="on"><b>1</b><span>기본 정보</span></li>
-        <li><b>2</b><span>설문</span></li>
-        <li><b>3</b><span>지원 동기</span></li>
-      </ol>
-
-      <div class="step" id="step1">
-      <div class="group">
-        <h3>기본 정보</h3>
-        <fieldset class="req">
-          <legend>이름과 연락처</legend>
-          <div class="two">
-            <input type="text" name="name" placeholder="이름" aria-label="이름" autocomplete="name" maxlength="50" required>
-            <input type="tel" name="phone" placeholder="010-0000-0000" aria-label="휴대전화 번호" autocomplete="tel" inputmode="tel" maxlength="20" required>
-          </div>
-        </fieldset>
-        <fieldset class="req">
-          <legend>연령대</legend>
-          <div class="chips">
-            <label class="chip"><input type="radio" name="age" value="20대" required><span>20대</span></label>
-            <label class="chip"><input type="radio" name="age" value="30대"><span>30대</span></label>
-            <label class="chip"><input type="radio" name="age" value="40대"><span>40대</span></label>
-            <label class="chip"><input type="radio" name="age" value="50대"><span>50대</span></label>
-            <label class="chip"><input type="radio" name="age" value="60대 이상"><span>60대 이상</span></label>
-          </div>
-        </fieldset>
-      </div>
-
-      <div class="group">
-        <h3>상담 가능 시간</h3>
-        <fieldset class="req">
-          <legend>요일과 시간대 <em>1순위는 필수</em></legend>
-          <div class="slots">
-            <span class="lab">1순위</span>
-            <select name="day1" required><option value="">요일</option><option>월</option><option>화</option><option>수</option><option>목</option><option>금</option><option>토</option><option>일</option></select>
-            <select name="time1" required><option value="">시간</option><option>오전 (10~12시)</option><option>오후 (13~15시)</option><option>오후 (15~18시)</option><option>저녁 (18~21시)</option></select>
-            <span class="lab">2순위</span>
-            <select name="day2"><option value="">요일</option><option>월</option><option>화</option><option>수</option><option>목</option><option>금</option><option>토</option><option>일</option></select>
-            <select name="time2"><option value="">시간</option><option>오전 (10~12시)</option><option>오후 (13~15시)</option><option>오후 (15~18시)</option><option>저녁 (18~21시)</option></select>
-            <span class="lab">3순위</span>
-            <select name="day3"><option value="">요일</option><option>월</option><option>화</option><option>수</option><option>목</option><option>금</option><option>토</option><option>일</option></select>
-            <select name="time3"><option value="">시간</option><option>오전 (10~12시)</option><option>오후 (13~15시)</option><option>오후 (15~18시)</option><option>저녁 (18~21시)</option></select>
-          </div>
-        </fieldset>
-      </div>
-      <p class="err" role="alert">필수 항목을 모두 입력해 주세요.</p>
-      <button type="button" class="r-btn r-full submit" data-next="2">다음 단계</button>
-      </div>
-
-      <div class="step" id="step2" hidden>
-      <div class="group">
-        <h3>설문</h3>
-        <fieldset class="req">
-          <legend>현재 직업</legend>
-          <div class="chips">
-            <label class="chip"><input type="radio" name="job" value="회사원" required><span>회사원</span></label>
-            <label class="chip"><input type="radio" name="job" value="자영업"><span>자영업</span></label>
-            <label class="chip"><input type="radio" name="job" value="전문직"><span>전문직</span></label>
-            <label class="chip"><input type="radio" name="job" value="프리랜서"><span>프리랜서</span></label>
-            <label class="chip"><input type="radio" name="job" value="전업 트레이더"><span>전업 트레이더</span></label>
-            <label class="chip"><input type="radio" name="job" value="학생"><span>학생</span></label>
-            <label class="chip"><input type="radio" name="job" value="무직 또는 준비 중"><span>무직 또는 준비 중</span></label>
-            <label class="chip etc"><input type="radio" name="job" value="기타"><span>기타</span><input type="text" name="job_etc" aria-label="기타 직업" maxlength="100" placeholder="입력해 주세요"></label>
-          </div>
-        </fieldset>
-        <fieldset class="req">
-          <legend>트레이딩 경험</legend>
-          <div class="chips grow">
-            <label class="chip"><input type="radio" name="exp" value="없음" required><span>없음</span></label>
-            <label class="chip"><input type="radio" name="exp" value="1년 미만"><span>1년 미만</span></label>
-            <label class="chip"><input type="radio" name="exp" value="1~3년"><span>1~3년</span></label>
-            <label class="chip"><input type="radio" name="exp" value="3년 이상"><span>3년 이상</span></label>
-          </div>
-        </fieldset>
-        <fieldset class="req">
-          <legend>지금까지의 트레이딩 결과</legend>
-          <div class="chips grow">
-            <label class="chip"><input type="radio" name="result" value="경험 없음" required><span>경험 없음</span></label>
-            <label class="chip"><input type="radio" name="result" value="손실"><span>손실</span></label>
-            <label class="chip"><input type="radio" name="result" value="본전 수준"><span>본전 수준</span></label>
-            <label class="chip"><input type="radio" name="result" value="수익"><span>수익</span></label>
-          </div>
-        </fieldset>
-        <fieldset class="req">
-          <legend>월급반에서 만들고 싶은 월수입 목표</legend>
-          <div class="chips grow">
-            <label class="chip"><input type="radio" name="goal" value="100만 원 이하" required><span>100만 원 이하</span></label>
-            <label class="chip"><input type="radio" name="goal" value="300만 원"><span>300만 원</span></label>
-            <label class="chip"><input type="radio" name="goal" value="500만 원"><span>500만 원</span></label>
-            <label class="chip"><input type="radio" name="goal" value="1,000만 원 이상"><span>1,000만 원 이상</span></label>
-          </div>
-        </fieldset>
-        <fieldset class="req">
-          <legend>하루에 학습·훈련에 쓸 수 있는 시간</legend>
-          <div class="chips grow">
-            <label class="chip"><input type="radio" name="hours" value="1시간 미만" required><span>1시간 미만</span></label>
-            <label class="chip"><input type="radio" name="hours" value="1~2시간"><span>1~2시간</span></label>
-            <label class="chip"><input type="radio" name="hours" value="2~4시간"><span>2~4시간</span></label>
-            <label class="chip"><input type="radio" name="hours" value="4시간 이상"><span>4시간 이상</span></label>
-          </div>
-        </fieldset>
-        <fieldset class="req">
-          <legend>매주 1회 이상 ZOOM 참여와 매일 매매 일지 작성이 가능한가요?</legend>
-          <div class="chips grow">
-            <label class="chip"><input type="radio" name="commit" value="가능" required><span>가능합니다</span></label>
-            <label class="chip"><input type="radio" name="commit" value="어려움"><span>어렵습니다</span></label>
-          </div>
-        </fieldset>
-        <fieldset class="req">
-          <legend>학습과 훈련에 꾸준히 참여할 의향이 있으신가요?</legend>
-          <div class="chips grow">
-            <label class="chip"><input type="radio" name="duration" value="있음" required><span>있습니다</span></label>
-            <label class="chip"><input type="radio" name="duration" value="고민 중"><span>고민 중입니다</span></label>
-          </div>
-        </fieldset>
-      </div>
-
-      <p class="err" role="alert">필수 항목을 모두 입력해 주세요.</p>
-      <button type="button" class="r-btn r-full submit" data-next="3">다음 단계</button>
-      <p class="fine"><a href="#" data-back="1">이전 단계로</a></p>
-      </div>
-
-      <div class="step" id="step3" hidden>
-      <div class="group">
-        <h3>지원 동기</h3>
-        <p class="intro">현재 투자와 트레이딩에 대한 가장 큰 문제와 고민, 월급반 과정에 참여하고 싶은 이유 등을 최대한 자세하게 적어 주세요.<br>소수 정예 훈련 코스인 만큼 TO가 한정되어 있습니다. 진지하게 임하실 분들과만 함께합니다.</p>
-        <fieldset class="req">
-          <legend>서술형 답변</legend>
-          <textarea name="essay" rows="10" maxlength="5000" required placeholder="자유롭게, 최대한 구체적으로 적어 주세요. (최대 5,000자)"></textarea>
-        </fieldset>
-      </div>
-
-      <div class="consent">
-        <details>
-          <summary>개인정보 수집·이용 동의</summary>
-          <p>수집 항목: 이름, 연락처, 설문 응답 · 목적: 월급반 상담 및 안내 · 보유 기간: 상담 종료 후 1년 또는 동의 철회 시까지. 동의를 거부할 수 있으나 거부 시 상담 신청이 제한됩니다.</p>
-        </details>
-        <label class="check"><input type="checkbox" name="consent" required>동의합니다</label>
-      </div>
-
-      <p class="err" role="alert">필수 항목을 모두 입력해 주세요.</p>
-      <button type="submit" class="r-btn r-full submit" disabled>상담 신청하기</button>
-      <p class="fine"><a href="#" data-back="2">이전 단계로</a> · 상황에 따라 상담 전화 일자는 다소 변동될 수 있습니다.</p>
-      </div>
-    </form>
-    </div>
-
-    <div class="done" id="done" tabindex="-1" aria-live="polite">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
-      <h3>상담 신청이 접수되었습니다.</h3>
-      <p>입력하신 연락처로 상담 일정을 안내드리겠습니다.</p>
+      <div class="r-pay"><a class="r-btn r-pay-btn" href="#" id="payButton">결제하기</a></div>
     </div>
   </div>
 </section>
@@ -762,13 +628,9 @@
 </div>
 <!-- ═══════ 하단 리뉴얼 끝 ═══════ -->
 
-<div class="sticky"><a class="btn gold" href="#apply">상담 신청하기</a></div>
+<div class="sticky"><a class="btn gold" href="#apply">결제하기</a></div>
 
 <script>
-  // Public submission key; private data can only be written by the server.
-  var FORM_ENDPOINT = "https://rpypknboeestdfvtlcad.supabase.co/functions/v1/submit-consultation";
-  var FORM_PUBLIC_KEY = "sb_publishable_voGB3SVlwOI6kSFwA02nYQ_yVrT3a7R";
-
   // 보이는 장면만 영상을 재생하고, 저감 모션·실패 시 이미지를 유지한다.
   (function () {
     if (!("IntersectionObserver" in window)) return;
@@ -854,108 +716,16 @@
     });
   })();
 
-  var form = document.getElementById("applyForm");
-  var done = document.getElementById("done");
-  var stepEls = [1, 2, 3].map(function (n) { return document.getElementById("step" + n); });
-  var steps = form.querySelectorAll(".steps li");
-  var submitButton = form.querySelector('button[type="submit"]');
-  var submitting = false;
-  var requestId = "";
-  var requestSnapshot = "";
-  submitButton.disabled = false;
-
-  // 값 없는 select는 흐리게
-  form.querySelectorAll("select").forEach(function (s) {
-    var sync = function () { s.classList.toggle("empty", !s.value); };
-    s.addEventListener("change", sync); sync();
-  });
-
-  function invalidIn(root) {
-    form.classList.remove("invalid");
-    root.querySelector(".err").textContent = "필수 항목을 모두 입력해 주세요.";
-    form.elements.name.setCustomValidity(form.elements.name.value.trim() ? "" : "이름을 입력해 주세요.");
-    form.elements.phone.setCustomValidity(/^01[016789][0-9]{7,8}$/.test(form.elements.phone.value.replace(/[\s()-]/g, "")) ? "" : "휴대전화 번호를 정확하게 입력해 주세요.");
-    form.elements.essay.setCustomValidity(form.elements.essay.value.trim() ? "" : "지원 동기를 입력해 주세요.");
-    var otherJob = form.elements.job.value === "기타";
-    form.elements.job_etc.required = otherJob;
-    form.elements.job_etc.setCustomValidity(!otherJob || form.elements.job_etc.value.trim() ? "" : "직업을 입력해 주세요.");
-    [2, 3].forEach(function (n) {
-      var day = form.elements["day" + n], time = form.elements["time" + n];
-      day.setCustomValidity(time.value && !day.value ? "요일도 선택해 주세요." : "");
-      time.setCustomValidity(day.value && !time.value ? "시간도 선택해 주세요." : "");
+  document.querySelectorAll(".r-case .thumb[data-yt]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube.com/embed/" + a.dataset.yt + "?autoplay=1";
+      f.allow = "autoplay; encrypted-media; picture-in-picture";
+      f.allowFullscreen = true;
+      a.replaceChildren(f);
+      a.classList.add("playing");
     });
-    var bad = Array.prototype.find.call(root.querySelectorAll("input,select,textarea"), function (el) { return !el.checkValidity(); });
-    if (!bad) return false;
-    form.classList.add("invalid");
-    root.querySelector(".err").textContent = bad.validationMessage || "필수 항목을 모두 입력해 주세요.";
-    if (!root.hidden) { bad.scrollIntoView({ block: "center" }); bad.focus({ preventScroll: true }); }
-    return true;
-  }
-  function goStep(n) {
-    if (submitting) return;
-    stepEls.forEach(function (el, i) { el.hidden = i + 1 !== n; steps[i].className = i + 1 === n ? "on" : i + 1 < n ? "passed" : ""; });
-    form.classList.remove("invalid");
-    form.scrollIntoView({ block: "start" });
-  }
-  form.querySelectorAll("[data-next]").forEach(function (b) {
-    b.addEventListener("click", function () { var n = +b.dataset.next; if (!invalidIn(stepEls[n - 2])) goStep(n); });
-  });
-  form.querySelectorAll("[data-back]").forEach(function (a) {
-    a.addEventListener("click", function (e) { e.preventDefault(); goStep(+a.dataset.back); });
-  });
-
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-    if (submitting) return;
-    for (var i = 0; i < stepEls.length; i++) { if (invalidIn(stepEls[i])) { goStep(i + 1); invalidIn(stepEls[i]); return; } }
-    var data = Object.fromEntries(new FormData(form).entries());
-    var snapshot = JSON.stringify(data);
-    if (!requestId || snapshot !== requestSnapshot) {
-      requestId = crypto.randomUUID();
-      requestSnapshot = snapshot;
-    }
-    data.request_id = requestId;
-    submitting = true;
-    submitButton.disabled = true;
-    submitButton.textContent = "접수 중…";
-    submitButton.setAttribute("aria-busy", "true");
-    var controller = new AbortController();
-    var timeout = setTimeout(function () { controller.abort(); }, 25000);
-    try {
-      var response = await fetch(FORM_ENDPOINT, {
-        method: "POST", headers: { "Content-Type": "application/json", "apikey": FORM_PUBLIC_KEY },
-        body: JSON.stringify(data), signal: controller.signal
-      });
-      var result = await response.json().catch(function () { return {}; });
-      if (!response.ok || result.ok !== true || result.id !== requestId) {
-        var error = new Error(result.message || "접수를 완료하지 못했습니다. 잠시 후 다시 시도해 주세요.");
-        error.field = result.field;
-        throw error;
-      }
-      form.hidden = true;
-      done.style.display = "block";
-      done.scrollIntoView({ block: "center" });
-      done.focus({ preventScroll: true });
-    } catch (error) {
-      submitting = false;
-      var field = typeof error.field === "string" ? form.elements.namedItem(error.field) : null;
-      if (field && field.closest) {
-        var stepIndex = stepEls.indexOf(field.closest(".step"));
-        if (stepIndex >= 0) goStep(stepIndex + 1);
-        field.focus({ preventScroll: true });
-      }
-      var activeStep = stepEls.find(function (el) { return !el.hidden; });
-      activeStep.querySelector(".err").textContent = error.name === "AbortError" || error instanceof TypeError
-        ? "연결이 원활하지 않습니다. 입력 내용은 유지되어 있으니 다시 신청해 주세요."
-        : error.message;
-      form.classList.add("invalid");
-    } finally {
-      clearTimeout(timeout);
-      submitting = false;
-      submitButton.disabled = false;
-      submitButton.textContent = "상담 신청하기";
-      submitButton.removeAttribute("aria-busy");
-    }
   });
 
   if ("IntersectionObserver" in window) {
