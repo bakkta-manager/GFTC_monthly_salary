@@ -285,18 +285,13 @@
   .r-feat-text p{font-size:16px;line-height:1.8;color:var(--r-body)}
   /* ── 사례 ── */
   .r-cases{background:var(--r-bg)}
-  .r-case{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:36px 0;border-top:1px solid var(--r-border)}
-  .r-case:last-child{border-bottom:1px solid var(--r-border)}
-  .r-case:nth-of-type(odd) .thumb{order:-1}
-  .renew .r-case .txt{margin:0;text-align:center;font-size:clamp(18px,1.7vw,22px);font-weight:700;line-height:1.75;letter-spacing:-.025em;color:var(--r-ink)}
-  .r-case .r{color:#d91e1e;font-weight:700}
-  .r-case .bl{color:var(--r-blue);font-weight:700}
+  .r-case-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px)}
   .r-case .thumb{position:relative;display:block;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000;text-decoration:none}
   .r-case .thumb img,.r-case .thumb iframe{width:100%;height:100%;display:block;border:0}
   .r-case .thumb img{object-fit:cover}
   .r-case .thumb::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,255,255,.92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230b1d36' d='M9 6l10 6-10 6z'/%3E%3C/svg%3E") center/28px no-repeat;box-shadow:0 8px 24px rgba(0,0,0,.3);pointer-events:none}
   .r-case .thumb.playing::after{display:none}
-  @media (max-width:760px){.r-case{grid-template-columns:1fr;gap:20px}.r-case:nth-of-type(odd) .thumb{order:0}}
+  @media (max-width:760px){.r-case-grid{grid-template-columns:1fr;gap:16px}}
   /* ── 5. 상담 신청 ── */
   .r-apply{scroll-margin-top:6rem;padding:0;background:var(--r-bg2)}
   .r-band{position:relative;overflow:hidden;padding:clamp(72px,8vw,96px) 0;background:linear-gradient(180deg,#144a8f 0%,#0a3470 55%,#08182e 100%);color:#fff;text-align:center}
@@ -595,10 +590,12 @@
 <section class="r-section r-cases" id="cases" aria-labelledby="cases-title">
   <div class="r-wrap">
     <div class="r-head r-reveal"><h2 id="cases-title">글로벌트레이더협회를 만나<br><span class="r-accent">삶이 바뀐</span> 사람들</h2></div>
-    <div class="r-case r-reveal"><p class="txt">30대 초반 공무원.<br>수중에 <span class="r">500만 원</span>뿐이던 이 사람은<br><span class="bl">이 이론</span>을 적용한 후 <span class="r">3년</span> 만에<br>빚 없이 <span class="bl">집 2채</span>를 마련했습니다.</p><a class="thumb" href="https://youtu.be/ZJDwAoTDZqs" target="_blank" rel="noopener" data-yt="ZJDwAoTDZqs"><img src="assets/case-1.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
-    <div class="r-case r-reveal"><p class="txt">투자에 '투'자도 모르던 생업 <span class="r">농부</span>가 있었습니다.<br>그는 낮에는 농사를 짓고 소를 키우며<br>밤에는 <span class="bl">이 이론</span>을 활용했습니다.<br>그리고 월 <span class="r">1억</span>을 벌고 있습니다.</p><a class="thumb" href="https://youtu.be/l9NWYuH32gs" target="_blank" rel="noopener" data-yt="l9NWYuH32gs"><img src="assets/case-2.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
-    <div class="r-case r-reveal"><p class="txt">12년간 투자했지만 실패만 거듭하던<br>한 사람이 있었습니다.<br>그는 <span class="bl">이 이론</span>을 적용한 뒤,<br>2주 만에 2배로 투자금을 불렸습니다.</p><a class="thumb" href="https://youtu.be/vSk1eoU3GmE" target="_blank" rel="noopener" data-yt="vSk1eoU3GmE"><img src="assets/case-3.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
-    <div class="r-case r-reveal"><p class="txt">빚 4억의 MZ세대 영끌족 투자자가 있었습니다.<br>그는 2년 동안 퇴근 후에만<br><span class="bl">이 이론</span>을 적용했습니다.<br>그리고 지금은 그 곤경에서 빠져나왔습니다.</p><a class="thumb" href="https://youtu.be/wBjdpOaY_LQ" target="_blank" rel="noopener" data-yt="wBjdpOaY_LQ"><img src="assets/case-4.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    <div class="r-case-grid">
+    <div class="r-case r-reveal"><a class="thumb" href="https://youtu.be/ZJDwAoTDZqs" target="_blank" rel="noopener" data-yt="ZJDwAoTDZqs"><img src="assets/case-1.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    <div class="r-case r-reveal"><a class="thumb" href="https://youtu.be/l9NWYuH32gs" target="_blank" rel="noopener" data-yt="l9NWYuH32gs"><img src="assets/case-2.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    <div class="r-case r-reveal"><a class="thumb" href="https://youtu.be/vSk1eoU3GmE" target="_blank" rel="noopener" data-yt="vSk1eoU3GmE"><img src="assets/case-3.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    <div class="r-case r-reveal"><a class="thumb" href="https://youtu.be/wBjdpOaY_LQ" target="_blank" rel="noopener" data-yt="wBjdpOaY_LQ"><img src="assets/case-4.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></a></div>
+    </div>
   </div>
 </section>
 
