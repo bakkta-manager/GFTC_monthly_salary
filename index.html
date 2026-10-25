@@ -877,14 +877,16 @@
 
   // 떠 있는 헤더: 도입 장면(#intro)을 지나면 나타난다.
   (function () {
-    var header = document.querySelector(".nav"), intro = document.getElementById("intro");
-    if (!header || !intro || !("IntersectionObserver" in window)) { if (header) { header.classList.add("is-visible"); header.inert = false; } return; }
+    var header = document.querySelector(".nav"), reality = document.getElementById("intro-reality");
+    if (!header || !reality) { if (header) { header.classList.add("is-visible"); header.inert = false; } return; }
+    // "비현실적인 수익" 화면이 뷰포트 상단 30% 안으로 들어오면 헤더 등장
     function sync() {
-      var visible = intro.getBoundingClientRect().bottom <= 4;
+      var visible = reality.getBoundingClientRect().top <= window.innerHeight * 0.3;
       header.classList.toggle("is-visible", visible);
       header.inert = !visible;
     }
-    new IntersectionObserver(sync, { rootMargin: "-4px 0px 0px 0px", threshold: 0 }).observe(intro);
+    window.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
     window.addEventListener("pageshow", sync);
     sync();
   })();
