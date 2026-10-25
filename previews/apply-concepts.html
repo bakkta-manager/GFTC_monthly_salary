@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>월급반 신청 섹션 시안 4개</title>
+<style>
+@font-face{font-family:Pretendard;src:url("../assets/fonts/pretendard.woff2") format("woff2");font-weight:100 900;font-display:swap}
+:root{--blue:#1c69d4;--blue-deep:#0a4ba1;--grad:linear-gradient(135deg,#0653b6 0%,#1c69d4 100%);--sky:#7cb0ff;--ink:#1b1f27;--body:#3b4252;--muted:#5d6680;--border:#dfe4ec;--bg:#fafbff;--bg2:#f3f5fa;--surface:#fff;--soft:#e8f1ff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--body);background:#e9ecf3;letter-spacing:-.01em;line-height:1.7}
+.tag{position:sticky;top:0;z-index:5;margin:0;padding:10px 20px;background:#111;color:#fff;font-size:14px;font-weight:700;letter-spacing:.08em}
+section{padding:clamp(72px,8vw,110px) 24px}
+.wrap{max-width:1120px;margin:0 auto}
+h2{margin:0;font-size:42px;font-weight:700;line-height:1.25;letter-spacing:-.03em;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:60px;padding:0 36px;border-radius:999px;background:var(--grad);color:#fff;font-size:18px;font-weight:700;text-decoration:none;box-shadow:0 0 0 1px rgba(124,176,255,.4),0 12px 40px -8px rgba(47,109,246,.7)}
+.btn:hover{transform:translateY(-2px)}
+.muted{color:var(--muted)}
+
+/* ── A. 라이트 프라이스 카드 ── */
+.a{background:var(--bg)}
+.a .wrap{text-align:center}
+.a .card{margin:40px auto 0;max-width:560px;padding:44px 40px 40px;background:var(--surface);border:1px solid var(--border);border-radius:26px;box-shadow:0 1px 0 rgba(11,29,54,.04),0 24px 60px -24px rgba(11,29,54,.25);text-align:left}
+.a .label{font-size:16px;font-weight:600;color:var(--muted)}
+.a .price{display:flex;align-items:baseline;gap:8px;margin:6px 0 24px}
+.a .price strong{font-size:56px;font-weight:700;letter-spacing:-.04em;color:var(--ink);line-height:1}
+.a .price span{font-size:18px;font-weight:600;color:var(--muted)}
+.a ul{list-style:none;margin:0 0 28px;padding:24px 0 0;border-top:1px solid var(--border);display:grid;gap:10px;font-size:16px;color:var(--body)}
+.a li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--blue);margin:0 12px 2px 0}
+.a .btn{width:100%}
+
+/* ── B. 다크 좌우 분할 ── */
+.b{background:linear-gradient(180deg,#0e3b7a,#08182e);color:#fff}
+.b .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.b h2{color:#fff;font-size:48px}
+.b p{margin:18px 0 0;font-size:18px;color:rgba(255,255,255,.72)}
+.b .panel{padding:40px;border-radius:26px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px)}
+.b .panel .label{font-size:16px;font-weight:600;color:rgba(255,255,255,.7)}
+.b .panel .price{margin:8px 0 28px;font-size:56px;font-weight:700;letter-spacing:-.04em;line-height:1}
+.b .panel .price small{font-size:22px;font-weight:600;margin-left:8px;color:rgba(255,255,255,.8)}
+.b .btn{width:100%;background:#fff;color:var(--blue-deep);box-shadow:0 12px 40px -8px rgba(0,0,0,.5)}
+.b .note{margin:16px 0 0;font-size:14px;color:rgba(255,255,255,.55);text-align:center}
+
+/* ── C. 미니멀 타이포 ── */
+.c{background:#fff}
+.c .wrap{max-width:900px;text-align:center}
+.c .eyebrow{font-size:16px;font-weight:600;color:var(--blue);letter-spacing:.02em}
+.c .big{margin:12px 0 0;font-size:clamp(72px,11vw,128px);font-weight:700;letter-spacing:-.05em;line-height:1;color:var(--ink)}
+.c .big small{font-size:.32em;font-weight:600;color:var(--muted);letter-spacing:-.02em;margin-right:.15em;vertical-align:.5em}
+.c hr{width:72px;margin:36px auto;border:0;border-top:2px solid var(--ink)}
+.c p{margin:0 0 36px;font-size:18px;color:var(--muted)}
+
+/* ── D. 수강권 티켓 ── */
+.d{background:var(--bg2)}
+.d .wrap{text-align:center}
+.d .ticket{position:relative;margin:40px auto 0;max-width:640px;display:grid;grid-template-columns:1fr auto;background:var(--surface);border-radius:22px;overflow:hidden;box-shadow:0 24px 60px -24px rgba(11,29,54,.3);text-align:left}
+.d .left{padding:36px 40px;background:var(--grad);color:#fff}
+.d .left .label{font-size:14px;font-weight:600;letter-spacing:.12em;opacity:.8}
+.d .left .name{margin:8px 0 0;font-size:32px;font-weight:700;letter-spacing:-.03em;line-height:1.2}
+.d .left .meta{margin:24px 0 0;font-size:14px;opacity:.8;display:flex;gap:18px}
+.d .right{position:relative;padding:36px 40px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;border-left:2px dashed var(--border)}
+.d .right::before,.d .right::after{content:"";position:absolute;left:-13px;width:24px;height:24px;border-radius:50%;background:var(--bg2)}
+.d .right::before{top:-12px}.d .right::after{bottom:-12px}
+.d .right .price{font-size:40px;font-weight:700;letter-spacing:-.04em;line-height:1;color:var(--ink)}
+.d .right .price small{font-size:18px;font-weight:600;color:var(--muted);margin-right:6px}
+.d .right .btn{min-height:52px;padding:0 28px;font-size:16px}
+
+@media (max-width:760px){
+  h2{font-size:30px}.b h2{font-size:32px}
+  .b .wrap{grid-template-columns:1fr;gap:32px}
+  .d .ticket{grid-template-columns:1fr}
+  .d .right{border-left:0;border-top:2px dashed var(--border)}
+  .d .right::before,.d .right::after{top:-12px;bottom:auto;left:auto}
+  .d .right::before{left:-12px}.d .right::after{right:-12px}
+}
+</style>
+</head>
+<body>
+
+<p class="tag">A · 라이트 프라이스 카드</p>
+<section class="a"><div class="wrap">
+  <h2>월급반 신청</h2>
+  <div class="card">
+    <div class="label">수강료</div>
+    <div class="price"><strong>29만 원</strong><span>/ 월</span></div>
+    <ul>
+      <li>아침·점심·저녁 시황</li>
+      <li>타점 교육 · W.E.T · 뉴스</li>
+      <li>수강생·졸업생 커뮤니티</li>
+      <li>파동에너지 이론 강의 24편</li>
+    </ul>
+    <a class="btn" href="#">결제하기</a>
+  </div>
+</div></section>
+
+<p class="tag">B · 다크 좌우 분할</p>
+<section class="b"><div class="wrap">
+  <div>
+    <h2>월급만큼의 수입,<br>한 달 29만 원으로<br>시작합니다.</h2>
+    <p>조교의 관리 감독하에 매주 실천하고 복기하는 집단 훈련 환경입니다.</p>
+  </div>
+  <div class="panel">
+    <div class="label">수강료</div>
+    <div class="price">29만 원<small>/ 월</small></div>
+    <a class="btn" href="#">결제하기</a>
+    <p class="note">6인 학습팀 · 전담 조교</p>
+  </div>
+</div></section>
+
+<p class="tag">C · 미니멀 타이포</p>
+<section class="c"><div class="wrap">
+  <div class="eyebrow">월급반 수강료</div>
+  <div class="big"><small>월</small>29만 원</div>
+  <hr>
+  <p>월급만큼의 수익을 목표로 하는 집단 훈련 과정</p>
+  <a class="btn" href="#">결제하기</a>
+</div></section>
+
+<p class="tag">D · 수강권 티켓</p>
+<section class="d"><div class="wrap">
+  <h2>월급반 신청</h2>
+  <div class="ticket">
+    <div class="left">
+      <div class="label">GFTC · 글로벌트레이더협회</div>
+      <div class="name">월급반 수강권</div>
+      <div class="meta"><span>6인 학습팀</span><span>전담 조교</span><span>매주 복기</span></div>
+    </div>
+    <div class="right">
+      <div class="price"><small>월</small>29만 원</div>
+      <a class="btn" href="#">결제하기</a>
+    </div>
+  </div>
+</div></section>
+
+</body>
+</html>
