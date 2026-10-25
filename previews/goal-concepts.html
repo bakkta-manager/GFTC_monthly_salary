@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>교육 목표 섹션 시안 4개</title>
+<style>
+@font-face{font-family:Pretendard;src:url("../assets/fonts/pretendard.woff2") format("woff2");font-weight:100 900;font-display:swap}
+:root{--blue:#1c69d4;--deep:#0a4ba1;--bright:#3b82f6;--sky:#7cb0ff;--grad:linear-gradient(135deg,#0653b6,#1c69d4);--text:linear-gradient(120deg,#0a4ba1,#1c69d4 55%,#3b82f6);--ink:#1b1f27;--body:#3b4252;--muted:#5d6680;--faint:#8c95ad;--border:#dfe4ec;--surface:linear-gradient(180deg,#fff,#f6f8fd);--sh:0 1px 0 rgba(11,29,54,.04),0 10px 30px -12px rgba(11,29,54,.16),0 30px 60px -30px rgba(28,105,212,.18);--sh2:0 2px 0 rgba(28,105,212,.08),0 18px 40px -14px rgba(11,29,54,.22),0 40px 80px -30px rgba(28,105,212,.28)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;color:var(--body);background:#e9ecf3;letter-spacing:-.01em;line-height:1.7}
+.tag{position:sticky;top:0;z-index:5;margin:0;padding:10px 20px;background:#111;color:#fff;font-size:14px;font-weight:700;letter-spacing:.08em}
+section{position:relative;overflow:hidden;padding:clamp(72px,8vw,110px) 24px;background:linear-gradient(180deg,#fbfcff,#f3f6fc)}
+.wrap{max-width:1120px;margin:0 auto}
+h2{margin:0;font-size:clamp(32px,3.6vw,46px);font-weight:700;line-height:1.25;letter-spacing:-.03em;color:var(--ink)}
+.accent{background:var(--text);-webkit-background-clip:text;background-clip:text;color:transparent}
+p{margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--blue);background:rgba(28,105,212,.08);border:1px solid rgba(28,105,212,.14)}
+.chk{position:relative;display:block;padding-left:34px;font-size:16px;color:var(--body)}
+.chk::before{content:"";position:absolute;left:0;top:3px;width:22px;height:22px;border-radius:50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/11px no-repeat,var(--grad);box-shadow:0 6px 14px -6px rgba(28,105,212,.7)}
+
+/* ── G-A 다음 단계 (월백반 → 월급반) ── */
+.ga .head{text-align:center;margin-bottom:56px}
+.ga .steps{display:grid;grid-template-columns:1fr auto 1.2fr;gap:28px;align-items:stretch}
+.ga .tile{position:relative;padding:36px 36px 32px;border-radius:26px;background:var(--surface);border:1px solid #fff;box-shadow:var(--sh);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.ga .tile:hover{transform:translateY(-6px);box-shadow:var(--sh2)}
+.ga .tile .lab{display:inline-block;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.04em;background:#eef2fa;color:var(--muted)}
+.ga .tile h3{margin:18px 0 4px;font-size:22px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.ga .tile .big{font-size:clamp(40px,4.4vw,56px);font-weight:700;letter-spacing:-.05em;line-height:1.05;color:var(--ink)}
+.ga .tile .big small{font-size:18px;font-weight:600;color:var(--muted);letter-spacing:-.02em;margin-left:6px}
+.ga .tile p{margin-top:14px;font-size:15px;color:var(--muted)}
+.ga .tile.now{background:var(--surface)}
+.ga .tile.now .lab{background:rgba(28,105,212,.1);color:var(--blue)}
+.ga .tile.next{color:#fff;background:radial-gradient(60% 80% at 15% 20%,rgba(59,130,246,.5),transparent 60%),linear-gradient(180deg,#0e3b7a,#08182e);border-color:rgba(255,255,255,.14);box-shadow:0 30px 70px -24px rgba(10,75,161,.7)}
+.ga .tile.next .lab{background:rgba(255,255,255,.14);color:#fff}
+.ga .tile.next h3,.ga .tile.next .big{color:#fff}
+.ga .tile.next .big{background:linear-gradient(120deg,#fff,#cfe0ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ga .tile.next .big small{color:rgba(255,255,255,.7)}
+.ga .tile.next p{color:rgba(255,255,255,.72)}
+.ga .arrow{align-self:center;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:#fff;box-shadow:0 14px 30px -10px rgba(28,105,212,.8)}
+.ga .arrow svg{width:22px;height:22px}
+.ga .note{margin:40px auto 0;max-width:720px;text-align:center;font-size:17px;color:var(--muted)}
+.ga .note b{color:var(--ink)}
+
+/* ── G-B 다크 스테이트먼트 + 추천 대상 ── */
+.gb{background:radial-gradient(60% 80% at 15% 20%,rgba(59,130,246,.4),transparent 60%),radial-gradient(50% 70% at 90% 90%,rgba(124,176,255,.22),transparent 60%),linear-gradient(180deg,#0e3b7a,#0a2d5e 55%,#08182e);color:#fff}
+.gb .split{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(40px,6vw,80px);align-items:center}
+.gb h2{color:#fff;font-size:clamp(36px,4.2vw,54px)}
+.gb .accent{background:linear-gradient(120deg,#fff,#9cc2ff);-webkit-background-clip:text;background-clip:text}
+.gb .eyebrow{color:rgba(255,255,255,.8);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)}
+.gb .lead{margin-top:20px;font-size:18px;color:rgba(255,255,255,.72)}
+.gb .card{padding:32px;border-radius:26px;background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(12px);box-shadow:0 30px 80px -30px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.25)}
+.gb .card .t{display:flex;align-items:center;gap:12px;font-size:18px;font-weight:700}
+.gb .card .t i{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#7cb0ff,#3b82f6);box-shadow:0 10px 24px -8px rgba(59,130,246,.9)}
+.gb .card .t svg{width:20px;height:20px;color:#fff}
+.gb .card ul{list-style:none;margin:22px 0 0;padding:22px 0 0;border-top:1px solid rgba(255,255,255,.14);display:grid;gap:14px}
+.gb .chk{color:rgba(255,255,255,.9)}
+.gb .chk b{color:#fff}
+.gb .chk::before{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/11px no-repeat,linear-gradient(135deg,#7cb0ff,#3b82f6)}
+.gb .card .foot{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:rgba(255,255,255,.55)}
+
+/* ── G-C 급여명세서 메타포 ── */
+.gc .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center}
+.gc .lead{margin-top:20px;font-size:18px;color:var(--muted)}
+.gc .who{margin-top:28px;padding:22px 24px;border-radius:18px;background:var(--surface);border:1px solid #fff;box-shadow:var(--sh)}
+.gc .who .chk b{color:var(--deep)}
+.gc .slip{position:relative;max-width:460px;margin:0 auto;padding:32px 32px 28px;border-radius:22px;background:#fff;border:1px solid #fff;box-shadow:var(--sh2);transform:rotate(-1.5deg);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.gc .slip:hover{transform:rotate(0) translateY(-6px)}
+.gc .slip::before{content:"";position:absolute;inset:0;border-radius:22px;background:repeating-linear-gradient(0deg,transparent 0 31px,rgba(28,105,212,.05) 31px 32px);pointer-events:none}
+.gc .slip .hd{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:2px solid var(--ink)}
+.gc .slip .hd b{font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.gc .slip .hd span{font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--muted)}
+.gc .slip .row{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px dashed var(--border);font-size:15px;color:var(--body)}
+.gc .slip .row span:last-child{font-weight:700;color:var(--ink)}
+.gc .slip .row.dim span:last-child{color:var(--faint);text-decoration:line-through;font-weight:600}
+.gc .slip .total{display:flex;justify-content:space-between;align-items:center;gap:16px;white-space:nowrap;margin-top:18px;padding:18px 20px;border-radius:14px;background:var(--grad);color:#fff;box-shadow:0 14px 30px -12px rgba(28,105,212,.8)}
+.gc .slip .total span{font-size:14px;opacity:.85}
+.gc .slip .total b{font-size:28px;font-weight:700;letter-spacing:-.04em}
+.gc .stamp{position:absolute;right:-6px;top:-14px;padding:6px 12px;border:2px solid #e5484d;border-radius:8px;color:#e5484d;font-size:12px;font-weight:800;letter-spacing:.12em;transform:rotate(8deg);opacity:.85}
+
+/* ── G-D 성장 계단 ── */
+.gd .head{text-align:center;margin-bottom:48px}
+.gd .stairs{position:relative;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;align-items:end;max-width:900px;margin:0 auto;padding-top:40px}
+.gd .step{position:relative;border-radius:22px 22px 0 0;padding:26px 24px 30px;background:var(--surface);border:1px solid #fff;border-bottom:0;box-shadow:var(--sh);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.gd .step:hover{transform:translateY(-6px)}
+.gd .s1{height:180px}.gd .s2{height:260px}.gd .s3{height:340px;color:#fff;background:radial-gradient(60% 60% at 20% 10%,rgba(59,130,246,.55),transparent 60%),linear-gradient(180deg,#1c69d4,#0a4ba1 60%,#083a7f);border-color:rgba(255,255,255,.2);box-shadow:0 30px 70px -24px rgba(28,105,212,.8)}
+.gd .step .lab{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.06em;background:#eef2fa;color:var(--muted)}
+.gd .s3 .lab{background:rgba(255,255,255,.18);color:#fff}
+.gd .step b{display:block;margin-top:14px;font-size:22px;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.gd .s3 b{color:#fff;font-size:26px}
+.gd .step .v{display:block;margin-top:4px;font-size:15px;color:var(--muted)}
+.gd .s3 .v{color:rgba(255,255,255,.78)}
+.gd .step .v strong{font-size:20px;color:var(--ink)}
+.gd .s3 .v strong{color:#fff}
+.gd .pointer{position:absolute;left:0;top:-48px;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:700;white-space:nowrap;box-shadow:0 10px 24px -8px rgba(0,0,0,.5)}
+.gd .pointer::after{content:"";position:absolute;left:22px;bottom:-6px;width:12px;height:12px;background:var(--ink);transform:rotate(45deg)}
+.gd .pointer i{width:8px;height:8px;border-radius:50%;background:#7cb0ff;box-shadow:0 0 0 4px rgba(124,176,255,.3);animation:pulse 1.6s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(124,176,255,.5)}100%{box-shadow:0 0 0 10px rgba(124,176,255,0)}}
+.gd .base{max-width:900px;margin:0 auto;height:2px;background:linear-gradient(90deg,transparent,var(--blue),transparent);opacity:.5}
+.gd .note{margin:36px auto 0;max-width:720px;text-align:center;font-size:17px;color:var(--muted)}
+.gd .note b{color:var(--ink)}
+
+@media (max-width:760px){
+  .ga .steps{grid-template-columns:1fr}
+  .ga .arrow{transform:rotate(90deg);justify-self:center}
+  .gb .split,.gc .split{grid-template-columns:1fr}
+  .gc .slip{transform:none}
+  .gd .stairs{grid-template-columns:1fr;align-items:stretch;padding-top:60px}
+  .gd .s1,.gd .s2,.gd .s3{height:auto;border-radius:22px;border-bottom:1px solid #fff}
+  .gd .base{display:none}
+}
+</style>
+</head>
+<body>
+
+<p class="tag">G-A · 다음 단계 (월백반 → 월급반)</p>
+<section class="ga"><div class="wrap">
+  <div class="head"><h2>월백반에서 월 100만 원을 만들었다면,<br>다음은 <span class="accent">월급만큼</span>입니다.</h2></div>
+  <div class="steps">
+    <div class="tile now">
+      <span class="lab">지금 여기 · 월백반</span>
+      <h3>무료 교육 과정</h3>
+      <div class="big">100만 원<small>/ 월</small></div>
+      <p>트레이딩으로 한 달 100만 원 정도의 수익을 만드는 데 성공하신 분</p>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></div>
+    <div class="tile next">
+      <span class="lab">다음 단계 · 월급반</span>
+      <h3>집단 훈련 과정</h3>
+      <div class="big">월급만큼<small>/ 월</small></div>
+      <p>6인 학습팀과 전담 조교, 매주 실천과 복기로 한 달에 월급만큼의 수익을 목표로 합니다</p>
+    </div>
+  </div>
+  <p class="note"><b>월급반은</b> 월백반을 거쳐 월 100만 원을 만들어 본 분들에게 추천드립니다.</p>
+</div></section>
+
+<p class="tag">G-B · 다크 스테이트먼트 + 추천 대상</p>
+<section class="gb"><div class="wrap split">
+  <div>
+    <span class="eyebrow">월급반의 목표</span>
+    <h2>트레이딩으로,<br>한 달에 <span class="accent">월급만큼.</span></h2>
+    <p class="lead">비현실적인 수익이 아니라 매달 월급 하나를 더 만드는 것. 월급반이 목표로 하는 단 하나의 숫자입니다.</p>
+  </div>
+  <div class="card">
+    <div class="t"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></i>이런 분께 추천합니다</div>
+    <ul>
+      <li class="chk">글로벌트레이더협회 무료 과정 <b>월백반</b>을 수강하신 분</li>
+      <li class="chk">트레이딩으로 <b>한 달 100만 원 정도</b>의 수익을 만들어 본 분</li>
+      <li class="chk">혼자가 아닌 <b>팀과 조교</b>의 관리 속에서 다음 단계로 가고 싶은 분</li>
+    </ul>
+    <p class="foot">월백반을 아직 듣지 않으셨다면 무료 과정부터 시작해 보세요.</p>
+  </div>
+</div></section>
+
+<p class="tag">G-C · 급여명세서 메타포</p>
+<section class="gc"><div class="wrap split">
+  <div>
+    <span class="eyebrow">월급반의 목표</span>
+    <h2>월급 하나 더.<br><span class="accent">트레이딩으로 만듭니다.</span></h2>
+    <p class="lead">월급반은 한 달에 월급만큼의 수익을 트레이딩으로 만드는 것을 목표로 하는 교육입니다.</p>
+    <div class="who"><p class="chk">무료 교육 과정 <b>월백반</b>으로 한 달 100만 원 정도의 수익을 만드신 분께 추천드립니다.</p></div>
+  </div>
+  <div class="slip" aria-hidden="true">
+    <span class="stamp">GOAL</span>
+    <div class="hd"><b>월급명세서</b><span>GFTC</span></div>
+    <div class="row dim"><span>월백반 · 무료 과정</span><span>100만 원</span></div>
+    <div class="row"><span>6인 학습팀 · 전담 조교</span><span>포함</span></div>
+    <div class="row"><span>매주 실천 · 기록 · 복기</span><span>포함</span></div>
+    <div class="row"><span>시황 · 타점 · W.E.T · 뉴스</span><span>포함</span></div>
+    <div class="total"><span>목표 수입</span><b>월급만큼</b></div>
+  </div>
+</div></section>
+
+<p class="tag">G-D · 성장 계단</p>
+<section class="gd"><div class="wrap">
+  <div class="head"><span class="eyebrow">월급반의 목표</span><h2>지금 서 있는 계단에서<br><span class="accent">한 칸 더</span> 올라갑니다.</h2></div>
+  <div class="stairs">
+    <div class="step s1"><span class="pointer"><i></i>지금 여기 계신가요?</span><span class="lab">START</span><b>처음 시작</b><span class="v">트레이딩 입문</span></div>
+    <div class="step s2"><span class="lab">월백반 · 무료</span><b>월백반</b><span class="v">한 달 <strong>100만 원</strong> 달성</span></div>
+    <div class="step s3"><span class="lab">월급반 · 집단 훈련</span><b>월급반</b><span class="v">한 달 <strong>월급만큼</strong>의 수익</span></div>
+  </div>
+  <div class="base"></div>
+  <p class="note">월급반은 <b>월백반으로 월 100만 원을 만들어 본 분</b>에게 추천드립니다. 6인 학습팀과 전담 조교가 다음 칸을 함께 오릅니다.</p>
+</div></section>
+
+</body>
+</html>

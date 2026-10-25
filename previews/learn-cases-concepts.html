@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>학습 방식 · 수강생 이야기 시안 4+4</title>
+<style>
+@font-face{font-family:Pretendard;src:url("../assets/fonts/pretendard.woff2") format("woff2");font-weight:100 900;font-display:swap}
+:root{--blue:#1c69d4;--deep:#0a4ba1;--bright:#3b82f6;--sky:#7cb0ff;--grad:linear-gradient(135deg,#0653b6,#1c69d4);--text:linear-gradient(120deg,#0a4ba1,#1c69d4 55%,#3b82f6);--ink:#1b1f27;--body:#3b4252;--muted:#5d6680;--faint:#8c95ad;--border:#dfe4ec;--bg:#fafbff;--surface:linear-gradient(180deg,#fff,#f6f8fd);--sh:0 1px 0 rgba(11,29,54,.04),0 10px 30px -12px rgba(11,29,54,.16),0 30px 60px -30px rgba(28,105,212,.18);--sh2:0 2px 0 rgba(28,105,212,.08),0 18px 40px -14px rgba(11,29,54,.22),0 40px 80px -30px rgba(28,105,212,.28)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;color:var(--body);background:#e9ecf3;letter-spacing:-.01em;line-height:1.7}
+.tag{position:sticky;top:0;z-index:5;margin:0;padding:10px 20px;background:#111;color:#fff;font-size:14px;font-weight:700;letter-spacing:.08em}
+section{position:relative;overflow:hidden;padding:clamp(72px,8vw,110px) 24px;background:linear-gradient(180deg,#fbfcff,#f3f6fc)}
+.wrap{max-width:1120px;margin:0 auto}
+h2{margin:0;font-size:42px;font-weight:700;line-height:1.25;letter-spacing:-.03em;color:var(--ink)}
+.accent{background:var(--text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.head{text-align:center;margin-bottom:56px}
+.sub{max-width:40rem;margin:16px auto 0;font-size:18px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;background:var(--grad);color:#fff;font-size:16px;font-weight:700;text-decoration:none;box-shadow:0 12px 40px -8px rgba(47,109,246,.7)}
+p{margin:0}
+
+/* ───── L-A 타임라인 ───── */
+.la .line{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:24px}
+.la .line::before{content:"";position:absolute;left:12%;right:12%;top:44px;height:2px;background:linear-gradient(90deg,transparent,var(--blue) 15%,var(--blue) 85%,transparent);opacity:.35}
+.la .node{position:relative;text-align:center;padding-top:0}
+.la .dot{position:relative;z-index:1;width:88px;height:88px;margin:0 auto 26px;display:grid;place-items:center;border-radius:50%;background:var(--surface);border:1px solid #fff;box-shadow:var(--sh);font-size:34px;font-weight:700;letter-spacing:-.04em;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.la .dot span{background:var(--text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.la .dot::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:1px dashed rgba(28,105,212,.35);animation:spin 18s linear infinite}
+.la .node:hover .dot{transform:translateY(-6px) scale(1.06);box-shadow:var(--sh2)}
+.la h3{margin:0 0 6px;font-size:22px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.la .node p{font-size:16px;color:var(--muted)}
+.la .week{display:inline-flex;gap:6px;margin-top:18px}
+.la .week i{width:30px;height:30px;display:grid;place-items:center;border-radius:8px;font:600 12px/1 Pretendard;font-style:normal;color:var(--muted);background:#fff;border:1px solid var(--border)}
+.la .week i.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 6px 14px -6px rgba(28,105,212,.7)}
+.la .close{margin:56px auto 0;max-width:720px;text-align:center;font-size:18px;color:var(--muted)}
+.la .close strong{color:var(--ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ───── L-B 다크 스포트라이트 ───── */
+.lb{background:radial-gradient(60% 80% at 15% 20%,rgba(59,130,246,.35),transparent 60%),radial-gradient(50% 70% at 90% 90%,rgba(124,176,255,.2),transparent 60%),linear-gradient(180deg,#0e3b7a,#0a2d5e 55%,#08182e);color:#fff}
+.lb h2{color:#fff}.lb .sub{color:rgba(255,255,255,.65)}
+.lb .accent{background:linear-gradient(120deg,#fff,#cfe0ff);-webkit-background-clip:text;background-clip:text}
+.lb .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.lb .card{position:relative;overflow:hidden;padding:36px 30px 32px;border-radius:26px;background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(12px);box-shadow:0 30px 80px -30px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s}
+.lb .card:hover{transform:translateY(-6px);border-color:rgba(124,176,255,.6)}
+.lb .num{position:absolute;right:-6px;top:-30px;font-size:180px;font-weight:700;letter-spacing:-.08em;line-height:1;color:rgba(255,255,255,.06);pointer-events:none;transition:color .35s}
+.lb .card:hover .num{color:rgba(124,176,255,.14)}
+.lb .ico{width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#7cb0ff,#3b82f6);box-shadow:0 10px 24px -8px rgba(59,130,246,.9);margin-bottom:60px}
+.lb .ico svg{width:24px;height:24px;color:#fff}
+.lb h3{margin:0 0 8px;font-size:22px;font-weight:700;letter-spacing:-.02em}
+.lb .card p{font-size:16px;color:rgba(255,255,255,.7)}
+.lb .close{margin:44px auto 0;max-width:720px;text-align:center;font-size:18px;color:rgba(255,255,255,.72)}
+.lb .close b{color:#fff}
+
+/* ───── L-C 좌우 분할 스텝 리스트 ───── */
+.lc .split{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:center}
+.lc .left p{margin-top:20px;font-size:18px;color:var(--muted)}
+.lc .stat{display:flex;gap:40px;margin-top:40px;padding-top:28px;border-top:1px solid var(--border)}
+.lc .stat b{display:block;font-size:34px;font-weight:700;letter-spacing:-.04em;line-height:1;background:var(--text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lc .stat span{font-size:14px;color:var(--muted)}
+.lc ol{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.lc li{position:relative;display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:center;padding:24px 28px 24px 22px;border-radius:20px;background:var(--surface);border:1px solid #fff;box-shadow:var(--sh);transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.lc li::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:4px;border-radius:4px;background:var(--grad);transform:scaleY(0);transition:transform .3s}
+.lc li:hover{transform:translateX(8px);box-shadow:var(--sh2)}
+.lc li:hover::before{transform:scaleY(1)}
+.lc .n{font-size:44px;font-weight:700;letter-spacing:-.05em;line-height:1;background:var(--text);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums}
+.lc h3{margin:0 0 2px;font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.lc li p{font-size:15px;color:var(--muted)}
+
+/* ───── L-D 주간 사이클 ───── */
+.ld .cycle{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.ld .ring{position:relative;aspect-ratio:1;max-width:460px;margin:0 auto;width:100%}
+.ld .ring svg{position:absolute;inset:0;width:100%;height:100%}
+.ld .ring .c{fill:none;stroke:url(#g);stroke-width:2;stroke-dasharray:6 10;animation:dash 30s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-320}}
+.ld .center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:46%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--grad);color:#fff;box-shadow:0 30px 60px -22px rgba(28,105,212,.7),inset 0 1px 0 rgba(255,255,255,.3)}
+.ld .center b{display:block;font-size:40px;font-weight:700;letter-spacing:-.04em;line-height:1}
+.ld .center span{font-size:14px;opacity:.8}
+.ld .pin{position:absolute;width:56%;display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:16px;background:var(--surface);border:1px solid #fff;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
+.ld .pin:hover{transform:scale(1.04);box-shadow:var(--sh2)}
+.ld .pin i{flex:none;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--grad);color:#fff;font:700 15px/1 Pretendard;font-style:normal}
+.ld .pin b{display:block;font-size:16px;color:var(--ink)}
+.ld .pin small{font-size:13px;color:var(--muted)}
+.ld .p1{left:50%;top:-4%;transform:translateX(-50%)}.ld .p1:hover{transform:translateX(-50%) scale(1.04)}
+.ld .p2{right:-8%;bottom:14%}.ld .p3{left:-8%;bottom:14%}
+.ld .copy p{margin-top:18px;font-size:18px;color:var(--muted)}
+.ld .copy ul{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px}
+.ld .copy li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--body)}
+.ld .copy li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/11px no-repeat,var(--grad)}
+
+/* ───── C-A 피처드 + 리스트 ───── */
+.thumb{position:relative;display:block;overflow:hidden;border-radius:18px;background:#000;aspect-ratio:16/9;box-shadow:0 20px 50px -20px rgba(11,29,54,.45)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.thumb:hover img{transform:scale(1.05)}
+.play{position:absolute;left:50%;top:50%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,255,255,.94) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230b1d36' d='M9 6l10 6-10 6z'/%3E%3C/svg%3E") center/28px no-repeat;box-shadow:0 8px 24px rgba(0,0,0,.3);transition:transform .3s}
+.thumb:hover .play{transform:translate(-50%,-50%) scale(1.12)}
+.ca .feat{display:grid;grid-template-columns:1.35fr 1fr;gap:32px;align-items:stretch}
+.ca .big{display:block;text-decoration:none;color:inherit}
+.ca .big .thumb{aspect-ratio:16/10;border-radius:26px}
+.ca .big .cap{margin-top:18px}
+.ca .cap b{display:block;font-size:22px;font-weight:700;color:var(--ink);letter-spacing:-.02em;line-height:1.4}
+.ca .cap span{display:inline-block;margin-top:8px;padding:4px 10px;border-radius:999px;background:rgba(28,105,212,.08);color:var(--blue);font-size:13px;font-weight:600}
+.ca .list{display:grid;gap:16px;align-content:stretch}
+.ca .row{display:grid;grid-template-columns:168px 1fr;gap:18px;align-items:center;padding:12px;border-radius:20px;background:var(--surface);border:1px solid #fff;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s;text-decoration:none;color:inherit}
+.ca .row:hover{transform:translateX(6px);box-shadow:var(--sh2)}
+.ca .row .thumb{border-radius:12px;box-shadow:none}
+.ca .row .play{width:40px;height:40px;background-size:18px}
+.ca .row b{display:block;font-size:16px;font-weight:700;color:var(--ink);line-height:1.45;letter-spacing:-.01em}
+.ca .row small{display:block;margin-top:4px;font-size:13px;color:var(--muted)}
+
+/* ───── C-B 다크 시네마 ───── */
+.cb{background:radial-gradient(70% 60% at 50% 0%,rgba(59,130,246,.25),transparent 60%),linear-gradient(180deg,#0b1a33,#06101f);color:#fff}
+.cb h2{color:#fff}
+.cb .accent{background:linear-gradient(120deg,#7cb0ff,#fff);-webkit-background-clip:text;background-clip:text}
+.cb .sub{color:rgba(255,255,255,.6)}
+.cb .reel{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cb .film{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:9/13;box-shadow:0 30px 70px -24px rgba(0,0,0,.8);transition:transform .4s cubic-bezier(.2,.7,.2,1);text-decoration:none;color:#fff}
+.cb .film img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.cb .film::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,16,31,0) 35%,rgba(6,16,31,.95));}
+.cb .film:hover{transform:translateY(-10px)}
+.cb .film:hover img{transform:scale(1.08)}
+.cb .film .cap{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:22px}
+.cb .film .cap b{display:block;font-size:17px;font-weight:700;line-height:1.45;letter-spacing:-.01em}
+.cb .film .cap small{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;color:rgba(255,255,255,.65)}
+.cb .film .cap small::before{content:"";width:18px;height:18px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%230b1d36' d='M9 6l10 6-10 6z'/%3E%3C/svg%3E") center/9px no-repeat}
+.cb .film:nth-child(2),.cb .film:nth-child(4){margin-top:40px}
+.cb .quote{margin:64px auto 0;max-width:760px;text-align:center;font-size:22px;line-height:1.6;color:rgba(255,255,255,.8)}
+.cb .quote::before{content:"\201C";display:block;font-size:80px;line-height:.6;color:rgba(124,176,255,.5);font-family:Georgia,serif;margin-bottom:12px}
+
+/* ───── C-C 틸트 갤러리 ───── */
+.cc .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 48px;max-width:980px;margin:0 auto}
+.cc .polaroid{padding:14px 14px 20px;border-radius:18px;background:#fff;box-shadow:var(--sh);text-decoration:none;color:inherit;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.cc .polaroid:nth-child(1){transform:rotate(-2deg)}.cc .polaroid:nth-child(2){transform:rotate(1.5deg) translateY(28px)}.cc .polaroid:nth-child(3){transform:rotate(1.2deg)}.cc .polaroid:nth-child(4){transform:rotate(-1.6deg) translateY(28px)}
+.cc .polaroid:hover{transform:rotate(0) translateY(-8px) scale(1.02);box-shadow:var(--sh2);z-index:1;position:relative}
+.cc .polaroid .thumb{border-radius:10px;box-shadow:none}
+.cc .polaroid b{display:block;margin-top:16px;font-size:17px;font-weight:700;color:var(--ink);line-height:1.45;letter-spacing:-.01em}
+.cc .polaroid small{display:block;margin-top:6px;font-size:13px;color:var(--muted)}
+.cc .cta{margin-top:72px;text-align:center}
+
+/* ───── C-D 채널 스타일 ───── */
+.cd .bar{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px}
+.cd .bar h2{font-size:36px}
+.cd .bar .sub{margin:10px 0 0;text-align:left}
+.cd .chan{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;background:var(--surface);border:1px solid #fff;box-shadow:var(--sh);text-decoration:none;color:var(--ink);font-weight:700;font-size:15px;white-space:nowrap}
+.cd .chan i{width:22px;height:22px;border-radius:6px;background:#ff0033 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9 7l8 5-8 5z'/%3E%3C/svg%3E") center/14px no-repeat}
+.cd .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.cd .vid{text-decoration:none;color:inherit;padding:12px;border-radius:22px;background:var(--surface);border:1px solid #fff;box-shadow:var(--sh);transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.cd .vid:hover{transform:translateY(-6px);box-shadow:var(--sh2)}
+.cd .vid .thumb{border-radius:14px;box-shadow:none}
+.cd .vid .play{width:46px;height:46px;background-size:20px}
+.cd .meta{padding:14px 6px 4px}
+.cd .meta b{display:block;font-size:15px;font-weight:700;color:var(--ink);line-height:1.45;letter-spacing:-.01em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cd .meta span{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;font-weight:600;color:var(--blue)}
+.cd .meta span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue)}
+
+@media (max-width:760px){
+  h2{font-size:30px}
+  .la .line,.lb .grid,.cb .reel,.cd .grid{grid-template-columns:1fr}
+  .la .line::before{display:none}
+  .lc .split,.ld .cycle,.ca .feat{grid-template-columns:1fr;gap:40px}
+  .cb .film:nth-child(2),.cb .film:nth-child(4){margin-top:0}
+  .cb .film{aspect-ratio:16/9}
+  .cc .gallery{grid-template-columns:1fr;gap:28px}
+  .cc .polaroid:nth-child(n){transform:none}
+  .cd .bar{flex-direction:column;align-items:flex-start}
+  .ld .pin{position:static;width:auto;transform:none!important;margin-top:12px}
+  .ld .ring{aspect-ratio:auto}.ld .ring svg,.ld .center{display:none}
+}
+</style>
+</head>
+<body>
+
+<p class="tag">L-A · 타임라인 루틴</p>
+<section class="la"><div class="wrap">
+  <div class="head"><h2>함께 배우고, 분석하고,<br><span class="accent">복기합니다.</span></h2></div>
+  <div class="line">
+    <div class="node"><div class="dot"><span>1</span></div><h3>6인 학습팀</h3><p>목표와 기록을 나누는 동료</p><div class="week"><i class="on">월</i><i>화</i><i>수</i><i>목</i><i>금</i></div></div>
+    <div class="node"><div class="dot"><span>2</span></div><h3>조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p><div class="week"><i class="on">월</i><i class="on">화</i><i class="on">수</i><i class="on">목</i><i class="on">금</i></div></div>
+    <div class="node"><div class="dot"><span>3</span></div><h3>기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p><div class="week"><i>월</i><i>화</i><i>수</i><i>목</i><i class="on">금</i></div></div>
+  </div>
+  <p class="close">조교의 관리 감독하에 <strong>매주 실천, 복기가 가능한</strong> 집단 훈련 환경입니다</p>
+</div></section>
+
+<p class="tag">L-B · 다크 스포트라이트</p>
+<section class="lb"><div class="wrap">
+  <div class="head"><h2>함께 배우고, 분석하고,<br><span class="accent">복기합니다.</span></h2></div>
+  <div class="grid">
+    <div class="card"><span class="num">1</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19a6 6 0 0 1 12 0M15 18a4 4 0 0 1 6 0"/></svg></div><h3>6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div>
+    <div class="card"><span class="num">2</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></div><h3>조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div>
+    <div class="card"><span class="num">3</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5m0 14h16M7 14l4-4 4 2 5-7"/></svg></div><h3>기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div>
+  </div>
+  <p class="close">조교의 관리 감독하에 <b>매주 실천, 복기가 가능한</b> 집단 훈련 환경입니다</p>
+</div></section>
+
+<p class="tag">L-C · 좌우 분할 스텝</p>
+<section class="lc"><div class="wrap split">
+  <div class="left">
+    <h2>함께 배우고,<br>분석하고,<br><span class="accent">복기합니다.</span></h2>
+    <p>조교의 관리 감독하에 매주 실천, 복기가 가능한 집단 훈련 환경입니다.</p>
+    <div class="stat"><div><b>6인</b><span>학습팀</span></div><div><b>매주</b><span>실천 · 복기</span></div><div><b>3단계</b><span>핵심 루틴</span></div></div>
+  </div>
+  <ol>
+    <li><span class="n">01</span><div><h3>6인 학습팀</h3><p>목표와 기록을 나누는 동료</p></div></li>
+    <li><span class="n">02</span><div><h3>조교의 학습 지원</h3><p>초기 설정부터 진도·과제 안내</p></div></li>
+    <li><span class="n">03</span><div><h3>기록과 복기</h3><p>내 판단과 행동을 돌아보는 시간</p></div></li>
+  </ol>
+</div></section>
+
+<p class="tag">L-D · 주간 사이클</p>
+<section class="ld"><div class="wrap cycle">
+  <div class="ring">
+    <svg viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#0a4ba1"/><stop offset="1" stop-color="#7cb0ff"/></linearGradient></defs><circle class="c" cx="50" cy="50" r="42"/></svg>
+    <div class="center"><div><b>매주</b><span>실천 → 기록 → 복기</span></div></div>
+    <div class="pin p1"><i>1</i><div><b>6인 학습팀</b><small>목표와 기록을 나누는 동료</small></div></div>
+    <div class="pin p2"><i>2</i><div><b>조교의 학습 지원</b><small>진도·과제 안내</small></div></div>
+    <div class="pin p3"><i>3</i><div><b>기록과 복기</b><small>판단과 행동 돌아보기</small></div></div>
+  </div>
+  <div class="copy">
+    <h2>함께 배우고, 분석하고,<br><span class="accent">복기합니다.</span></h2>
+    <p>조교의 관리 감독하에 매주 실천, 복기가 가능한 집단 훈련 환경입니다.</p>
+    <ul><li>6인 학습팀이 목표와 기록을 공유합니다</li><li>조교가 초기 설정부터 진도·과제를 안내합니다</li><li>매주 내 판단과 행동을 돌아보는 복기 시간을 갖습니다</li></ul>
+  </div>
+</div></section>
+
+<p class="tag">C-A · 피처드 + 리스트</p>
+<section class="ca"><div class="wrap">
+  <div class="head"><h2>글로벌트레이더협회를 만나<br><span class="accent">삶이 바뀐</span> 사람들</h2></div>
+  <div class="feat">
+    <a class="big" href="#"><span class="thumb"><img src="../assets/case-1.jpg" alt=""><span class="play"></span></span><div class="cap"><b>비트코인 10개 날려먹은 체대생,<br>이 방법 하나로 집 2채 샀습니다</b><span>수강생 인터뷰</span></div></a>
+    <div class="list">
+      <a class="row" href="#"><span class="thumb"><img src="../assets/case-2.jpg" alt=""><span class="play"></span></span><div><b>낮에는 농부, 밤에는 투자자</b><small>수강생 인터뷰</small></div></a>
+      <a class="row" href="#"><span class="thumb"><img src="../assets/case-3.jpg" alt=""><span class="play"></span></span><div><b>12년간 투자 수익 0원, 이거 하나만 바꿨더니 14일 만에 2배</b><small>수강생 인터뷰</small></div></a>
+      <a class="row" href="#"><span class="thumb"><img src="../assets/case-4.jpg" alt=""><span class="play"></span></span><div><b>3년 전 빚투로 시작한 영끌족, 지금은 어떻게 됐을까?</b><small>수강생 인터뷰</small></div></a>
+    </div>
+  </div>
+</div></section>
+
+<p class="tag">C-B · 다크 시네마</p>
+<section class="cb"><div class="wrap">
+  <div class="head"><h2>글로벌트레이더협회를 만나<br><span class="accent">삶이 바뀐</span> 사람들</h2><p class="sub">수강생들이 직접 들려주는 이야기</p></div>
+  <div class="reel">
+    <a class="film" href="#"><img src="../assets/case-1.jpg" alt=""><div class="cap"><b>비트코인 10개 날려먹은 체대생, 집 2채 샀습니다</b><small>인터뷰 보기</small></div></a>
+    <a class="film" href="#"><img src="../assets/case-2.jpg" alt=""><div class="cap"><b>낮에는 농부, 밤에는 투자자</b><small>인터뷰 보기</small></div></a>
+    <a class="film" href="#"><img src="../assets/case-3.jpg" alt=""><div class="cap"><b>12년간 수익 0원, 14일 만에 2배</b><small>인터뷰 보기</small></div></a>
+    <a class="film" href="#"><img src="../assets/case-4.jpg" alt=""><div class="cap"><b>빚투로 시작한 영끌족, 지금은?</b><small>인터뷰 보기</small></div></a>
+  </div>
+  <p class="quote">비현실적인 수익이 아니라, 매주 기록하고 복기하는 습관이 삶을 바꿨습니다.</p>
+</div></section>
+
+<p class="tag">C-C · 틸트 갤러리</p>
+<section class="cc"><div class="wrap">
+  <div class="head"><h2>글로벌트레이더협회를 만나<br><span class="accent">삶이 바뀐</span> 사람들</h2></div>
+  <div class="gallery">
+    <a class="polaroid" href="#"><span class="thumb"><img src="../assets/case-1.jpg" alt=""><span class="play"></span></span><b>비트코인 10개 날려먹은 체대생, 이 방법 하나로 집 2채 샀습니다</b><small>수강생 인터뷰</small></a>
+    <a class="polaroid" href="#"><span class="thumb"><img src="../assets/case-2.jpg" alt=""><span class="play"></span></span><b>낮에는 농부, 밤에는 투자자</b><small>수강생 인터뷰</small></a>
+    <a class="polaroid" href="#"><span class="thumb"><img src="../assets/case-3.jpg" alt=""><span class="play"></span></span><b>12년간 투자 수익 0원, 이거 하나만 바꿨더니 14일 만에 2배</b><small>수강생 인터뷰</small></a>
+    <a class="polaroid" href="#"><span class="thumb"><img src="../assets/case-4.jpg" alt=""><span class="play"></span></span><b>3년 전 빚투로 시작한 영끌족, 지금은 어떻게 됐을까?</b><small>수강생 인터뷰</small></a>
+  </div>
+  <div class="cta"><a class="btn" href="#">더 많은 이야기 보기</a></div>
+</div></section>
+
+<p class="tag">C-D · 채널 스타일</p>
+<section class="cd"><div class="wrap">
+  <div class="bar"><div><h2>글로벌트레이더협회를 만나<br><span class="accent">삶이 바뀐</span> 사람들</h2><p class="sub">수강생 인터뷰 시리즈</p></div><a class="chan" href="#"><i></i>채널 보기</a></div>
+  <div class="grid">
+    <a class="vid" href="#"><span class="thumb"><img src="../assets/case-1.jpg" alt=""><span class="play"></span></span><div class="meta"><b>비트코인 10개 날려먹은 체대생, 이 방법 하나로 집 2채 샀습니다</b><span>수강생 인터뷰</span></div></a>
+    <a class="vid" href="#"><span class="thumb"><img src="../assets/case-2.jpg" alt=""><span class="play"></span></span><div class="meta"><b>낮에는 농부, 밤에는 투자자</b><span>수강생 인터뷰</span></div></a>
+    <a class="vid" href="#"><span class="thumb"><img src="../assets/case-3.jpg" alt=""><span class="play"></span></span><div class="meta"><b>12년간 투자 수익 0원, 이거 하나만 바꿨더니 14일 만에 2배</b><span>수강생 인터뷰</span></div></a>
+    <a class="vid" href="#"><span class="thumb"><img src="../assets/case-4.jpg" alt=""><span class="play"></span></span><div class="meta"><b>3년 전 빚투로 시작한 영끌족, 지금은 어떻게 됐을까?</b><span>수강생 인터뷰</span></div></a>
+  </div>
+</div></section>
+
+</body>
+</html>
