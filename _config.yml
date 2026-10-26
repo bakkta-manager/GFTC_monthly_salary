@@ -1,0 +1,33 @@
+# GitHub Pages 공개 범위 — 웹에는 월급반 공개 페이지(index.html + assets)만 올리고, 시안·작업 문서는 레포에만 둔다
+# (2026-10-26 대표 「상세페이지 켜」 — 고치기 전 문장이 남은 시안이 웹 주소로 열리지 않게. 월천반 공개 페이지는 GFTC_monthly_1000 하나)
+exclude:
+  - previews
+  - wolcheon-previews
+  - docs
+  - design-handoff
+  - supabase
+  - index-glow.html
+  - wolcheon-glow.html
+  - wolcheon.html
+  - assets/fonts/README.md
+  - assets/generated-intro-images.md
+  - assets/intro-photo-credits.md
+  - apply-paybtn.png
+  - born-sec.png
+  - born-variants.png
+  - case-concepts.png
+  - cases-site.png
+  - curri-after-revert.png
+  - hero-split-concepts.png
+  - hero-variants.png
+  - idea-variants.png
+  - lecture-line-concepts.png
+  - mobile-full.png
+  - mv-apply.png
+  - mv-born.png
+  - mv-hero.png
+  - mv-price.png
+  - mv-price2.png
+  - mv-three.png
+  - screen1.png
+  - screen2.png
