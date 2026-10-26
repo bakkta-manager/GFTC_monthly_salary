@@ -81,8 +81,9 @@
   .hero .sub{font-size:clamp(18px,1.8vw,22px);font-weight:600;line-height:1.55;color:rgba(255,255,255,.92);max-width:30ch}
   .hero .idea,.hero .born{display:flex;flex-direction:column;align-items:center;gap:14px}
   .hero .idea-label{font-size:clamp(24px,2.8vw,36px);font-weight:600;letter-spacing:-.01em;color:rgba(255,255,255,.85)}
-  .hero .scroll{margin-top:28px;font-size:14px;letter-spacing:.18em;color:rgba(255,255,255,.85);display:flex;flex-direction:column;align-items:center;gap:8px}
-  .hero .scroll::after{content:"";width:1px;height:40px;background:rgba(255,255,255,.45)}
+  .hero .scroll{margin-top:28px;display:flex;flex-direction:column;align-items:center;padding-top:6px}
+  .hero .scroll::before,.hero .scroll::after{content:"";width:30px;height:30px;border-right:3px solid rgba(255,255,255,.72);border-bottom:3px solid rgba(255,255,255,.72);transform:rotate(45deg)}
+  .hero .scroll::after{margin-top:-15px}
   .born-sec{background:transparent;color:#fff;text-align:center;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center}
   .born-sec .wrap{padding-block:clamp(72px,8vw,110px)}
   .born-sec .born{display:flex;flex-direction:column;align-items:center;gap:14px}
@@ -381,7 +382,7 @@
   .born-sec::before{content:"";position:absolute;left:50%;top:50%;width:90vmax;height:46vmax;transform:translate(-50%,-50%);pointer-events:none;background:radial-gradient(ellipse,rgba(255,228,120,.13),rgba(28,105,212,.0) 60%)}
   .hero .qsep{width:140px;background:linear-gradient(90deg,transparent,rgba(255,216,77,.9),transparent);box-shadow:0 0 14px rgba(255,216,77,.55)}
   .born-sec .vsep{background:linear-gradient(180deg,transparent,rgba(255,216,77,.95),transparent);box-shadow:0 0 14px rgba(255,216,77,.55)}
-  .hero .scroll::after{background:linear-gradient(180deg,rgba(255,255,255,.9),transparent);box-shadow:0 0 10px rgba(255,255,255,.45)}
+  .hero .scroll::before,.hero .scroll::after{filter:drop-shadow(0 0 5px rgba(255,255,255,.35))}
   .hero .quote{text-shadow:0 2px 30px rgba(6,19,39,.45)}
   .born-sec .h1{text-shadow:0 2px 30px rgba(6,19,39,.45)}
   .hero .grid,.born-sec .grid{background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px)}
@@ -475,12 +476,12 @@
   /* ══ 모션 레이어: 스크롤 등장 · 히어로 인트로 · 호버 반응 ══ */
   .motion .rv{opacity:0;translate:0 22px;transition:opacity .75s cubic-bezier(.2,.7,.2,1),translate .75s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
   .motion .rv.in{opacity:1;translate:0 0}
-  .motion .hero .idea>*,.motion .hero .scroll{animation:g-rise 1s cubic-bezier(.2,.7,.2,1) both}
+  .motion .hero .idea>*,.motion .hero .scroll{animation:g-rise .7s cubic-bezier(.2,.7,.2,1) both}
   .motion .hero .idea>:nth-child(2){animation-delay:.25s}
   .motion .hero .idea>:nth-child(3){animation-delay:.5s}
   .motion .hero .idea>:nth-child(4){animation-delay:.65s}
   .motion .hero .scroll{animation-delay:1.1s}
-  .motion .hero .scroll::after{transform-origin:top;animation:g-scroll-line 1.8s cubic-bezier(.4,0,.2,1) 1.6s infinite}
+  .motion .hero .scroll::before,.motion .hero .scroll::after{animation:g-chev 2s ease-in-out 1.6s infinite}
   /* 제목 강조: 등장 시 그라데이션이 왼쪽에서 오른쪽으로 쓸려 지나감 */
   .motion .rv .blue,.motion .rv.h2 .blue{background-size:220% 100%;background-position:100% 0;transition:background-position 1.1s cubic-bezier(.2,.7,.2,1) .15s}
   .motion .rv.in .blue,.motion .rv.in.h2 .blue{background-position:0 0}
@@ -503,12 +504,8 @@
   .preview:hover .lock{transform:translateY(-3px);box-shadow:inset 0 1px 0 #fff,0 26px 50px -18px rgba(11,29,54,.45)}
   .preview:hover .lock svg{animation:g-wiggle .6s ease-in-out}
   /* 커리큘럼 원형: 등장 시 호(弧) 드로잉 + 노드 팝, 범례 ↔ 노드 연동 하이라이트 */
-  /* 조용한 등장: 호는 서서히 나타나고, 중앙 원과 노드는 아주 살짝 커지며 페이드 인 (튕김·링 펄스 없음) */
-  .motion .wheel svg path{opacity:0;transition:opacity 1.2s ease .2s}
-  .motion .wheel.in svg path{opacity:1}
-  .motion .wheel .node,.motion .wheel .core{opacity:0;scale:.96;transition:opacity .9s ease,scale .9s ease}
-  .motion .wheel.in .node,.motion .wheel.in .core{opacity:1;scale:1}
-  .motion .wheel.in .core{transition-delay:.1s}.motion .wheel.in .n1{transition-delay:.3s}.motion .wheel.in .n2{transition-delay:.45s}.motion .wheel.in .n3{transition-delay:.6s}
+  /* 원형 다이어그램은 개별 요소 애니메이션 없이 전체가 한 번에 조용히 페이드 인 (.rv 공통 등장만 사용) */
+  .motion .wheel.rv{translate:0 0;transition:opacity 1.1s ease}
   .wheel .node{transition:box-shadow .3s,border-color .3s}
   .wheel .node.hi,.wheel .node:hover{box-shadow:0 16px 36px -16px rgba(11,29,54,.35),0 0 0 6px rgba(255,255,255,.7),0 0 0 12px rgba(28,105,212,.18)}
   .legend>div{padding:10px 14px;margin:-10px -14px;border-radius:14px;transition:background .25s}
@@ -529,7 +526,7 @@
   .benefit .note div{transition:transform .3s,box-shadow .3s}
   .benefit .note div:hover{transform:translateY(-2px);box-shadow:0 18px 36px -16px rgba(28,105,212,.5),inset 0 1px 0 #fff}
   @keyframes g-rise{from{opacity:0;translate:0 26px;filter:blur(6px)}to{opacity:1;translate:0 0;filter:blur(0)}}
-  @keyframes g-scroll-line{0%{transform:scaleY(0);opacity:0}30%{opacity:1}100%{transform:scaleY(1);opacity:0}}
+  @keyframes g-chev{0%,100%{opacity:.3}50%{opacity:1}}
   @keyframes g-shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
   @keyframes g-sheen{to{transform:translateX(420%) skewX(-20deg)}}
   @keyframes g-wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-12deg)}75%{transform:rotate(12deg)}}
@@ -537,7 +534,7 @@
   @keyframes g-pop{to{opacity:1;scale:1}}
   @keyframes g-ring{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(1.5)}}
   @media (max-width:760px){.cases .case:nth-child(even){margin-top:0}.legend>div{padding:0;margin:0}}
-  @media (prefers-reduced-motion:reduce){.hero .idea>*,.hero .scroll,.hero .scroll::after,.wheel svg path,.wheel .node,.wheel .core,.cta.gold-btn::after,.nav-cta::after{animation:none!important}}
+  @media (prefers-reduced-motion:reduce){.hero .idea>*,.hero .scroll,.hero .scroll::before,.hero .scroll::after,.wheel svg path,.wheel .node,.wheel .core,.cta.gold-btn::after,.nav-cta::after{animation:none!important}}
 
   /* ══ 히어로 전용 모션: 단어 단위 등장 · 커서 스포트라이트 · 격자 패럴랙스 ══ */
   .hero .wrap{z-index:1}
@@ -545,15 +542,17 @@
   .hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .5s;background:radial-gradient(560px circle at var(--mx,50%) var(--my,40%),rgba(255,255,255,.11),transparent 60%)}
   .hero.spot::after{opacity:1}
   .hero .quote .w{display:inline-block;white-space:pre}
-  .hero .gold .w{background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .gold .w{background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .14em;margin:0 -.14em}
+  .hero .gold,.born-sec .gold{padding:0 .1em;margin:0 -.1em}
   .motion .hero .idea>p{animation:none}
-  .motion .hero .quote .w{opacity:0;translate:0 .55em;filter:blur(8px);animation:g-word .95s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--base,0s) + var(--i,0)*55ms)}
-  .motion .hero .quote:nth-of-type(1) .w{--base:.35s}
-  .motion .hero .quote:nth-of-type(2) .w{--base:1.55s}
-  .motion .hero .gold .w{background-size:220% 100%;animation:g-word .95s cubic-bezier(.2,.7,.2,1) forwards,g-shimmer 6s ease-in-out 3s infinite}
-  .motion .hero .idea>:nth-child(3){animation:g-line .9s cubic-bezier(.2,.7,.2,1) 1.25s both}
-  .motion .hero .scroll{animation-delay:2.6s}
-  .motion .hero .scroll::after{animation-delay:3.2s}
+  .motion .hero .quote .w{opacity:0;translate:0 .55em;filter:blur(8px);animation:g-word .6s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--base,0s) + var(--i,0)*32ms)}
+  .motion .hero .quote:nth-of-type(1) .w{--base:.25s}
+  .motion .hero .quote:nth-of-type(2) .w{--base:.95s}
+  .motion .hero .gold .w{background-size:220% 100%;animation:g-word .6s cubic-bezier(.2,.7,.2,1) forwards,g-shimmer 6s ease-in-out 2s infinite}
+  .motion .hero .idea>:nth-child(3){animation:g-line .7s cubic-bezier(.2,.7,.2,1) .8s both}
+  .motion .hero .scroll{animation-delay:1.6s}
+  .motion .hero .scroll::before{animation-delay:2.1s}
+  .motion .hero .scroll::after{animation-delay:2.4s}
   .motion .born-sec .idea-label.rv{letter-spacing:.35em;transition:opacity .75s cubic-bezier(.2,.7,.2,1),translate .75s cubic-bezier(.2,.7,.2,1),letter-spacing 1.2s cubic-bezier(.2,.7,.2,1)}
   .motion .born-sec .idea-label.rv.in{letter-spacing:-.01em}
   .motion .born-sec .vsep{transform-origin:top;scale:1 0;transition:scale .9s cubic-bezier(.2,.7,.2,1) .7s}
@@ -589,7 +588,7 @@
       <div class="qsep" aria-hidden="true"></div>
       <p class="serif quote">'나와 <span class="gold">같은 레벨의 트레이더</span>를<br>양성하는 과정을 만들어보자'</p>
     </div>
-    <div class="scroll" aria-hidden="true">SCROLL</div>
+    <div class="scroll" aria-hidden="true"></div>
   </div>
 </section>
 
