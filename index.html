@@ -1205,7 +1205,8 @@
       if (target !== null) { event.preventDefault(); go(target); }
     });
     window.addEventListener("touchstart", function (event) {
-      touch = event.touches.length === 1 && !isControl(event.target) ? {x:event.touches[0].clientX,y:event.touches[0].clientY,consumed:false} : null;
+      // 모바일(640px 이하)에서는 한 장면씩 넘기지 않고 자연스럽게 스크롤한다.
+      touch = event.touches.length === 1 && !isControl(event.target) && !window.matchMedia("(max-width: 640px)").matches ? {x:event.touches[0].clientX,y:event.touches[0].clientY,consumed:false} : null;
     }, {passive:true});
     window.addEventListener("touchmove", function (event) {
       if (!touch || event.touches.length !== 1) { touch = null; return; }
